@@ -12,5 +12,115 @@ html(lang="en")
       img(src="./images/main/main_background.svg")
     .content
       .main
-        | main
+        .container
+          .main-container
+            .row
+              .col-lg-6
+                img(src='./images/main/kodebox-big.png')
+                .description
+                  | Kodebox is a blockchain technology company on a mission to create and enable a smarter asset management system. Its flagship product CodeChain is a distributed ledger platform that allows more transparent and efficient asset management for the gaming industry.
+              .col-lg-6
+                img.asset-chain-img(src='./images/main/asset-chain.png')
+          .projects-container
+            h3
+              | Projects
+            .underline
+            .row
+              .col-lg-6
+                .project-item
+                  img(src='./images/main/codechain.png')
+                  .title
+                    | CodeChain
+                  .description
+                    | Programmable blockchain platform optimal for multiple asset management
+                  .link
+                    | website
+              .col-lg-6
+                .project-item
+                  img(src='./images/main/gocryptobot.png')
+                  .title
+                    | GoCryptobot
+                  .description
+                    | World's first mobile blockchain game for both iOS and Android
+                  .link
+                    | website
+          .team-container
+            h3
+              | Team
+            .underline
+            .description
+              | Kodebox is a blockchain technology company on a mission to create and enable a smarter asset management system.
+            .team-item-group
+              include includes/team.pug
+              .team-item
+                .team-item-image-join
+                  img(src='./images/main/user-icon.png')
+                .team-item-right
+                  .team-item-name
+                    | Join Us!
+                  .team-item-description
+                    | job@kodebox.io
+          .media-container
+            h3
+              | Media Coverage
+            .underline
+            include includes/media.pug
+          .presentation-container
+            h3
+              | Presentation materials
+            .underline
+            include includes/presentation.pug
+          .event-container
+            h3
+              | Events
+            .underline
+            .upcomming-group
+              p.title
+                | Upcomming events
+              .row
+                .col-lg-6
+                  .event-item
+                    img.event-img(src="")
+                    .event-title
+                      | Blockchain Connect
+                    .event-date
+                      | 2018.12.29, Seoul
+                .col-lg-6
+                  .event-item
+                    img.event-img(src="")
+                    .event-title
+                      | Blockchain Connect
+                    .event-date
+                      | 2018.12.29, Seoul
+            .past-group
+              p.title
+                | Past events
+              .row
+                .col-lg-6
+                  .event-item
+                    img.event-img(src="")
+                    .event-title
+                      | Blockchain Connect
+                    .event-date
+                      | 2018.12.29, Seoul
+                .col-lg-6
+                  .event-item
+                    img.event-img(src="")
+                    .event-title
+                      | Blockchain Connect
+                    .event-date
+                      | 2018.12.29, Seoul
+            .partners-group
+              p.title
+                | Investors & Partners
+              .small-under-line
+              .partners-group-list
+                .row
+                  .col-lg-6
+                    .partner-logo
+                      img(src="")
+                  .col-lg-6
+                    .partner-logo
+                      img(src="")
+
     include includes/footer.pug

@@ -1,0 +1,272 @@
+.main {
+  .main-container {
+    padding-top: 120px;
+
+    @media screen and (max-width: 767px) {
+      padding-top: 80px;
+    }
+
+    .description {
+      margin-top: 30px;
+      font-size: 20px;
+      padding-right: 30px;
+
+      @media screen and (max-width: 991px) {
+        padding-right: 0;
+      }
+    }
+
+    .asset-chain-img {
+      margin-top: 50px;
+      width: 466px;
+      height: 79px;
+
+      @media screen and (max-width: 486px) {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .projects-container {
+    margin-top: 100px;
+
+    .project-item {
+      margin-top: 80px;
+      text-align: center;
+
+      .title {
+        margin-top: 30px;
+        font-size: 28px;
+        font-weight: 900;
+      }
+
+      .description {
+        margin-top: 10px;
+        font-size: 22px;
+        width: 300px;
+        margin: 0 auto;
+
+        @media screen and (max-width: 991px) {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+
+      .link {
+        margin-top: 10px;
+        font-size: 18px;
+        color: #d94c47;
+      }
+    }
+  }
+
+  .team-container {
+    margin-top: 100px;
+
+    .description {
+      padding-top: 20px;
+    }
+
+
+    .team-item-group {
+      margin-top: 30px;
+
+      @media screen and (max-width: 509px) {
+        text-align: center;
+      }
+
+      .team-item {
+        display: inline-block;
+        position: relative;
+        width: 220px;
+        height: 115px;
+        margin-right: 20px;
+        margin-bottom: 15px;
+      }
+
+      .team-item-image {
+        position: absolute;
+        width: 75px;
+        height: 75px;
+        left: 0;
+        top: 0;
+        background-color: gray;
+      }
+
+      .team-item-image-join {
+        position: absolute;
+        width: 75px;
+        height: 75px;
+        left: 0;
+        top: 0;
+        background-color: #eaa912;
+
+        img {
+          position: absolute;
+          bottom: 0;
+          left: 7px;
+        }
+      }
+
+      .team-item-right {
+        position: absolute;
+        width: 145px;
+        height: 75px;
+        left: 75px;
+        top: 0;
+        background-color: #eee;
+        padding: 10px;
+        padding-top: 15px;
+
+        .team-item-name {
+          font-weight: bold;
+          font-size: 16px;
+        }
+
+        .team-item-description {
+          font-size: 16px;
+        }
+      }
+
+      .team-item-link-group {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        .team-item-link {
+          margin-left: 5px;
+          font-size: 14px;
+          display: inline-block;
+          cursor: pointer;
+        }
+
+        .team-item-link:hover {
+          color: #087250;
+        }
+      }
+    }
+  }
+
+  .media-container {
+    margin-top: 100px;
+
+    ul {
+      margin-top: 50px;
+
+      li {
+        font-size: 20px;
+        cursor: pointer;
+
+        @media screen and (max-width: 992px) {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .presentation-container {
+    margin-top: 100px;
+
+    ul {
+      margin-top: 50px;
+
+      li {
+        font-size: 20px;
+        cursor: pointer;
+
+        @media screen and (max-width: 992px) {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .event-container {
+    margin-top: 100px;
+
+    .upcomming-group {
+      margin-top: 60px;
+
+      .title {
+        color: #d94c47;
+        font-size: 24px;
+        font-weight: 900;
+      }
+    }
+
+    .event-item {
+      width: 460px;
+      height: 350px;
+
+      @media screen and (max-width: 480px) {
+        width: 100%;
+      }
+
+      .event-img {
+        width: 100%;
+        height: 257px;
+        background-color: #eee;
+      }
+
+      .event-title {
+        margin-top: 10px;
+        margin-left: 5px;
+        font-size: 24px;
+      }
+
+      .event-date {
+        margin-left: 5px;
+        font-size: 24px;
+      }
+    }
+
+    .past-group {
+      margin-top: 60px;
+
+      .title {
+        color: #898989;
+        font-size: 24px;
+        font-weight: 900;
+      }
+    }
+
+    .partners-group {
+      margin-top: 100px;
+      text-align: center;
+
+      .title {
+        color: #d94c47;
+        font-size: 24px;
+        font-weight: 900;
+        margin-bottom: 0;
+      }
+
+      .small-under-line {
+        margin: 0 auto;
+        width: 300px;
+        height: 1px;
+        background-color: #313131;
+      }
+
+      .partners-group-list {
+        margin: 0 auto;
+        margin-top: 80px;
+        margin-bottom: 200px;
+        width: 800px;
+
+        @media screen and (max-width: 991px) {
+          width: 100%;
+        }
+
+        .partner-logo {
+          margin: 0 auto;
+          margin-bottom: 30px;
+          width: 300px;
+          height: 250px;
+          border: 1px solid;
+        }
+      }
+    }
+  }
+}
