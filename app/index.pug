@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Kodebox
+  body
+    include includes/header.pug
+    +cc-header('main')
+    .background-green-box
+      img(src="./images/main/main_background.svg")
+    .content
+      .main
+        | main
+    include includes/footer.pug
