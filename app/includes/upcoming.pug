@@ -1,17 +1,26 @@
 mixin cc-event-item(title, date, image, link)
   .col-lg-6
     .event-item
-      if image
-        img.event-img(src=image)
-      else
-        img.event-img(src='./images/events/empty.png')
-      .event-title
-        | #{title}
-      .event-date
-        | #{date}
       if link
         a.more-info(href=link, target='_blank')
-          | More info
+          if image
+            img.event-img(src=image)
+          else
+            img.event-img(src='./images/events/empty.png')
+      else
+        if image
+          img.event-img(src=image)
+        else
+          img.event-img(src='./images/events/empty.png')
+      if link
+        a.more-info(href=link, target='_blank')
+          .event-title
+            | #{title}
+      else
+        .event-title
+          | #{title}
+      .event-date
+        | #{date}
 +cc-event-item('IEEE Blockchain Summit Korea 2018', '2018-06-07~08 Seoul', '', 'http://sites.ieee.org/bcsummitkorea-2018/')
 +cc-event-item('CodeChain Seminar 4', '2018-06-13 Supex Hall, T Tower, Seoul', '')
 +cc-event-item('CodeChain Seminar 5', '2018-06-20 Supex Hall, T Tower, Seoul', '')

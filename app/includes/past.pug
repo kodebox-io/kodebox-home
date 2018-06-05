@@ -1,18 +1,27 @@
 mixin cc-event-item(title, date, image, link)
   .col-lg-6
     .event-item
-      if image
-        img.event-img(src=image)
-      else
-        img.event-img(src='./images/events/empty.png')
-      .event-title
-        | #{title}
-      .event-date
-        | #{date}
       if link
         a.more-info(href=link, target='_blank')
-          | More info
-+cc-event-item('CodeChain Seminar -  Blockchain Storage', '2018-06-05 Seoul', './images/events/180605_kodeboxweb_eventformat.png', '')
-+cc-event-item('CodeChain Seminar - P2P Network', '2018-05-30 Seoul', './images/events/180605_kodeboxweb_eventformat.png', '')
-+cc-event-item('CodeChain Seminar - BTF Consensus', '2018-05-23 Seoul', './images/events/180523_codechainseminar1_crop.png', '')
+          if image
+            img.event-img(src=image)
+          else
+            img.event-img(src='./images/events/empty.png')
+      else
+        if image
+          img.event-img(src=image)
+        else
+          img.event-img(src='./images/events/empty.png')
+      if link
+        a.more-info(href=link, target='_blank')
+          .event-title
+            | #{title}
+      else
+        .event-title
+          | #{title}
+      .event-date
+        | #{date}
++cc-event-item('CodeChain Seminar -  Blockchain Storage', '2018-06-05 Seoul', './images/events/180605_kodeboxweb_eventformat.png', 'https://docs.google.com/presentation/d/1HtXdipYotF9DKmXJhP0c2OEgLCGEj1cxCP0jEuTeS8w/edit?usp=sharing')
++cc-event-item('CodeChain Seminar - P2P Network', '2018-05-30 Seoul', './images/events/180605_kodeboxweb_eventformat.png', 'https://docs.google.com/presentation/d/1qYBKe8RONh3JKdRrwvKTuY_2p7FeQEJRR1oqep5lKmo/edit?usp=sharing')
++cc-event-item('CodeChain Seminar - BTF Consensus', '2018-05-23 Seoul', './images/events/180523_codechainseminar1_crop.png', 'https://docs.google.com/presentation/d/10W7gKEvk_6XRIlSdiKwnwP9gVzo5Re5m_24QzLGaqvk/edit?usp=sharing')
 +cc-event-item('Blockchain Connect', '2018-01-11 Seoul', './images/events/20180111_blockchainconnect_crop.png', 'https://onoffmix.com/event/123063')
