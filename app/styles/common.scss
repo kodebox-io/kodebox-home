@@ -1,4 +1,4 @@
-@import 'fonts';
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import "~bootstrap/scss/bootstrap";
 
 $fa-font-path: "~font-awesome/webfonts";
@@ -9,7 +9,7 @@ $fa-font-path: "~font-awesome/webfonts";
 @import "~font-awesome/scss/fa-brands.scss";
 
 body {
-  font-family: 'Source Han Sans', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   background-color: white;
   color: #313131;
   margin-top: 56px;
