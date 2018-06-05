@@ -129,18 +129,18 @@
         }
 
         .team-item-description {
-          font-size: 16px;
+          font-size: 14px;
         }
       }
 
       .team-item-link-group {
         position: absolute;
-        bottom: 0;
+        bottom: 10px;
         right: 0;
 
         .team-item-link {
           margin-left: 5px;
-          font-size: 14px;
+          font-size: 12px;
           display: inline-block;
           cursor: pointer;
 
@@ -149,7 +149,7 @@
           }
 
           a:hover {
-            color: #087250;
+            color: #d94c47;
           }
         }
       }
@@ -177,6 +177,7 @@
 
         .media-item:hover {
           text-decoration: none;
+          color: #d94c47;
         }
       }
     }
@@ -203,6 +204,7 @@
 
         .presentation-item:hover {
           text-decoration: none;
+          color: #d94c47;
         }
       }
     }
