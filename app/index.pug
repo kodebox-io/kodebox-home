@@ -33,7 +33,7 @@ html(lang='en')
                     | CodeChain
                   .description
                     | Programmable blockchain platform optimal for multiple asset management
-                  a.link(href='https://codechain.io')
+                  a.link(href='https://codechain.io', target='_blank')
                     | website
               .col-lg-6
                 .project-item
@@ -42,7 +42,7 @@ html(lang='en')
                     | GoCryptobot
                   .description
                     | World's first mobile blockchain game for both iOS and Android
-                  a.link(href='https://gocryptobot.io')
+                  a.link(href='https://gocryptobot.io', target='_blank')
                     | website
           .team-container
             h3
@@ -78,38 +78,12 @@ html(lang='en')
               p.title
                 | Upcomming events
               .row
-                .col-lg-6
-                  .event-item
-                    img.event-img(src='')
-                    .event-title
-                      | Blockchain Connect
-                    .event-date
-                      | 2018.12.29, Seoul
-                .col-lg-6
-                  .event-item
-                    img.event-img(src='')
-                    .event-title
-                      | Blockchain Connect
-                    .event-date
-                      | 2018.12.29, Seoul
+                include includes/upcomming.pug
             .past-group
               p.title
                 | Past events
               .row
-                .col-lg-6
-                  .event-item
-                    img.event-img(src='')
-                    .event-title
-                      | Blockchain Connect
-                    .event-date
-                      | 2018.12.29, Seoul
-                .col-lg-6
-                  .event-item
-                    img.event-img(src='')
-                    .event-title
-                      | Blockchain Connect
-                    .event-date
-                      | 2018.12.29, Seoul
+                include includes/past.pug
             .partners-group
               p.title
                 | Investors & Partners
@@ -118,9 +92,9 @@ html(lang='en')
                 .row
                   .col-lg-6
                     .partner-logo
-                      img(src='')
+                      img(src='./images/partner/donamu.png')
                   .col-lg-6
                     .partner-logo
-                      img(src='')
+                      img(src='./images/partner/kakao.png')
 
     include includes/footer.pug

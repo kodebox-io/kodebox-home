@@ -1,76 +1,28 @@
-.team-item
-  .team-item-image
-    | image
-  .team-item-right
-    .team-item-name
-      | Kwang Yul Seo
-    .team-item-description
-      | CEO
-  .team-item-link-group
-    .team-item-link
-      i.fab.fa-github.fa-2x(aria-hidden='true')
-    .team-item-link
-      i.fab.fa-github.fa-2x(aria-hidden='true')
-    .team-item-link
-      i.fab.fa-github.fa-2x(aria-hidden='true')
-.team-item
-  .team-item-image
-    | image
-  .team-item-right
-    .team-item-name
-      | Kwang Yul Seo
-    .team-item-description
-      | CEO
-  .team-item-link-group
-    .team-item-link
-      i.fab.fa-github.fa-2x(aria-hidden='true')
-    .team-item-link
-      i.fab.fa-github.fa-2x(aria-hidden='true')
-    .team-item-link
-      i.fab.fa-github.fa-2x(aria-hidden='true')
-.team-item
-  .team-item-image
-    | image
-  .team-item-right
-    .team-item-name
-      | Kwang Yul Seo
-    .team-item-description
-      | CEO
-  .team-item-link-group
-    .team-item-link
-      i.fab.fa-github.fa-2x(aria-hidden='true')
-    .team-item-link
-      i.fab.fa-github.fa-2x(aria-hidden='true')
-    .team-item-link
-      i.fab.fa-github.fa-2x(aria-hidden='true')
-.team-item
-  .team-item-image
-    | image
-  .team-item-right
-    .team-item-name
-      | Kwang Yul Seo
-    .team-item-description
-      | CEO
-  .team-item-link-group
-    .team-item-link
-      i.fab.fa-github.fa-2x(aria-hidden='true')
-    .team-item-link
-      i.fab.fa-github.fa-2x(aria-hidden='true')
-    .team-item-link
-      i.fab.fa-github.fa-2x(aria-hidden='true')
-.team-item
-  .team-item-image
-    | image
-  .team-item-right
-    .team-item-name
-      | Kwang Yul Seo
-    .team-item-description
-      | CEO
-  .team-item-link-group
-    .team-item-link
-      i.fab.fa-github.fa-2x(aria-hidden='true')
-    .team-item-link
-      i.fab.fa-github.fa-2x(aria-hidden='true')
-    .team-item-link
-      i.fab.fa-github.fa-2x(aria-hidden='true')
-
+mixin cc-team-item(imageUrl, name, job, githubLink, mediumLink)
+  .team-item
+    .team-item-image
+      img(src=imageUrl)
+    .team-item-right
+      .team-item-name
+        | #{name}
+      .team-item-description
+        | #{job}
+    .team-item-link-group
+      if githubLink
+        .team-item-link
+          a(href=githubLink, target='_blank')
+            i.fab.fa-github.fa-2x(aria-hidden='true')
+      if mediumLink
+        .team-item-link
+          a(href=mediumLink, target='_blank')
+            i.fab.fa-medium-m.fa-2x(aria-hidden='true')
++cc-team-item('./images/member/kwangyul.png', 'Kwang Yul Seo', 'CEO', 'https://github.com/kseo', 'https://medium.com/@kwangseo')
++cc-team-item('./images/member/misun.png', 'Mi Sun Cho', 'Head of Business', '', 'https://medium.com/@kwangseo')
++cc-team-item('./images/member/jaeyong.png', 'Jae Yong Jo', 'COO', 'https://github.com/jaeyoi', 'https://medium.com/@jaeyoi')
++cc-team-item('./images/member/jingyeong.png', 'Jin Gyeong Jeong', 'Software Engineer', '', 'https://medium.com/@jjgjoojis')
++cc-team-item('./images/member/juhyeong.png', 'Ju Hyeong Park', 'Software Engineer', 'https://github.com/majecty', 'https://medium.com/@majecty')
++cc-team-item('./images/member/seulgi.png', 'Seul Gi Kim', 'Software Engineer', 'https://github.com/sgkim126', 'https://medium.com/@seulgi.kim')
++cc-team-item('./images/member/seungwoo.png', 'Seung Woo Kim', 'Software Engineer', 'https://github.com/ScarletBlue', 'https://medium.com/@koreanboy1120')
++cc-team-item('./images/member/gilyoung.png', 'Gil Young Kim', 'Software Engineer', 'https://github.com/xpdlf1004', 'https://medium.com/@xpdlf1004')
++cc-team-item('./images/member/kyunghee.png', 'Kyung Hee Yim', 'Designer', '', 'https://medium.com/@KyungheeYim')
++cc-team-item('./images/member/joonmo.png', 'Joon Mo Yang', 'Software Engineer', 'https://github.com/Kais-DkM', 'https://medium.com/@joonmo.yang')
