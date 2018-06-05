@@ -1,13 +1,16 @@
 .header {
   background-color: #eee !important;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
 
   .logo {
-    width: 30px;
-    height: 30px;
-  }
-
-  .second-logo {
     width: 95px;
     height: 27px;
+  }
+
+  .header-icon {
+    margin: 0 auto;
   }
 }

@@ -14,10 +14,6 @@ mixin cc-header(url)
           | #{text}
   nav.header.custom-nav.navbar.navbar-expand-lg.navbar-light
     .container
-      a.navbar-brand(href='/index.html')
-        | Kodebox
-      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
-        span.navbar-toggler-icon
-      #navbarSupportedContent.collapse.navbar-collapse
-        ul.navbar-nav.mr-auto
-          +cc-nav-item('Home', '/index.html', url == 'main')
+      a.navbar-brand.header-icon(href='#')
+        img.logo(src='./images/main/kodebox-small.png')
+
