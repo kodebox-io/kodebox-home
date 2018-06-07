@@ -32,7 +32,9 @@
     margin-top: 100px;
 
     .project-item {
+      margin: 0 auto;
       margin-top: 100px;
+      width: 340px;
       text-align: center;
 
       .title {
@@ -53,14 +55,16 @@
         }
       }
 
-      .link {
-        margin-top: 10px;
-        font-size: 18px;
-        color: #d94c47;
+      .link-container {
+        color: #313131;
       }
 
-      .link:hover {
+      .link-container:hover {
         text-decoration: none;
+
+        .title {
+          color: #d94c47;
+        }
       }
     }
   }
