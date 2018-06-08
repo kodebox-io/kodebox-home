@@ -6,6 +6,11 @@
       padding-top: 80px;
     }
 
+    .main-logo-img {
+      width: 285px;
+      height: 83px;
+    }
+
     .description {
       margin-top: 30px;
       font-size: 20px;
@@ -43,6 +48,16 @@
         font-weight: 900;
       }
 
+      .gocryptobot-img {
+        width: 254px;
+        height: 126px;
+      }
+
+      .codechain-img {
+        width: 133px;
+        height: 133px;
+      }
+
       .description {
         margin: 0 auto;
         margin-top: 10px;
@@ -75,26 +90,35 @@
     .team-item-group {
       margin-top: 70px;
 
-      @media screen and (max-width: 767px) {
+      @media screen and (max-width: 991px) {
         text-align: center;
       }
 
       .team-item {
         display: inline-block;
         position: relative;
-        width: 240px;
-        height: 115px;
-        margin-right: 20px;
+        width: 330px;
+        height: 113px;
+        margin-right: 30px;
         margin-bottom: 30px;
+
+        @media screen and (max-width: 991px) {
+          margin-right: 0;
+          text-align: center;
+        }
       }
 
       .team-item-image {
         position: absolute;
-        width: 75px;
-        height: 75px;
+        width: 113px;
+        height: 113px;
         left: 0;
         top: 0;
-        background-color: gray;
+      }
+
+      .team-item-background {
+        position: absolute;
+        left: 55px;
       }
 
       .team-item-image-join {
@@ -114,28 +138,30 @@
 
       .team-item-right {
         position: absolute;
-        width: 165px;
-        height: 75px;
-        left: 75px;
+        width: 217px;
+        height: 113px;
+        left: 113px;
         top: 0;
-        background-color: #eee;
         padding: 10px;
         padding-top: 15px;
+        text-align: left;
 
         .team-item-name {
+          margin-top: 6px;
           font-weight: bold;
-          font-size: 16px;
+          font-size: 19px;
         }
 
         .team-item-description {
-          font-size: 14px;
+          font-size: 13px;
+          color: #898989;
         }
       }
 
       .team-item-link-group {
         position: absolute;
         bottom: 10px;
-        right: 0;
+        left: 117px;
 
         .team-item-link {
           margin-left: 5px;

@@ -1,21 +1,21 @@
 mixin cc-team-item(imageUrl, name, job, githubLink, mediumLink)
   .team-item
-    .team-item-image
-      img(src=imageUrl)
+    img.team-item-background(src='./images/main/profile-triangle.png')
+    img.team-item-image(src=imageUrl)
     .team-item-right
       .team-item-name
         | #{name}
       .team-item-description
         | #{job}
     .team-item-link-group
-      if githubLink
-        .team-item-link
-          a(href=githubLink, target='_blank')
-            i.fab.fa-github.fa-2x(aria-hidden='true')
       if mediumLink
         .team-item-link
           a(href=mediumLink, target='_blank')
             i.fab.fa-medium-m.fa-2x(aria-hidden='true')
+      if githubLink
+        .team-item-link
+          a(href=githubLink, target='_blank')
+            i.fab.fa-github.fa-2x(aria-hidden='true')
 +cc-team-item('./images/member/kwangyul.png', 'Kwang Yul Seo', 'CEO', 'https://github.com/kseo', 'https://medium.com/@kwangseo')
 +cc-team-item('./images/member/misun.png', 'Mi Sun Cho', 'Head of Business', '', 'https://medium.com/@misunsilviacho')
 +cc-team-item('./images/member/jaeyong.png', 'Jae Yong Jo', 'COO', 'https://github.com/jaeyoi', 'https://medium.com/@jaeyoi')
