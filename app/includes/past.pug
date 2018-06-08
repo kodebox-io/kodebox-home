@@ -1,26 +1,18 @@
 mixin cc-event-item(title, date, image, link)
-  .col-lg-6
+  .col-xl-5.col-lg-6
     .event-item
-      if link
-        a.more-info(href=link, target='_blank')
-          if image
-            img.event-img(src=image)
-          else
-            img.event-img(src='./images/events/empty.png')
-      else
+      a.more-info(href=link, target='_blank')
         if image
           img.event-img(src=image)
         else
           img.event-img(src='./images/events/empty.png')
-      if link
-        a.more-info(href=link, target='_blank')
+        .info-container
+          .decoration-block
+          img.decoration-triangle(src='./images/main/arrow.png')
           .event-title
             | #{title}
-      else
-        .event-title
-          | #{title}
-      .event-date
-        | #{date}
+          .event-date
+            | #{date}
 +cc-event-item('CodeChain Seminar -  Blockchain Storage', '2018-06-05 Seoul', './images/events/180605_kodeboxweb_eventformat.png', 'https://docs.google.com/presentation/d/1HtXdipYotF9DKmXJhP0c2OEgLCGEj1cxCP0jEuTeS8w/edit?usp=sharing')
 +cc-event-item('CodeChain Seminar - P2P Network', '2018-05-30 Seoul', './images/events/180605_kodeboxweb_eventformat.png', 'https://docs.google.com/presentation/d/1qYBKe8RONh3JKdRrwvKTuY_2p7FeQEJRR1oqep5lKmo/edit?usp=sharing')
 +cc-event-item('CodeChain Seminar - BTF Consensus', '2018-05-23 Seoul', './images/events/180523_codechainseminar1_crop.png', 'https://docs.google.com/presentation/d/10W7gKEvk_6XRIlSdiKwnwP9gVzo5Re5m_24QzLGaqvk/edit?usp=sharing')

@@ -88,16 +88,23 @@
     margin-top: 100px;
 
     .team-item-group {
+      margin: 0 auto;
       margin-top: 70px;
+      width: 990px;
 
-      @media screen and (max-width: 991px) {
+      @media screen and (max-width: 1010px) {
+        width: 660px;
+      }
+
+      @media screen and (max-width: 767px) {
+        width: 100%;
         text-align: center;
       }
 
       .team-item {
         display: inline-block;
         position: relative;
-        width: 330px;
+        width: 300px;
         height: 113px;
         margin-right: 30px;
         margin-bottom: 30px;
@@ -138,7 +145,7 @@
 
       .team-item-right {
         position: absolute;
-        width: 217px;
+        width: 187px;
         height: 113px;
         left: 113px;
         top: 0;
@@ -186,7 +193,7 @@
 
     ul {
       margin-top: 50px;
-      padding-left: 0;
+      padding-left: 25px;
       list-style-type: none;
 
       li {
@@ -203,7 +210,8 @@
         }
 
         .media-icon {
-          margin-right: 8px;
+          margin-left: -25px;
+          margin-right: 5px;
         }
 
         .media-item:hover {
@@ -219,7 +227,7 @@
 
     ul {
       margin-top: 50px;
-      padding-left: 0;
+      padding-left: 18px;
       list-style-type: none;
 
       li {
@@ -236,7 +244,8 @@
         }
 
         .presentation-icon {
-          margin-right: 8px;
+          margin-right: 5px;
+          margin-left: -18px;
         }
 
         .presentation-item:hover {
@@ -258,13 +267,32 @@
         font-size: 24px;
         font-weight: 900;
       }
+
+      .upcomming-event-item {
+        font-size: 20px;
+      }
+
+      .event-link-icon {
+        color: #087250;
+        margin-left: 5px;
+      }
+
+      .upcoming-link {
+        color: #313131;
+      }
+
+      .upcoming-link:hover {
+        color: #d94c47;
+        text-decoration: none;
+      }
     }
 
     .event-item {
-      width: 460px;
+      width: 356px;
       margin-bottom: 40px;
+      background-color: #f5f5f5;
 
-      @media screen and (max-width: 480px) {
+      @media screen and (max-width: 434px) {
         width: 100%;
         height: auto;
       }
@@ -275,16 +303,42 @@
         background-color: #eee;
       }
 
+      .info-container {
+        position: relative;
+      }
+
+      .decoration-block {
+        position: absolute;
+        top: 0;
+        left: 10px;
+        width: 30px;
+        height: 5px;
+        background-color: #eaa912;
+      }
+
+      .decoration-triangle {
+        position: absolute;
+        width: 24px;
+        height: 20px;
+        top: -20px;
+        right: 30px;
+      }
+
       .event-title {
-        margin-top: 10px;
-        margin-left: 5px;
-        font-size: 24px;
-        font-weight: bold;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 18px;
+        font-weight: 500;
       }
 
       .event-date {
-        margin-left: 5px;
-        font-size: 20px;
+        font-size: 14px;
+        margin-top: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+        color: #706f6f;
       }
 
       .more-info {
@@ -327,7 +381,8 @@
 
       .partners-group-list {
         margin: 0 auto;
-        margin-bottom: 200px;
+        margin-top: 40px;
+        margin-bottom: 100px;
         width: 800px;
 
         @media screen and (max-width: 991px) {
@@ -336,9 +391,13 @@
 
         .partner-logo {
           margin: 0 auto;
-          margin-bottom: 30px;
-          width: 300px;
-          height: 100px;
+          width: 180px;
+          height: auto;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
         }
       }
     }
