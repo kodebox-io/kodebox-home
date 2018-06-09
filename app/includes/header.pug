@@ -16,4 +16,14 @@ mixin cc-header(url)
     .container
       a.navbar-brand.header-icon(href='#')
         img.logo(src='./images/main/kodebox-big.png')
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          +cc-nav-item('Home', '#main-container', true)
+          +cc-nav-item('Projects', '#projects-container', false)
+          +cc-nav-item('Team', '#team-container', false)
+          +cc-nav-item('Media', '#media-container', false)
+          +cc-nav-item('Presentation', '#presentation-container', false)
+          +cc-nav-item('Events', '#events-container', false)
 

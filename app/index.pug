@@ -20,7 +20,7 @@ html(lang='en')
     .content
       .main
         .container
-          .main-container
+          #main-container.main-container.scroll-target
             .row
               .col-lg-6
                 img.main-logo-img(src='./images/main/kodebox-big.png')
@@ -28,7 +28,7 @@ html(lang='en')
                   | Kodebox is a blockchain technology company on a mission to create and enable a smarter asset management system. Its flagship product CodeChain is a distributed ledger platform that allows more transparent and efficient asset management for the gaming industry.
               .col-lg-6
                 img.asset-chain-img(src='./images/main/asset-chain.png')
-          .projects-container
+          #projects-container.projects-container.scroll-target
             h3
               | Projects
             .underline
@@ -51,7 +51,7 @@ html(lang='en')
                         | GoCryptobot
                       .description
                         | World's first mobile blockchain game for both iOS and Android
-          .team-container
+          #team-container.team-container.scroll-target
             h3
               | Team
             .underline
@@ -65,17 +65,17 @@ html(lang='en')
                     | Join Us!
                   .team-item-description
                     | job@kodebox.io
-          .media-container
+          #media-container.media-container.scroll-target
             h3
               | Media Coverage
             .underline
             include includes/media.pug
-          .presentation-container
+          #presentation-container.presentation-container.scroll-target
             h3
               | Presentation materials
             .underline
             include includes/presentation.pug
-          .event-container
+          #events-container.event-container.scroll-target
             h3
               | Events
             .underline
