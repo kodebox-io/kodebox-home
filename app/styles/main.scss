@@ -90,14 +90,8 @@
     .team-item-group {
       margin: 0 auto;
       margin-top: 70px;
-      width: 990px;
 
-      @media screen and (max-width: 1010px) {
-        width: 660px;
-      }
-
-      @media screen and (max-width: 767px) {
-        width: 100%;
+      @media screen and (max-width: 1199px) {
         text-align: center;
       }
 
@@ -106,8 +100,8 @@
         position: relative;
         width: 300px;
         height: 113px;
-        margin-right: 30px;
-        margin-bottom: 30px;
+        margin-right: 60px;
+        margin-bottom: 70px;
 
         @media screen and (max-width: 991px) {
           margin-right: 0;
@@ -261,8 +255,22 @@
         font-weight: 900;
       }
 
+      .upcomming-event-item-list {
+        list-style-type: none;
+        padding-left: 40px;
+      }
+
       .upcomming-event-item {
         font-size: 20px;
+
+        @media screen and (max-width: 992px) {
+          font-size: 15px;
+        }
+
+        .upcomming-item-icon {
+          margin-right: 5px;
+          margin-left: -20px;
+        }
       }
 
       .event-link-icon {
@@ -376,7 +384,7 @@
         margin: 0 auto;
         margin-top: 40px;
         margin-bottom: 100px;
-        width: 800px;
+        width: 500px;
 
         @media screen and (max-width: 991px) {
           width: 100%;
