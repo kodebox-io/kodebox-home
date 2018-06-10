@@ -19,7 +19,8 @@ mixin cc-header(url)
       button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
         span.navbar-toggler-icon
       #navbarSupportedContent.collapse.navbar-collapse
-        ul.navbar-nav.mr-auto
+        .mr-auto
+        ul.navbar-nav
           +cc-nav-item('Home', '#main-container', true)
           +cc-nav-item('Projects', '#projects-container', false)
           +cc-nav-item('Team', '#team-container', false)

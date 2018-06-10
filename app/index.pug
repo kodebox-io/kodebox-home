@@ -15,23 +15,20 @@ html(lang='en')
   body
     include includes/header.pug
     +cc-header('main')
-    .background-green-box
-      img(src='./images/main/main_background.svg')
     .content
       .main
-        .container
-          #main-container.main-container.scroll-target
-            .row
-              .col-lg-6
-                img.main-logo-img(src='./images/main/kodebox-big.png')
-                .description
-                  | Kodebox is a blockchain technology company on a mission to create and enable a smarter asset management system. Its flagship product CodeChain is a distributed ledger platform that allows more transparent and efficient asset management for the gaming industry.
-              .col-lg-6
-                img.asset-chain-img(src='./images/main/asset-chain.png')
-          #projects-container.projects-container.scroll-target
+        #main-container.main-container.scroll-target
+          .container
+            .logo-container
+              img.main-logo(src='./images/main/main-logo-2x.png')
+              img.main-logo-text(src='./images/main/main-logo-text-2x.png')
+              .main-description
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        #projects-container.projects-container.scroll-target
+          .container
+            .decoration-box.red-decoration
             h3
               | Projects
-            .underline
             .row
               .col-lg-6
                 .project-item
@@ -51,10 +48,11 @@ html(lang='en')
                         | GoCryptobot
                       .description
                         | World's first mobile blockchain game for both iOS and Android
-          #team-container.team-container.scroll-target
+        #team-container.team-container.scroll-target
+          .container
+            .decoration-box.yellow-decoration
             h3
               | Team
-            .underline
             .team-item-group
               include includes/team.pug
               .team-item
@@ -65,20 +63,23 @@ html(lang='en')
                     | Join Us!
                   .team-item-description
                     | job@kodebox.io
-          #media-container.media-container.scroll-target
+        #media-container.media-container.scroll-target
+          .container
+            .decoration-box.green-decoration
             h3
               | Media Coverage
-            .underline
             include includes/media.pug
-          #presentation-container.presentation-container.scroll-target
+        #presentation-container.presentation-container.scroll-target
+          .container
+            .decoration-box.yellow-decoration
             h3
               | Presentation materials
-            .underline
             include includes/presentation.pug
-          #events-container.event-container.scroll-target
+        #events-container.event-container.scroll-target
+          .container
+            .decoration-box.red-decoration
             h3
               | Events
-            .underline
             .upcoming-group
               p.title
                 | Upcoming events
