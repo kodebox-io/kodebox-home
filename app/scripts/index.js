@@ -23,7 +23,7 @@ $('nav').find('a').click(function (e) {
 
 $(window).on('scroll', function () {
   $('.scroll-target').each(function () {
-    if ($(window).scrollTop() >= $(this).offset().top) {
+    if ($(window).scrollTop() >= $(this).offset().top - 66) {
       var id = $(this).attr('id')
       $('nav li').removeClass('active')
       $('nav li a').blur()
