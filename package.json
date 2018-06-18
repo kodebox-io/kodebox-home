@@ -6,11 +6,11 @@
   "author": "<roadzero@kodebox.io>",
   "scripts": {
     "build-pug": "pug templates -o docs -P -w",
-    "build-css": "node-sass docs/scss/vitality.scss --output docs/css --source-map-embed --source-map-contents --output-style compressed",
+    "build-css": "node-sass docs/scss/vitality.scss --output docs/css",
     "start-css": "yarn run build-css --watch",
     "start-pug": "yarn run build-pug -w",
     "start": "concurrently \"yarn run start-css\" \"yarn run start-pug\"",
-    "build": "concurrently \"yarn run build-css\" \"yarn run build-pug\""
+    "build": "concurrently \"yarn run build-css --source-map-embed --source-map-contents --output-style compressed\" \"yarn run build-pug\""
   },
   "license": "MIT",
   "dependencies": {
