@@ -9,7 +9,8 @@
     "build-css": "node-sass docs/scss/vitality.scss --output docs/css",
     "start-css": "yarn run build-css --watch",
     "start-pug": "yarn run build-pug -w",
-    "start": "concurrently \"yarn run start-css\" \"yarn run start-pug\"",
+    "start-dev-server": "live-server --open=/docs/",
+    "start": "concurrently \"yarn run start-css\" \"yarn run start-pug\" \"yarn run start-dev-server\"",
     "build": "concurrently \"yarn run build-css --source-map-embed --source-map-contents --output-style compressed\" \"yarn run build-pug\""
   },
   "license": "MIT",
@@ -18,6 +19,7 @@
   },
   "devDependencies": {
     "concurrently": "^3.5.1",
+    "live-server": "^1.2.0",
     "node-sass": "^4.9.0"
   }
 }
