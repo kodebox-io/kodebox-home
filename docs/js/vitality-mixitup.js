@@ -1,3 +1,3 @@
 // Mixitup Settings
-var containerEl = document.querySelector('#portfolioList');
-var mixer = mixitup(containerEl);
+// var containerEl = document.querySelector('#portfolioList');
+// var mixer = mixitup(containerEl);

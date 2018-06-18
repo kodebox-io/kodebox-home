@@ -1,8 +1,7 @@
 .team-carousel {
     .item {
         position: relative;
-        margin-right: 15px;
-        margin-left: 15px;
+        margin-bottom: 30px;
         .overlay {
             position: absolute;
             z-index: 1;
@@ -13,6 +12,12 @@
             opacity: .5;
             background-color: $themeDark;
         }
+
+        img {
+          height: auto;
+          width: 100%;
+        }
+
         .team-caption {
             position: absolute;
             z-index: 2;

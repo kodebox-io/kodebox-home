@@ -5,7 +5,7 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
     meta(name='description', content='')
     meta(name='author', content='')
-    title Vitality - Multipurpose Bootstrap 4 One Page Theme
+    title Kodebox
     // Bootstrap core CSS
     link(href='vendor/bootstrap/css/bootstrap.min.css', rel='stylesheet', type='text/css')
     // Custom fonts for this theme
@@ -43,61 +43,32 @@ html(lang='en')
         #navbarResponsive.collapse.navbar-collapse
           ul.navbar-nav.ml-auto
             li.nav-item
-              a.nav-link.js-scroll-trigger(href='#about') About
+              a.nav-link.js-scroll-trigger(href='#project') Project
             li.nav-item
               a.nav-link.js-scroll-trigger(href='#team') Team
             li.nav-item
-              a.nav-link.js-scroll-trigger(href='#services') Process
+              a.nav-link.js-scroll-trigger(href='#talks') Talks
             li.nav-item
-              a.nav-link.js-scroll-trigger(href='#work') Work
+              a.nav-link.js-scroll-trigger(href='#events') Events
             li.nav-item
-              a.nav-link.js-scroll-trigger(href='#pricing') Pricing
-            li.nav-item
-              a.nav-link.js-scroll-trigger(href='#contact') Contact
+              a.nav-link.js-scroll-trigger(href='#media') Media
     // Masthead
     header.masthead(style="background-image: url('img/agency/backgrounds/bg-header.jpg');")
       .container.h-100
         .row.h-100
           .col-12.my-auto.text-center.text-white
-            img.masthead-img.img-fluid.mb-3(src='img/agency/profile.svg', alt='')
-            .masthead-title Vitality
+            img.masthead-img.img-fluid.mb-3(src='img/agency/profile.png', alt='')
+            .masthead-title Kodebox
             hr.colored
-            .masthead-subtitle by Start Bootstrap
+            .masthead-subtitle Blockchain technology company
       .scroll-down
-        a.btn.js-scroll-trigger(href='#about')
+        a.btn.js-scroll-trigger(href='#project')
           i.fa.fa-angle-down.fa-fw
-    // About Section
-    section#about.page-section
-      .container-fluid
-        .wow.fadeIn.text-center
-          h1 A Theme for Creatives & Agencies
-          p.mb-0 Vitality is the perfect theme for a freelance professional or an agency.
+    // Project Section
+    section#project.page-section
+      .container.text-center.wow.fadeIn
+        h2 Project
         hr.colored
-        .row.text-center
-          .col-lg-3.col-md-6
-            .wow.fadeIn.px-4.pb-4.pb-lg-0.h-100(data-wow-delay='.2s')
-              i.fa.fa-code.fa-4x
-              h3 Bootstrap 4
-              p.mb-0
-                | Unleash the power and flexibility of the newly released Bootstrap 4 when you choose Vitality! One framework, every device.
-          .col-lg-3.col-md-6
-            .wow.fadeIn.px-4.pb-4.pb-lg-0.h-100(data-wow-delay='.4s')
-              i.fa.fa-edit.fa-4x
-              h3 Easy to Edit
-              p.mb-0
-                | Vitality is easy to edit and customize and includes SASS and LESS versions for deeper customization.
-          .col-lg-3.col-md-6
-            .wow.fadeIn.px-4.pb-4.pb-lg-0.h-100(data-wow-delay='.6s')
-              i.fa.fa-tablet.fa-4x
-              h3 Responsive
-              p.mb-0
-                | In today's world where devices come in every shape and size, Vitality will responsively adapt to look great on any screen!
-          .col-lg-3.col-md-6
-            .wow.fadeIn.px-4.h-100(data-wow-delay='.8s')
-              i.fa.fa-heart.fa-4x
-              h3 Built with Love
-              p.mb-0
-                | All themes by Start Bootstrap are crafted with care. Thank you for choosing Vitality and being a customer!
     // Team Section
     section#team.page-section.bg-light
       .container.text-center.wow.fadeIn
@@ -105,106 +76,113 @@ html(lang='en')
         p.mb-0
           | We are a group of digital marketers with a passion for great art that serves a practical purpose.
         hr.colored
-        .team-carousel.owl-carousel.owl-theme.mt-4
+        .team-carousel.mt-4
           // Team Carousel Item 1
-          .item
-            .overlay
-            img.img-fluid(src='img/agency/team/1.jpg', alt='')
-            .team-caption
-              h3 Patricia West
-              hr.colored
-              p Marketing Director
-              ul.list-inline.list-team-social
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-facebook.fa-fw
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-twitter.fa-fw
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-linkedin.fa-fw
-          // Team Carousel Item 2
-          .item
-            .overlay
-            img.img-fluid(src='img/agency/team/2.jpg', alt='')
-            .team-caption
-              h3 Howard Scott
-              hr.colored
-              p Sales Manager
-              ul.list-inline.list-team-social
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-facebook.fa-fw
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-twitter.fa-fw
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-linkedin.fa-fw
-          // Team Carousel Item 3
-          .item
-            .overlay
-            img.img-fluid(src='img/agency/team/3.jpg', alt='')
-            .team-caption
-              h3 Kate Williams
-              hr.colored
-              p Creative Director
-              ul.list-inline.list-team-social
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-facebook.fa-fw
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-twitter.fa-fw
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-linkedin.fa-fw
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-dribbble.fa-fw
-          // Team Carousel Item 4
-          .item
-            .overlay
-            img.img-fluid(src='img/agency/team/4.jpg', alt='')
-            .team-caption
-              h3 Jeremy Davidson
-              hr.colored
-              p Web Developer
-              ul.list-inline.list-team-social
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-facebook.fa-fw
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-twitter.fa-fw
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-linkedin.fa-fw
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-github.fa-fw
-          // Team Carousel Item 5
-          .item
-            .overlay
-            img.img-fluid(src='img/agency/team/5.jpg', alt='')
-            .team-caption
-              h3 Amy Vanderbute
-              hr.colored
-              p Graphic Artist
-              ul.list-inline.list-team-social
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-facebook.fa-fw
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-twitter.fa-fw
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-linkedin.fa-fw
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-dribbble.fa-fw
+          .row
+            .col-lg-4.col-md-6
+              .item
+                .team-img
+                  .overlay
+                  img.img-fluid(src='img/agency/team/1.jpg', alt='')
+                .team-caption
+                  h3 Patricia West
+                  hr.colored
+                  p Marketing Director
+                  ul.list-inline.list-team-social
+                    li.list-inline-item
+                      a(href='#')
+                        i.fa.fa-facebook.fa-fw
+                    li.list-inline-item
+                      a(href='#')
+                        i.fa.fa-twitter.fa-fw
+                    li.list-inline-item
+                      a(href='#')
+                        i.fa.fa-linkedin.fa-fw
+            .col-lg-4.col-md-6
+              .item
+                .team-img
+                  .overlay
+                  img.img-fluid(src='img/agency/team/2.jpg', alt='')
+                .team-caption
+                  h3 Howard Scott
+                  hr.colored
+                  p Sales Manager
+                  ul.list-inline.list-team-social
+                    li.list-inline-item
+                      a(href='#')
+                        i.fa.fa-facebook.fa-fw
+                    li.list-inline-item
+                      a(href='#')
+                        i.fa.fa-twitter.fa-fw
+                    li.list-inline-item
+                      a(href='#')
+                        i.fa.fa-linkedin.fa-fw
+            .col-lg-4.col-md-6
+              .item
+                .team-img
+                  .overlay
+                  img.img-fluid(src='img/agency/team/3.jpg', alt='')
+                .team-caption
+                  h3 Kate Williams
+                  hr.colored
+                  p Creative Director
+                  ul.list-inline.list-team-social
+                    li.list-inline-item
+                      a(href='#')
+                        i.fa.fa-facebook.fa-fw
+                    li.list-inline-item
+                      a(href='#')
+                        i.fa.fa-twitter.fa-fw
+                    li.list-inline-item
+                      a(href='#')
+                        i.fa.fa-linkedin.fa-fw
+                    li.list-inline-item
+                      a(href='#')
+                        i.fa.fa-dribbble.fa-fw
+            .col-lg-4.col-md-6
+              .item
+                .team-img
+                  .overlay
+                  img.img-fluid(src='img/agency/team/4.jpg', alt='')
+                .team-caption
+                  h3 Jeremy Davidson
+                  hr.colored
+                  p Web Developer
+                  ul.list-inline.list-team-social
+                    li.list-inline-item
+                      a(href='#')
+                        i.fa.fa-facebook.fa-fw
+                    li.list-inline-item
+                      a(href='#')
+                        i.fa.fa-twitter.fa-fw
+                    li.list-inline-item
+                      a(href='#')
+                        i.fa.fa-linkedin.fa-fw
+                    li.list-inline-item
+                      a(href='#')
+                        i.fa.fa-github.fa-fw
+            .col-lg-4.col-md-6
+              .item
+                .team-img
+                  .overlay
+                  img.img-fluid(src='img/agency/team/5.jpg', alt='')
+                .team-caption
+                  h3 Amy Vanderbute
+                  hr.colored
+                  p Graphic Artist
+                  ul.list-inline.list-team-social
+                    li.list-inline-item
+                      a(href='#')
+                        i.fa.fa-facebook.fa-fw
+                    li.list-inline-item
+                      a(href='#')
+                        i.fa.fa-twitter.fa-fw
+                    li.list-inline-item
+                      a(href='#')
+                        i.fa.fa-linkedin.fa-fw
+                    li.list-inline-item
+                      a(href='#')
+                        i.fa.fa-dribbble.fa-fw
     // Call to Action
     section.call-to-action(style="background-image: url('img/agency/backgrounds/bg-quote.jpg');")
       .container.wow.fadeIn
@@ -219,384 +197,53 @@ html(lang='en')
               span.text-primary functions
               | .
             hr.colored
-            a.btn.btn-primary.js-scroll-trigger(href='#services') How We Work
-    // Services Section
-    section#services.page-section.services
-      .container
-        .text-center.wow.fadeIn
-          h2 Our Process
-          hr.colored
-          p.mb-0 Here is an overview of how we approach each new project.
-        .row.mt-4
-          // Service Item 1
-          .col-lg-4.wow.fadeIn(data-wow-delay='.2s')
-            .media
-              .pull-left
-                i.fa.fa-clipboard.rounded-circle
-              .media-body
-                h3.media-heading Plan
-                ul
-                  li Client interview
-                  li Gather consumer data
-                  li Create content strategy
-                  li Analyze research
-          // Service Item 2
-          .col-lg-4.wow.fadeIn(data-wow-delay='.4s')
-            .media
-              .pull-left
-                i.fa.fa-pencil.rounded-circle
-              .media-body
-                h3.media-heading Create
-                ul
-                  li Build wireframe
-                  li Gather client feedback
-                  li Code development
-                  li Marketing review
-          // Service Item 3
-          .col-lg-4.wow.fadeIn(data-wow-delay='.6s')
-            .media
-              .pull-left
-                i.fa.fa-rocket.rounded-circle
-              .media-body
-                h3.media-heading Launch
-                ul
-                  li Deploy website
-                  li Market product launch
-                  li Collect UX data
-                  li Quarterly maintenence
-    // Portfolio Carousel Heading
-    section#work.page-section.bg-light
+            a.btn.btn-primary.js-scroll-trigger(href='#activities') How We Work
+    // Activities Section
+    section#activities.page-section.bg-light
       .container.text-center.wow.fadeIn
-        h2 Our Work
+        h2 ACTIVITIES
         hr.colored
         p Here are some examples of our work.
-    // Portfolio Carousel
-    .portfolio-carousel.wow.fadeIn.owl-carousel.owl-theme
-      // Portfolio Carousel Item 1
-      .item(style="background-image: url('img/agency/portfolio/carousel/bg-1.jpg')")
-        .container-fluid
-          .row.h-100
-            .col-md-7.my-auto.d-none.d-sm-block
-              .device-container
-                .device-mockup.macbook.portrait.black
-                  .device
-                    .screen
-                      img.img-fluid(src='img/agency/portfolio/carousel/screen-1a.jpg', alt='')
-            .col-md-5.my-auto
-              .project-details
-                span.project-name Project Name
-                span.project-description Branding, Website Design
-                hr.colored
-                a.btn.btn-primary(href='#portfolioModal1', data-toggle='modal')
-                  | View Details
-                  i.fa.fa-long-arrow-right.fa-fw
-      // Portfolio Carousel Item 2
-      .item(style="background-image: url('img/agency/portfolio/carousel/bg-2.jpg')")
-        .container-fluid
-          .row.h-100
-            .col-md-7.my-auto.d-none.d-sm-block
-              .device-container
-                .device-mockup.macbook.portrait.black
-                  .device
-                    .screen
-                      img.img-fluid(src='img/agency/portfolio/carousel/screen-2a.jpg', alt='')
-            .col-md-5.my-auto
-              .project-details
-                span.project-name Project Name
-                span.project-description Branding, Website Design
-                hr.colored
-                a.btn.btn-primary(href='#portfolioModal2', data-toggle='modal')
-                  | View Details
-                  i.fa.fa-long-arrow-right.fa-fw
-      // Portfolio Carousel Item 3
-      .item(style="background-image: url('img/agency/portfolio/carousel/bg-3.jpg')")
-        .container-fluid
-          .row.h-100
-            .col-md-7.my-auto.d-none.d-sm-block
-              .device-container
-                .device-mockup.macbook.portrait.black
-                  .device
-                    .screen
-                      img.img-fluid(src='img/agency/portfolio/carousel/screen-3a.jpg', alt='')
-            .col-md-5.my-auto
-              .project-details
-                span.project-name Project Name
-                span.project-description Branding, Website Design
-                hr.colored
-                a.btn.btn-primary(href='#portfolioModal3', data-toggle='modal')
-                  | View Details
-                  i.fa.fa-long-arrow-right.fa-fw
-      // Portfolio Carousel Item 4
-      .item(style="background-image: url('img/agency/portfolio/carousel/bg-4.jpg')")
-        .container-fluid
-          .row.h-100
-            .col-md-7.my-auto.d-none.d-sm-block
-              .device-container
-                .device-mockup.macbook.portrait.black
-                  .device
-                    .screen
-                      img.img-fluid(src='img/agency/portfolio/carousel/screen-4.jpg', alt='')
-            .col-md-5.my-auto
-              .project-details
-                span.project-name Project Name
-                span.project-description Branding, Website Design
-                hr.colored
-                a.btn.btn-primary(href='#portfolioModal4', data-toggle='modal')
-                  | View Details
-                  i.fa.fa-long-arrow-right.fa-fw
-    // Portfolio Grid Section
-    section.page-section
+    // Talk Section
+    section#talks.page-section
       .container.text-center.wow.fadeIn
-        h2 Portfolio
-        hr.colored
-        p Here are some other projects that we've worked on.
-        .controls.mt-3
-          button.control.btn.btn-secondary.btn-sm.mx-2.mb-4(type='button', data-mixitup-control='', data-filter='all') All
-          button.control.btn.btn-secondary.btn-sm.mx-2.mb-4(type='button', data-mixitup-control='', data-filter='.identity') Identity
-          button.control.btn.btn-secondary.btn-sm.mx-2.mb-4(type='button', data-mixitup-control='', data-filter='.graphic') Graphic
-          button.control.btn.btn-secondary.btn-sm.mx-2.mb-4(type='button', data-mixitup-control='', data-filter='.web') Web
-        #portfolioList.portfolio-grid.clearfix
-          // Grid Item 1
-          .mix.identity(href='img/agency/portfolio/grid/grid-1.jpg', title='Client Name')
-            .portfolio-wrapper
-              img(src='img/agency/portfolio/grid/grid-1.jpg', alt='')
-              .caption
-                .caption-text
-                  a.text-title Client Name
-                  span.text-category Brand Identity
-                .caption-bg
-          // Grid Item 2
-          .mix.web(href='img/agency/portfolio/grid/grid-2.jpg', title='Client Name')
-            .portfolio-wrapper
-              img(src='img/agency/portfolio/grid/grid-2.jpg', alt='')
-              .caption
-                .caption-text
-                  a.text-title Client Name
-                  span.text-category Web Development
-                .caption-bg
-          // Grid Item 3
-          .mix.web(href='img/agency/portfolio/grid/grid-3.jpg', title='Client Name')
-            .portfolio-wrapper
-              img(src='img/agency/portfolio/grid/grid-3.jpg', alt='')
-              .caption
-                .caption-text
-                  a.text-title Client Name
-                  span.text-category Web Development
-                .caption-bg
-          // Grid Item 4
-          .mix.identity(href='img/agency/portfolio/grid/grid-4.jpg', title='Client Name')
-            .portfolio-wrapper
-              img(src='img/agency/portfolio/grid/grid-4.jpg', alt='')
-              .caption
-                .caption-text
-                  a.text-title Client Name
-                  span.text-category Brand Identity
-                .caption-bg
-          // Grid Item 5
-          .mix.web(href='img/agency/portfolio/grid/grid-5.jpg', title='Client Name')
-            .portfolio-wrapper
-              img(src='img/agency/portfolio/grid/grid-5.jpg', alt='')
-              .caption
-                .caption-text
-                  a.text-title Client Name
-                  span.text-category Web Development
-                .caption-bg
-          // Grid Item 6
-          .mix.graphic(href='img/agency/portfolio/grid/grid-6.jpg', title='Client Name')
-            .portfolio-wrapper
-              img(src='img/agency/portfolio/grid/grid-6.jpg', alt='')
-              .caption
-                .caption-text
-                  a.text-title Client Name
-                  span.text-category Graphic Design
-                .caption-bg
-          // Grid Item 7
-          .mix.graphic(href='img/agency/portfolio/grid/grid-7.jpg', title='Client Name')
-            .portfolio-wrapper
-              img(src='img/agency/portfolio/grid/grid-7.jpg', alt='')
-              .caption
-                .caption-text
-                  a.text-title Client Name
-                  span.text-category Graphic Design
-                .caption-bg
-          // Grid Item 8
-          .mix.web(href='img/agency/portfolio/grid/grid-8.jpg', title='Client Name')
-            .portfolio-wrapper
-              img(src='img/agency/portfolio/grid/grid-8.jpg', alt='')
-              .caption
-                .caption-text
-                  a.text-title Client Name
-                  span.text-category Web Development
-                .caption-bg
-          // Grid Item 9
-          .mix.identity(href='img/agency/portfolio/grid/grid-9.jpg', title='Client Name')
-            .portfolio-wrapper
-              img(src='img/agency/portfolio/grid/grid-9.jpg', alt='')
-              .caption
-                .caption-text
-                  a.text-title Client Name
-                  span.text-category Brand Identity
-                .caption-bg
-    // Testomonials Section
-    section.page-section.testimonials.bg-light
-      .container.wow.fadeIn
-        .row
-          .col-lg-10.mx-auto
-            .testimonials-carousel
-              // Testimonial Item 1
-              .item.mb-4
-                p.lead "Working with Vitality was both a valuable and rewarding experience."
-                hr.colored
-                p
-                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, temporibus, laborum, dignissimos doloremque corporis alias nostrum recusandae culpa id quisquam harum impedit sed sunt non obcaecati vero ipsam aut fugit?
-                .testimonial-img
-                  img.rounded-circle.img-fluid(src='img/agency/testimonials/1.jpg', alt='')
-                .testimonial-author
-                  span.name Jim Walker
-                  p.small CEO of Company Name
-                  .stars
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-              // Testimonial Item 2
-              .item.mb-4
-                p.lead "Vitality is a well coded, well documented, and easy to use theme!"
-                hr.colored
-                p
-                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem amet rem minus dolorum, facere in soluta explicabo, unde eveniet illo vel, nemo nostrum atque nesciunt facilis quaerat quasi reprehenderit dicta.
-                .testimonial-img
-                  img.rounded-circle.img-fluid(src='img/agency/testimonials/2.jpg', alt='')
-                .testimonial-author
-                  span.name Ashley Creadle
-                  p.small Creative Director of Company Name
-                  .stars
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-    // Pricing Section
-    section#pricing.page-section.pricing(style="background-image: url('img/agency/backgrounds/bg-pricing.jpg')")
-      .container.wow.fadeIn
-        .text-center
-          h2 Pricing
-          hr.colored
-          p
-            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, quae, laborum, voluptate delectus odio doloremque error porro obcaecati nemo animi ducimus quaerat nostrum? Ab molestiae eaque et atque architecto reiciendis.
-        .row
-          // Pricing Table 1
-          .col-md-4
-            .pricing-item.featured-first
-              h3 Basic
-              hr.colored
-              .price
-                span.number
-                  sup $
-                  | 25
-                |                 / month
-              ul.list-group.mb-3
-                li.list-group-item 60 Users
-                li.list-group-item Unlimited Forums
-                li.list-group-item Unlimited Reports
-                li.list-group-item 3,000 Entries per Month
-                li.list-group-item 200 MB Storage
-                li.list-group-item Unlimited Support
-              a.btn.btn-secondary(href='#') Sign Up
-          // Pricing Table 2
-          .col-md-4
-            .pricing-item.featured
-              h3 Plus
-              hr.colored
-              .price
-                span.number
-                  sup $
-                  | 50
-                |                 / month
-              ul.list-group.mb-3
-                li.list-group-item 60 Users
-                li.list-group-item Unlimited Forums
-                li.list-group-item Unlimited Reports
-                li.list-group-item 3,000 Entries per Month
-                li.list-group-item 200 MB Storage
-                li.list-group-item Unlimited Support
-              a.btn.btn-secondary(href='#') Sign Up
-          // Pricing Table 3
-          .col-md-4
-            .pricing-item.featured-last
-              h3 Premium
-              hr.colored
-              .price
-                span.number
-                  sup $
-                  | 150
-                |                 / month
-              ul.list-group.mb-3
-                li.list-group-item 60 Users
-                li.list-group-item Unlimited Forums
-                li.list-group-item Unlimited Reports
-                li.list-group-item 3,000 Entries per Month
-                li.list-group-item 200 MB Storage
-                li.list-group-item Unlimited Support
-              a.btn.btn-secondary(href='#') Sign Up
-    // Newsletter Signup Call to Action
-    section.page-section.signup-form.bg-inverse.text-white
-      .container.text-center
-        h3.m0 Subscribe to our newsletter!
-        hr.colored
-        .row
-          .col-lg-8.mx-auto
-            // MailChimp Signup Form
-            #mc_embed_signup
-              // Replace the form action in the line below with your MailChimp embed action! Visit the documentation for additional instructions!
-              form#mc-embedded-subscribe-form(role='form', action='//startbootstrap.us3.list-manage.com/subscribe/post?u=531af730d8629808bd96cf489&id=afb284632f', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
-                .input-group.input-group-lg
-                  input#mce-EMAIL.form-control(type='email', name='EMAIL', placeholder='Email address...')
-                  span.input-group-btn
-                    button#mc-embedded-subscribe.btn.btn-primary(type='submit', name='subscribe') Subscribe!
-                #mce-responses
-                  #mce-error-response.response(style='display:none')
-                  #mce-success-response.response(style='display:none')
-            // End MailChimp Signup Form
-    // Contact Section
-    section#contact.page-section
-      .container.wow.fadeIn
-        .text-center
-          h2 Contact Us
-          hr.colored
-          p
-            | Please tell us about your next project and we will let you know what we can do to help you.
-        .row.mt-4
-          .col-lg-8.mx-auto
-            form#contactForm(name='sentMessage', novalidate='')
-              .row.control-group
-                .form-group.col-12.floating-label-form-group.controls
-                  label Name
-                  input#name.form-control(type='text', placeholder='Name', required='', data-validation-required-message='Please enter your name.')
-                  p.help-block.text-danger
-              .row.control-group
-                .form-group.col-12.floating-label-form-group.controls
-                  label Email Address
-                  input#email.form-control(type='email', placeholder='Email Address', required='', data-validation-required-message='Please enter your email address.')
-                  p.help-block.text-danger
-              .row.control-group
-                .form-group.col-12.floating-label-form-group.controls
-                  label Phone Number
-                  input#phone.form-control(type='tel', placeholder='Phone Number', required='', data-validation-required-message='Please enter your phone number.')
-                  p.help-block.text-danger
-              .row.control-group
-                .form-group.col-12.floating-label-form-group.controls
-                  label Message
-                  textarea#message.form-control(rows='5', placeholder='Message', required='', data-validation-required-message='Please enter a message.')
-                  p.help-block.text-danger
-              br
-              #success
-              .row
-                .form-group.col-12
-                  button.btn.btn-secondary(type='submit') Send
-    // Block Button Call to Action
-    a.btn.btn-block.btn-full-width(href='https://wrapbootstrap.com/theme/vitality-multipurpose-one-page-theme-WB02K3KK3') Buy Vitality Now!
+        h3 Talks
+        p Here are some examples of our work.
+    // Event Section
+    section#events.page-section
+      .container.text-center.wow.fadeIn
+        h3 Events
+        p Here are some examples of our work.
+        h4 Upcoming Events
+          .upcoming-event-carousel.owl-carousel.owl-theme
+            .item
+              p
+                | test
+            .item
+              p
+                | test
+        h4 Past Events
+          .past-event-carousel.owl-carousel.owl-theme
+            .item
+              p
+                | test
+            .item
+              p
+                | test
+            .item
+              p
+                | test
+            .item
+              p
+                | test
+            .item
+              p
+                | test
+    // Media Section
+    section#media.page-section
+      .container.text-center.wow.fadeIn
+        h3 Media Coverage
+        p Here are some examples of our work.
     // Footer
     footer.footer(style="background-image: url('img/agency/backgrounds/bg-footer.jpg')")
       .container.text-center

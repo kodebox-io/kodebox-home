@@ -5,6 +5,16 @@ header.masthead {
   background-color: $themeDark;
   @include background-cover;
   @include background-fixed;
+  .overlay {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    background-color: $themeDark;
+  }
   .masthead-img {
     max-width: 150px;
     max-height: 150px;
