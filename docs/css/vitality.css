@@ -266,6 +266,12 @@ header.video {
         font-size: 40px;
         line-height: 42px; } }
 
+#project .project-item-container {
+  margin-top: 50px; }
+  #project .project-item-container .project-img {
+    width: 80%;
+    height: auto; }
+
 #events .upcoming-event-carousel .item {
   background-color: antiquewhite; }
 
