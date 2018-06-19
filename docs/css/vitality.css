@@ -319,6 +319,18 @@ header.video {
         .team-carousel .item .team-caption .list-team-social li a:hover, .team-carousel .item .team-caption .list-team-social li a:focus {
           color: white; }
 
+#talks .talk-item {
+  max-width: 345px; }
+
+#media .media-item {
+  padding: 15px;
+  position: relative;
+  max-width: 345px; }
+  #media .media-item i {
+    position: absolute;
+    right: 15px;
+    bottom: 15px; }
+
 footer.footer {
   padding: 50px 0 20px;
   color: rgba(255, 255, 255, 0.7);
