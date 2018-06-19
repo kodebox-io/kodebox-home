@@ -1,12 +1,14 @@
 #events {
   .upcoming-event-carousel {
-    .item {
+    .upcoming-item {
       background-color: antiquewhite;
+      padding: 15px;
     }
   }
   .past-event-carousel {
-    .item {
+    .past-item {
       background-color: antiquewhite;
+      padding: 15px;
     }
   }
 }
