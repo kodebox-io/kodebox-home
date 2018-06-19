@@ -2,9 +2,7 @@
   background-color: $themeDark;
   .navbar-toggler {
     padding: 15px;
-
     color: white;
-
     font-size: 14px;
     &:focus,
     &:hover {
@@ -14,7 +12,6 @@
   }
   .navbar-brand {
     color: white;
-
     font-size: 24px;
     line-height: 44px;
     @include heading-font;
@@ -24,11 +21,10 @@
   }
   .navbar-collapse {
     .navbar-nav {
-      > .nav-item {
-        > .nav-link {
+      >.nav-item {
+        >.nav-link {
           padding-top: 15px;
           padding-bottom: 15px;
-
           color: white;
           &:focus,
           &:hover {
@@ -47,11 +43,9 @@
     height: auto;
     padding: 30px 0;
     @include transition-padding;
-
     background-color: transparent;
     &.navbar-shrink {
       padding: 5px 0;
-
       background-color: $themeDark;
     }
     .navbar-brand {
@@ -63,12 +57,12 @@
     }
     .navbar-collapse {
       .navbar-nav {
-        > .nav-item {
+        >.nav-item {
           margin-right: 5px;
           &:last-child {
             margin-right: 0;
           }
-          > .nav-link {
+          >.nav-link {
             padding: 15px;
             &.active,
             &.active:focus,

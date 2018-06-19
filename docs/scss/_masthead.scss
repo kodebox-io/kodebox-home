@@ -109,6 +109,7 @@ header.video {
     transform: translateX(-50%) translateY(-50%);
   }
 }
+
 @media screen and (max-device-width: 1024px) {
   header.video {
     background: url('../img/agency/backgrounds/bg-mobile-fallback.jpg') $themeDark no-repeat center center scroll;
