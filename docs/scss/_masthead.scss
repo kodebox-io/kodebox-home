@@ -2,31 +2,26 @@ header.masthead {
   position: relative;
   padding-top: 150px;
   padding-bottom: 150px;
-  background-color: $themeDark;
+  background-color: white;
   @include background-cover;
   @include background-fixed;
-  .overlay {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: .5;
-    background-color: $themeDark;
-  }
-  .masthead-img {
-    max-width: 150px;
-    max-height: 150px;
-  }
   .masthead-title {
     font-size: 4rem;
     line-height: 4rem;
     @include heading-font;
   }
   .masthead-subtitle {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+    max-width: 500px;
+  }
+  .asset-image {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 80px;
+    width: 700px;
+    height: auto;
   }
   .scroll-down {
     position: absolute;
@@ -34,19 +29,17 @@ header.masthead {
     width: 100%;
     text-align: center;
     .btn {
-      font-size: 30px;
+      font-size: 60px;
       line-height: 50px;
-      width: 50px;
-      height: 50px;
+      width: 100px;
+      height: 60px;
       padding: 0;
       letter-spacing: normal;
-      color: white;
-      border: 2px solid white;
-      border-radius: 100% !important;
+      color: $themeDark;
       @include transition-all;
       &:hover {
-        color: fade-out(white, 0.5) !important;
-        border-color: fade-out(white, 0.5);
+        color: fade-out($themeDark, 0.5) !important;
+        border-color: fade-out($themeDark, 0.5);
         outline: none;
       }
       &:active,
@@ -55,66 +48,26 @@ header.masthead {
       }
     }
   }
+  @media (max-height: 800px) {
+    .scroll-down {
+      display: none;
+    }
+  }
   @media (min-width: 992px) {
     height: 100vh;
-    min-height: 700px;
-    padding-top: 0;
+    min-height: 900px;
+    padding-top: 230px;
     padding-bottom: 0;
-    .masthead-img {
-      max-width: 250px;
-      max-height: 250px;
-    }
     .masthead-title {
       font-size: 5rem;
       line-height: 5rem;
     }
     .masthead-subtitle {
-      font-size: 2rem;
-      line-height: 2rem;
+      font-size: 1.5rem;
+      line-height: 1.8rem;
     }
-  }
-}
-
-header.video {
-  background: $themeDark;
-  overflow: hidden;
-  .overlay {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.6;
-    background: black;
-  }
-  .container {
-    position: relative;
-  }
-  .container,
-  .scroll-down {
-    z-index: 999;
-  }
-  video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-  }
-}
-
-@media screen and (max-device-width: 1024px) {
-  header.video {
-    background: url('../img/backgrounds/bg-mobile-fallback.jpg') $themeDark no-repeat center center scroll;
-    video {
-      display: none;
+    .asset-image {
+      display: block;
     }
   }
 }

@@ -76,16 +76,16 @@ h6 {
     font-size: 50px; } }
 
 #mainNav {
-  background-color: #222; }
+  background-color: #F8F9FB; }
   #mainNav .navbar-toggler {
     padding: 15px;
-    color: white;
+    color: #222;
     font-size: 14px; }
     #mainNav .navbar-toggler:focus, #mainNav .navbar-toggler:hover {
-      color: #222;
-      background-color: white; }
+      color: #111;
+      font-weight: 600; }
   #mainNav .navbar-brand {
-    color: white;
+    color: #222;
     font-size: 24px;
     line-height: 44px;
     font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -96,11 +96,12 @@ h6 {
   #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link {
     padding-top: 15px;
     padding-bottom: 15px;
-    color: white; }
+    color: #222; }
     #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link:focus, #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link:hover {
-      color: rgba(255, 255, 255, 0.5); }
+      color: rgba(34, 34, 34, 0.5); }
     #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link.active, #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link.active:focus, #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link.active:hover {
-      color: #EF4035; }
+      color: #111;
+      font-weight: 600; }
   @media (min-width: 992px) {
     #mainNav {
       height: auto;
@@ -109,7 +110,7 @@ h6 {
       background-color: transparent; }
       #mainNav.navbar-shrink {
         padding: 5px 0;
-        background-color: #222; }
+        background-color: #F8F9FB; }
       #mainNav .navbar-brand {
         font-size: 26px;
         line-height: 50px; }
@@ -122,16 +123,14 @@ h6 {
         #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link {
           padding: 15px; }
           #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link.active, #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link.active:focus, #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link.active:hover {
-            color: #EF4035;
-            border-radius: 0;
-            border-radius: 5px;
-            background-color: white; } }
+            color: #111;
+            font-weight: 600; } }
 
 header.masthead {
   position: relative;
   padding-top: 150px;
   padding-bottom: 150px;
-  background-color: #222;
+  background-color: white;
   background-size: cover;
   background-attachment: scroll; }
   @media (min-width: 1024px) {
@@ -140,18 +139,6 @@ header.masthead {
   @media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
     header.masthead {
       background-attachment: scroll; } }
-  header.masthead .overlay {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: .5;
-    background-color: #222; }
-  header.masthead .masthead-img {
-    max-width: 150px;
-    max-height: 150px; }
   header.masthead .masthead-title {
     font-size: 4rem;
     line-height: 4rem;
@@ -159,81 +146,53 @@ header.masthead {
     font-weight: 900;
     text-transform: uppercase; }
   header.masthead .masthead-subtitle {
-    font-size: 1.5rem;
-    line-height: 1.5rem; }
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+    max-width: 500px; }
+  header.masthead .asset-image {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 80px;
+    width: 700px;
+    height: auto; }
   header.masthead .scroll-down {
     position: absolute;
     bottom: 20px;
     width: 100%;
     text-align: center; }
     header.masthead .scroll-down .btn {
-      font-size: 30px;
+      font-size: 60px;
       line-height: 50px;
-      width: 50px;
-      height: 50px;
+      width: 100px;
+      height: 60px;
       padding: 0;
       letter-spacing: normal;
-      color: white;
-      border: 2px solid white;
-      border-radius: 100% !important;
+      color: #222;
       transition: all 0.5s; }
       header.masthead .scroll-down .btn:hover {
-        color: rgba(255, 255, 255, 0.5) !important;
-        border-color: rgba(255, 255, 255, 0.5);
+        color: rgba(34, 34, 34, 0.5) !important;
+        border-color: rgba(34, 34, 34, 0.5);
         outline: none; }
       header.masthead .scroll-down .btn:active, header.masthead .scroll-down .btn:focus {
         box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5) !important; }
+  @media (max-height: 800px) {
+    header.masthead .scroll-down {
+      display: none; } }
   @media (min-width: 992px) {
     header.masthead {
       height: 100vh;
-      min-height: 700px;
-      padding-top: 0;
+      min-height: 900px;
+      padding-top: 230px;
       padding-bottom: 0; }
-      header.masthead .masthead-img {
-        max-width: 250px;
-        max-height: 250px; }
       header.masthead .masthead-title {
         font-size: 5rem;
         line-height: 5rem; }
       header.masthead .masthead-subtitle {
-        font-size: 2rem;
-        line-height: 2rem; } }
-
-header.video {
-  background: #222;
-  overflow: hidden; }
-  header.video .overlay {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.6;
-    background: black; }
-  header.video .container {
-    position: relative; }
-  header.video .container,
-  header.video .scroll-down {
-    z-index: 999; }
-  header.video video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%); }
-
-@media screen and (max-device-width: 1024px) {
-  header.video {
-    background: url("../img/backgrounds/bg-mobile-fallback.jpg") #222 no-repeat center center scroll; }
-    header.video video {
-      display: none; } }
+        font-size: 1.5rem;
+        line-height: 1.8rem; }
+      header.masthead .asset-image {
+        display: block; } }
 
 .call-to-action {
   padding: 100px 0;
@@ -266,19 +225,39 @@ header.video {
         font-size: 40px;
         line-height: 42px; } }
 
-#project .project-item-container {
-  margin-top: 50px; }
-  #project .project-item-container .project-img {
-    width: 80%;
-    height: auto; }
+#project {
+  background-color: #F8F9FB; }
+  #project .project-item-container .project-item {
+    border: 1px #313131;
+    border-radius: 15px; }
+    #project .project-item-container .project-item img {
+      width: auto;
+      height: 250px; }
+    #project .project-item-container .project-item .project-title {
+      text-transform: none !important;
+      font-size: 2rem; }
+    #project .project-item-container .project-item .project-description {
+      max-width: 340px; }
+    #project .project-item-container .project-item .detail-btn {
+      border: 1px solid #313131;
+      width: 100px;
+      padding: 5px;
+      border-radius: 20px;
+      cursor: pointer; }
 
 #events .upcoming-event-carousel .upcoming-item {
   background-color: antiquewhite;
   padding: 15px; }
+  #events .upcoming-event-carousel .upcoming-item img {
+    width: 100%;
+    height: auto; }
 
 #events .past-event-carousel .past-item {
   background-color: antiquewhite;
   padding: 15px; }
+  #events .past-event-carousel .past-item img {
+    width: 100%;
+    height: auto; }
 
 .team-carousel .item {
   position: relative;
