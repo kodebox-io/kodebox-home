@@ -5,7 +5,7 @@
   "repository": "git@github.com:kodebox-io/kodebox-home-new.git",
   "author": "<roadzero@kodebox.io>",
   "scripts": {
-    "build-pug": "pug templates -o docs -P -w",
+    "build-pug": "pug templates -o docs -P",
     "build-css": "node-sass docs/scss/vitality.scss --output docs/css",
     "start-css": "yarn run build-css --watch",
     "start-pug": "yarn run build-pug -w",
