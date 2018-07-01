@@ -1,7 +1,7 @@
 // Core variables and mixins
 $themePrimary: #EF4035;
-$themeDark: #222;
-$themeDarken: #111;
+$themeDark: #313131;
+$themeDarken: #313131;
 @import "mixins.scss";
 // Global Styles
 @import "global.scss";
@@ -9,7 +9,6 @@ $themeDarken: #111;
 // Components
 @import "navbar.scss";
 @import "masthead.scss";
-@import "call-to-action.scss";
 @import "project.scss";
 @import "events.scss";
 @import "team.scss";

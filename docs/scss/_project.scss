@@ -1,5 +1,5 @@
 #project {
-  background-color: #F8F9FB;
+  background-color: #f7f7f7;
   .project-item-container {
     .project-item {
       border: 1px #313131;
@@ -11,6 +11,7 @@
       .project-title {
         text-transform: none !important;
         font-size: 2rem;
+        font-weight: 600;
       }
       .project-description {
         max-width: 340px;

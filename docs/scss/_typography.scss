@@ -4,11 +4,11 @@ body {
 }
 
 a {
-  color: $themePrimary;
+  color: $themeDark;
   @include transition-all;
   &:hover,
   &:focus {
-    color: darken($themePrimary, 15%);
+    color: darken($themeDarken, 15%);
     text-decoration: none;
   }
 }
@@ -16,6 +16,12 @@ a {
 p {
   font-size: 18px;
   line-height: 1.5;
+}
+
+p.description {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #999;
 }
 
 p.lead {
@@ -30,6 +36,7 @@ h4,
 h5,
 h6 {
   @include heading-font;
+  font-weight: 900;
 }
 
 @media (min-width: 768px) {

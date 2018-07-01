@@ -1,5 +1,8 @@
 #mainNav {
-  background-color: #F8F9FB;
+  background-color: white;
+  @include heading-font;
+  letter-spacing: 2px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .1);
   .navbar-toggler {
     padding: 15px;
     color: $themeDark;
@@ -11,7 +14,6 @@
     }
   }
   .navbar-brand {
-    color: $themeDark;
     font-size: 24px;
     line-height: 44px;
     @include heading-font;
@@ -42,12 +44,15 @@
   }
   @media (min-width: 992px) {
     height: auto;
-    padding: 30px 0;
+    padding: 15px 0;
     @include transition-padding;
+    box-shadow: none;
+    border-bottom: 1px solid rgba(220, 220, 220, .4);
     background-color: transparent;
     &.navbar-shrink {
       padding: 5px 0;
-      background-color: #F8F9FB;
+      background-color: white;
+      box-shadow: 0 0 5px rgba(0, 0, 0, .1);
     }
     .navbar-brand {
       font-size: 26px;

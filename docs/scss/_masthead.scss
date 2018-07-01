@@ -6,8 +6,9 @@ header.masthead {
   @include background-cover;
   @include background-fixed;
   .masthead-title {
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 900;
     @include heading-font;
   }
   .masthead-subtitle {
@@ -59,8 +60,9 @@ header.masthead {
     padding-top: 230px;
     padding-bottom: 0;
     .masthead-title {
-      font-size: 5rem;
-      line-height: 5rem;
+      font-size: 4rem;
+      line-height: 4rem;
+      font-weight: 900;
     }
     .masthead-subtitle {
       font-size: 1.5rem;

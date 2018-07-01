@@ -1,110 +1,44 @@
+mixin team-iteam(imgSrc, name, rank, mediumLink, GithubLink)
+  .col-lg-4.col-md-6.wow.fadeIn.mb-3
+    .item
+      img.team-img(src=imgSrc, alt='')
+      .team-caption
+        p.lead.name.mt-3.mb-0
+          | #{name}
+        p.description.rank
+          | #{rank}
+        .line.mx-auto.my-3
+        ul.list-inline.list-team-social
+          li.list-inline-item
+            a(href=mediumLink)
+              i.fa.fa-medium.fa-fw
+          li.list-inline-item
+            a(href=GithubLink)
+              i.fa.fa-github.fa-fw
 section#team.page-section
   .container.text-center
-    h2.wow.fadeIn Our Team
-    .team-carousel.mt-4
-      // Team Carousel Item 1
+    h2.wow.fadeIn OUR TEAM
+    .team-container.mt-5
       .row
-        .col-lg-4.col-md-6.wow.fadeIn
+        +team-iteam('img/team/team1.png', 'Kwang Yul Seo', 'CEO', '#', '#')
+        +team-iteam('img/team/team1.png', 'Mi Sun Cho', 'Head of Business', '#', '#')
+        +team-iteam('img/team/team1.png', 'Jae Yong Jo', 'COO', '#', '#')
+        +team-iteam('img/team/team1.png', 'Ju Hyeong Park', 'Software Engineer', '#', '#')
+        +team-iteam('img/team/team1.png', 'Jin Gyeong Jung', 'Software Engineer', '#', '#')
+        +team-iteam('img/team/team1.png', 'Seul Gi Kim', 'Software Engineer', '#', '#')
+        +team-iteam('img/team/team1.png', 'Seung Woo Kim', 'Software Engineer', '#', '#')
+        +team-iteam('img/team/team1.png', 'Gil Young Kim', 'Software Engineer', '#', '#')
+        +team-iteam('img/team/team1.png', 'Joon Mo Yang', 'Software Engineer', '#', '#')
+        +team-iteam('img/team/team1.png', 'Kyung Hee Yim', 'Software Engineer', '#', '#')
+        +team-iteam('img/team/team1.png', 'Gi Yoon Kim', 'Business Manager', '#', '#')
+        // Join Us
+        .col-lg-4.col-md-6.wow.fadeIn.mb-3
           .item
-            .team-img
-              .overlay
-              img.img-fluid(src='img/team/1.jpg', alt='')
+            img.team-img(src='img/team/join-us.svg', alt='')
             .team-caption
-              h3 Patricia West
-              hr.colored
-              p Marketing Director
-              ul.list-inline.list-team-social
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-facebook.fa-fw
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-twitter.fa-fw
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-linkedin.fa-fw
-        .col-lg-4.col-md-6.wow.fadeIn
-          .item
-            .team-img
-              .overlay
-              img.img-fluid(src='img/team/2.jpg', alt='')
-            .team-caption
-              h3 Howard Scott
-              hr.colored
-              p Sales Manager
-              ul.list-inline.list-team-social
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-facebook.fa-fw
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-twitter.fa-fw
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-linkedin.fa-fw
-        .col-lg-4.col-md-6.wow.fadeIn
-          .item
-            .team-img
-              .overlay
-              img.img-fluid(src='img/team/3.jpg', alt='')
-            .team-caption
-              h3 Kate Williams
-              hr.colored
-              p Creative Director
-              ul.list-inline.list-team-social
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-facebook.fa-fw
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-twitter.fa-fw
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-linkedin.fa-fw
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-dribbble.fa-fw
-        .col-lg-4.col-md-6.wow.fadeIn
-          .item
-            .team-img
-              .overlay
-              img.img-fluid(src='img/team/4.jpg', alt='')
-            .team-caption
-              h3 Jeremy Davidson
-              hr.colored
-              p Web Developer
-              ul.list-inline.list-team-social
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-facebook.fa-fw
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-twitter.fa-fw
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-linkedin.fa-fw
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-github.fa-fw
-        .col-lg-4.col-md-6.wow.fadeIn
-          .item
-            .team-img
-              .overlay
-              img.img-fluid(src='img/team/5.jpg', alt='')
-            .team-caption
-              h3 Amy Vanderbute
-              hr.colored
-              p Graphic Artist
-              ul.list-inline.list-team-social
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-facebook.fa-fw
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-twitter.fa-fw
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-linkedin.fa-fw
-                li.list-inline-item
-                  a(href='#')
-                    i.fa.fa-dribbble.fa-fw
+              p.lead.name.mt-3.mb-0
+                | Join Us
+              .rank
+                | job@kodebox.io
+              .line.mx-auto.my-3
+              // Logo

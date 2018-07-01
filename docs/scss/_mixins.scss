@@ -22,7 +22,7 @@
 }
 
 @mixin sans-serif-font() {
-  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Hind', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 @mixin serif-font() {
@@ -30,7 +30,5 @@
 }
 
 @mixin heading-font() {
-  font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 900;
-  text-transform: uppercase;
+  font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
