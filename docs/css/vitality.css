@@ -41,13 +41,14 @@ section.page-section {
 
 body {
   font-weight: 300;
-  font-family: 'Hind', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  font-family: 'Hind', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased; }
 
 a {
   color: #313131;
   transition: all 0.5s; }
   a:hover, a:focus {
-    color: #0b0b0b;
+    color: black;
     text-decoration: none; }
 
 p {
@@ -57,7 +58,7 @@ p {
 p.description {
   font-size: 18px;
   line-height: 1.5;
-  color: #999; }
+  color: #5c5c5c; }
 
 p.lead {
   font-size: 24px;
@@ -74,37 +75,37 @@ h6 {
 
 @media (min-width: 768px) {
   h1 {
-    font-size: 52px; }
+    font-size: 42px; }
   h2 {
-    font-size: 50px; } }
+    font-size: 40px; } }
 
 #mainNav {
   background-color: white;
   font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   letter-spacing: 2px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-weight: 400;
+  font-size: 0.8rem; }
   #mainNav .navbar-toggler {
     padding: 15px;
     color: #313131;
     font-size: 14px; }
     #mainNav .navbar-toggler:focus, #mainNav .navbar-toggler:hover {
-      color: #313131;
-      font-weight: 600; }
+      color: #1d1d1d; }
   #mainNav .navbar-brand {
     font-size: 24px;
     line-height: 44px;
     font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     #mainNav .navbar-brand img {
-      height: 40px; }
+      height: 35px; }
   #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link {
     padding-top: 15px;
     padding-bottom: 15px;
-    color: #313131; }
+    color: #999; }
     #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link:focus, #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link:hover {
-      color: rgba(49, 49, 49, 0.5); }
+      color: rgba(49, 49, 49, 0.3); }
     #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link.active, #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link.active:focus, #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link.active:hover {
-      color: #313131;
-      font-weight: 600; }
+      color: #1d1d1d; }
   @media (min-width: 992px) {
     #mainNav {
       height: auto;
@@ -121,7 +122,7 @@ h6 {
         font-size: 26px;
         line-height: 50px; }
         #mainNav .navbar-brand img {
-          height: 46px; }
+          height: 41px; }
       #mainNav .navbar-collapse .navbar-nav > .nav-item {
         margin-right: 5px; }
         #mainNav .navbar-collapse .navbar-nav > .nav-item:last-child {
@@ -129,8 +130,7 @@ h6 {
         #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link {
           padding: 15px; }
           #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link.active, #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link.active:focus, #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link.active:hover {
-            color: #313131;
-            font-weight: 600; } }
+            color: #1d1d1d; } }
 
 header.masthead {
   position: relative;
@@ -146,20 +146,15 @@ header.masthead {
     header.masthead {
       background-attachment: scroll; } }
   header.masthead .masthead-title {
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: 40px;
     font-weight: 900;
-    font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
   header.masthead .masthead-subtitle {
-    font-size: 1.3rem;
-    line-height: 1.4rem;
-    max-width: 500px; }
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #5c5c5c; }
   header.masthead .asset-image {
-    display: none;
-    position: absolute;
-    right: 0px;
-    top: 80px;
-    width: 700px;
+    width: 100%;
     height: auto; }
   header.masthead .scroll-down {
     position: absolute;
@@ -173,53 +168,41 @@ header.masthead {
       height: 60px;
       padding: 0;
       letter-spacing: normal;
-      color: #313131;
+      color: #ccc;
       transition: all 0.5s; }
       header.masthead .scroll-down .btn:hover {
-        color: rgba(49, 49, 49, 0.5) !important;
-        border-color: rgba(49, 49, 49, 0.5);
+        color: rgba(204, 204, 204, 0.5) !important;
         outline: none; }
       header.masthead .scroll-down .btn:active, header.masthead .scroll-down .btn:focus {
         box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5) !important; }
-  @media (max-height: 800px) {
-    header.masthead .scroll-down {
-      display: none; } }
   @media (min-width: 992px) {
     header.masthead {
       height: 100vh;
-      min-height: 900px;
-      padding-top: 230px;
-      padding-bottom: 0; }
+      min-height: 600px; }
       header.masthead .masthead-title {
-        font-size: 4rem;
-        line-height: 4rem;
+        font-size: 3.5rem;
         font-weight: 900; }
       header.masthead .masthead-subtitle {
-        font-size: 1.5rem;
-        line-height: 1.8rem; }
-      header.masthead .asset-image {
-        display: block; } }
+        font-size: 1.4rem; } }
 
 #project {
   background-color: #f7f7f7; }
-  #project .project-item-container .project-item {
-    border: 1px #313131;
-    border-radius: 15px; }
-    #project .project-item-container .project-item img {
-      width: auto;
-      height: 250px; }
-    #project .project-item-container .project-item .project-title {
-      text-transform: none !important;
-      font-size: 2rem;
-      font-weight: 600; }
-    #project .project-item-container .project-item .project-description {
-      max-width: 340px; }
-    #project .project-item-container .project-item .detail-btn {
-      border: 1px solid #313131;
-      width: 100px;
-      padding: 5px;
-      border-radius: 20px;
-      cursor: pointer; }
+  #project .project-item-container .project-item img {
+    width: auto;
+    height: 250px; }
+  #project .project-item-container .project-item .project-title {
+    text-transform: none !important;
+    font-size: 1.5rem;
+    font-weight: 600; }
+  #project .project-item-container .project-item .project-description {
+    max-width: 340px; }
+  #project .project-item-container .project-item .detail-btn {
+    font-size: 0.8rem;
+    border: 1px solid #999;
+    width: 80px;
+    padding: 5px;
+    border-radius: 20px;
+    cursor: pointer; }
 
 #events .upcoming-event-carousel .upcoming-item {
   background-color: antiquewhite;

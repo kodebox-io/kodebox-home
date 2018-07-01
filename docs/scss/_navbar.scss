@@ -3,6 +3,8 @@
   @include heading-font;
   letter-spacing: 2px;
   box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+  font-weight: 400;
+  font-size: 0.8rem;
   .navbar-toggler {
     padding: 15px;
     color: $themeDark;
@@ -10,7 +12,6 @@
     &:focus,
     &:hover {
       color: $themeDarken;
-      font-weight: 600;
     }
   }
   .navbar-brand {
@@ -18,7 +19,7 @@
     line-height: 44px;
     @include heading-font;
     img {
-      height: 40px;
+      height: 35px;
     }
   }
   .navbar-collapse {
@@ -27,16 +28,15 @@
         >.nav-link {
           padding-top: 15px;
           padding-bottom: 15px;
-          color: $themeDark;
+          color: #999;
           &:focus,
           &:hover {
-            color: fade-out($themeDark, 0.5);
+            color: fade-out($themeDark, 0.7);
           }
           &.active,
           &.active:focus,
           &.active:hover {
             color: $themeDarken;
-            font-weight: 600;
           }
         }
       }
@@ -58,7 +58,7 @@
       font-size: 26px;
       line-height: 50px;
       img {
-        height: 46px;
+        height: 41px;
       }
     }
     .navbar-collapse {
@@ -74,7 +74,6 @@
             &.active:focus,
             &.active:hover {
               color: $themeDarken;
-              font-weight: 600;
             }
           }
         }

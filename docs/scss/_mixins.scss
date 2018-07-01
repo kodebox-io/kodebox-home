@@ -25,8 +25,12 @@
   font-family: 'Hind', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+@mixin title-font {
+  font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 @mixin serif-font() {
-  font-family: 'Cardo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 @mixin heading-font() {

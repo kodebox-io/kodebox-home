@@ -1,6 +1,7 @@
 body {
   font-weight: 300;
   @include sans-serif-font;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -21,7 +22,7 @@ p {
 p.description {
   font-size: 18px;
   line-height: 1.5;
-  color: #999;
+  color: rgb(92, 92, 92);
 }
 
 p.lead {
@@ -41,9 +42,9 @@ h6 {
 
 @media (min-width: 768px) {
   h1 {
-    font-size: 52px;
+    font-size: 42px;
   }
   h2 {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
