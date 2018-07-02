@@ -5,7 +5,7 @@
  */
 // Load WOW.js on non-touch devices
 var isPhoneDevice = "ontouchstart" in document.documentElement;
-$(document).ready(function () {
+$(document).ready(function() {
   if (isPhoneDevice) {
     //mobile
   } else {
@@ -18,11 +18,11 @@ $(document).ready(function () {
   }
 });
 
-(function ($) {
+(function($) {
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -36,7 +36,7 @@ $(document).ready(function () {
   });
 
   // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function () {
+  $('.js-scroll-trigger').click(function() {
     $('.navbar-collapse').collapse('hide');
   });
 
@@ -47,7 +47,7 @@ $(document).ready(function () {
   });
 
   // Collapse Navbar
-  var navbarCollapse = function () {
+  var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
     } else {
@@ -60,33 +60,12 @@ $(document).ready(function () {
   $(window).scroll(navbarCollapse);
 
   // Activates floating label headings for the contact form
-  $("body").on("input propertychange", ".floating-label-form-group", function (e) {
+  $("body").on("input propertychange", ".floating-label-form-group", function(e) {
     $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
-  }).on("focus", ".floating-label-form-group", function () {
+  }).on("focus", ".floating-label-form-group", function() {
     $(this).addClass("floating-label-form-group-with-focus");
-  }).on("blur", ".floating-label-form-group", function () {
+  }).on("blur", ".floating-label-form-group", function() {
     $(this).removeClass("floating-label-form-group-with-focus");
-  });
-
-  // Owl Carousel Settings
-  $(".upcoming-event-carousel").owlCarousel({
-    items: 2,
-    navigation: true,
-    pagination: false,
-    navigationText: [
-      "<i class='fa fa-angle-left'></i>",
-      "<i class='fa fa-angle-right'></i>"
-    ],
-  });
-
-  $(".past-event-carousel").owlCarousel({
-    items: 3,
-    navigation: true,
-    pagination: false,
-    navigationText: [
-      "<i class='fa fa-angle-left'></i>",
-      "<i class='fa fa-angle-right'></i>"
-    ],
   });
 
   // Magnific Popup Settings

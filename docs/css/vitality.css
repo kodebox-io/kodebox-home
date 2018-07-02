@@ -242,7 +242,22 @@ header.masthead {
       color: rgba(92, 92, 92, 0.7); }
 
 #talks .talk-item {
-  max-width: 345px; }
+  border-bottom: 1px solid #5c5c5c; }
+  #talks .talk-item .talk-title {
+    font-weight: 600;
+    font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  #talks .talk-item img {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    width: 100px;
+    height: auto; }
+
+#talks .show-more-btn {
+  color: #5c5c5c;
+  border: 1px solid #5c5c5c;
+  border-radius: 20px;
+  width: 80px; }
 
 #media .media-item {
   padding: 15px;

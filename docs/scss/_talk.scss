@@ -1,5 +1,22 @@
 #talks {
   .talk-item {
-    max-width: 345px;
+    border-bottom: 1px solid $themeDescription;
+    .talk-title {
+      font-weight: 600;
+      @include heading-font;
+    }
+    img {
+      position: absolute;
+      right: 15px;
+      top: 12px;
+      width: 100px;
+      height: auto;
+    }
+  }
+  .show-more-btn {
+    color: $themeDescription;
+    border: 1px solid $themeDescription;
+    border-radius: 20px;
+    width: 80px;
   }
 }
