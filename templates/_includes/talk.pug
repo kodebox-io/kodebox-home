@@ -1,4 +1,4 @@
-mixin talk-item(type, title, description)
+mixin talk-item(icon, title, description)
   .col-12.wow.fadeIn
     .talk-item.py-1.d-flex
       .talk-word.d-inline-block.mr-auto.my-auto
@@ -6,19 +6,14 @@ mixin talk-item(type, title, description)
           | #{title}
         p.description.talk-date
           | #{description}
-      if (type == 'slide')
-        img.pl-3(src='img/talks/slide.svg')
-      else if (type == 'text')
-        img.pl-3(src='img/talks/text.svg')
-      else
-        img.pl-3(src='img/talks/youtube.svg')
+      img.pl-3(src=icon)
 section#talks.page-section
   .container.text-center
     h2.wow.fadeIn TALKS
     .talk-item-container.mx-auto
       .row.mt-5.text-left
-        +talk-item('slide', 'CodeChain Seminar: Blockchain Storage', '2018-05-24')
-        +talk-item('text', 'CodeChain Seminar: Blockchain Storage', '2018-05-24')
-        +talk-item('youtube', 'CodeChain Seminar: Blockchain Storage', '2018-05-24')
+        +talk-item('img/talks/slide_r.svg', 'CodeChain Seminar: Blockchain Storage', '2018-05-24')
+        +talk-item('img/talks/slide_g.svg', 'CodeChain Seminar: Blockchain Storage', '2018-05-24')
+        +talk-item('img/talks/slide_y.svg', 'CodeChain Seminar: Blockchain Storage', '2018-05-24')
     .show-more-btn.mx-auto.mt-4.wow.fadeIn.mt-5
       | More

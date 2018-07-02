@@ -216,10 +216,10 @@ header.masthead {
   height: 80px; }
 
 #events .event-item .type {
-  font-weight: 900;
   font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 #events .event-item .title {
+  font-weight: 600;
   font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 #events .show-more-btn {
@@ -295,7 +295,6 @@ header.masthead {
 #media {
   background-color: #f7f7f7; }
   #media .media-item {
-    padding: 15px;
     position: relative;
     max-width: 345px; }
     #media .media-item .title {

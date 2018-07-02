@@ -8,10 +8,10 @@
       height: 80px;
     }
     .type {
-      font-weight: 900;
       @include heading-font;
     }
     .title {
+      font-weight: 600;
       @include heading-font;
     }
   }
