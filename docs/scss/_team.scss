@@ -16,19 +16,31 @@
       border-radius: 100%;
     }
     .line {
-      width: 100px;
+      width: 130px;
       height: 1px;
-      background-color: #212529;
+      background: #bbb;
     }
     .team-caption {
       .list-team-social {
         li {
+          .inactive {
+            width: 23px;
+            height: 23px;
+            filter: opacity(20%);
+            margin-right: 5px;
+            margin-left: 5px;
+          }
           a {
-            font-size: 1.5rem;
-            color: #5c5c5c;
+            .active {
+              width: 23px;
+              height: 23px;
+              filter: opacity(70%);
+              margin-right: 5px;
+              margin-left: 5px;
+            }
             &:hover,
             &:focus {
-              color: fade-out(#5c5c5c, 0.3);
+              filter: opacity(40%);
             }
           }
         }

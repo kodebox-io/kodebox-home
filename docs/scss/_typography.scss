@@ -5,11 +5,11 @@ body {
 }
 
 a {
-  color: $themeDark;
+  color: $themeDescription;
   @include transition-all;
   &:hover,
   &:focus {
-    color: darken($themeDarken, 15%);
+    color: darken($themeDescription, 15%);
     text-decoration: none;
   }
 }

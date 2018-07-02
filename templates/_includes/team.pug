@@ -1,4 +1,4 @@
-mixin team-iteam(imgSrc, name, rank, mediumLink, GithubLink)
+mixin team-iteam(imgSrc, name, rank, mediumLink, githubLink)
   .col-lg-4.col-md-6.wow.fadeIn.mb-3
     .item
       img.team-img(src=imgSrc, alt='')
@@ -7,29 +7,36 @@ mixin team-iteam(imgSrc, name, rank, mediumLink, GithubLink)
           | #{name}
         p.description.rank.mb-1
           | #{rank}
+        .line.my-3.mx-auto
         ul.list-inline.list-team-social
           li.list-inline-item
-            a(href=mediumLink)
-              i.fa.fa-medium.fa-fw
+            if (mediumLink)
+              a(href=mediumLink, target='_blank')
+                img.active(src='img/team/medium.png')
+            else
+              img.inactive(src='img/team/medium.png')
           li.list-inline-item
-            a(href=GithubLink)
-              i.fa.fa-github.fa-fw
+            if (githubLink)
+              a(href=githubLink, target='_blank')
+                img.active(src='img/team/github.png')
+            else
+              img.inactive(src='img/team/github.png')
 section#team.page-section
   .container.text-center
     h2.wow.fadeIn TEAM
     .team-container.mt-5
       .row
-        +team-iteam('img/team/1.png', 'Kwang Yul Seo', 'CEO', '#', '#')
-        +team-iteam('img/team/2.png', 'Mi Sun Cho', 'Head of Business', '#', '#')
-        +team-iteam('img/team/3.png', 'Jae Yong Jo', 'COO', '#', '#')
-        +team-iteam('img/team/4.png', 'Ju Hyeong Park', 'Software Engineer', '#', '#')
-        +team-iteam('img/team/5.png', 'Jin Gyeong Jung', 'Software Engineer', '#', '#')
-        +team-iteam('img/team/6.png', 'Seul Gi Kim', 'Software Engineer', '#', '#')
-        +team-iteam('img/team/7.png', 'Seung Woo Kim', 'Software Engineer', '#', '#')
-        +team-iteam('img/team/8.png', 'Gil Young Kim', 'Software Engineer', '#', '#')
-        +team-iteam('img/team/9.png', 'Joon Mo Yang', 'Software Engineer', '#', '#')
-        +team-iteam('img/team/10.png', 'Kyung Hee Yim', 'Software Engineer', '#', '#')
-        +team-iteam('img/team/11.png', 'Gi Yoon Kim', 'Business Manager', '#', '#')
+        +team-iteam('img/team/1.png', 'Kwang Yul Seo', 'CEO', 'https://medium.com/@kwangseo', 'https://github.com/kseo')
+        +team-iteam('img/team/2.png', 'Mi Sun Cho', 'Head of Business', 'https://medium.com/@misunsilviacho')
+        +team-iteam('img/team/3.png', 'Jae Yong Jo', 'COO', 'https://medium.com/@jaeyoi', 'https://github.com/jaeyoi')
+        +team-iteam('img/team/4.png', 'Ju Hyeong Park', 'Software Engineer', 'https://medium.com/@majecty', 'https://github.com/majecty')
+        +team-iteam('img/team/5.png', 'Jin Gyeong Jung', 'Software Engineer', 'https://medium.com/@jjgjoojis', 'https://github.com/joojis')
+        +team-iteam('img/team/6.png', 'Seul Gi Kim', 'Software Engineer', 'https://medium.com/@seulgi.kim', 'https://github.com/sgkim126')
+        +team-iteam('img/team/7.png', 'Seung Woo Kim', 'Software Engineer', 'https://medium.com/@koreanboy1120', 'https://github.com/ScarletBlue')
+        +team-iteam('img/team/8.png', 'Gil Young Kim', 'Software Engineer', 'https://medium.com/@xpdlf1004', 'https://github.com/xpdlf1004')
+        +team-iteam('img/team/9.png', 'Joon Mo Yang', 'Software Engineer', 'https://medium.com/@joonmo.yang', 'https://github.com/Kais-DkM')
+        +team-iteam('img/team/10.png', 'Kyung Hee Yim', 'Software Engineer', 'https://medium.com/@KyungheeYim')
+        +team-iteam('img/team/11.png', 'Gi Yoon Kim', 'Business Manager', 'https://medium.com/@kky2455')
         // Join Us
         .col-lg-4.col-md-6.wow.fadeIn.mb-3
           .item

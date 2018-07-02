@@ -19,6 +19,13 @@
     border: 1px solid $themeDescription;
     border-radius: 20px;
     width: 80px;
+    padding: 5px;
+    font-size: 0.8rem;
     cursor: pointer;
+    &:hover {
+      @include transition-all;
+      color: fade-out($themeDescription, 0.3);
+      border: 1px solid fade-out($themeDescription, 0.3);
+    }
   }
 }

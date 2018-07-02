@@ -45,10 +45,10 @@ body {
   -webkit-font-smoothing: antialiased; }
 
 a {
-  color: #313131;
+  color: #5c5c5c;
   transition: all 0.5s; }
   a:hover, a:focus {
-    color: black;
+    color: #363636;
     text-decoration: none; }
 
 p {
@@ -203,6 +203,10 @@ header.masthead {
     padding: 5px;
     border-radius: 20px;
     cursor: pointer; }
+    #project .project-item-container .project-item .detail-btn:hover {
+      transition: all 0.5s;
+      color: rgba(153, 153, 153, 0.5);
+      border: 1px solid rgba(153, 153, 153, 0.5); }
 
 #events .event-item-container {
   max-width: 800px; }
@@ -223,7 +227,13 @@ header.masthead {
   border: 1px solid #5c5c5c;
   border-radius: 20px;
   width: 80px;
+  padding: 5px;
+  font-size: 0.8rem;
   cursor: pointer; }
+  #events .show-more-btn:hover {
+    transition: all 0.5s;
+    color: rgba(92, 92, 92, 0.7);
+    border: 1px solid rgba(92, 92, 92, 0.7); }
 
 .team-container .item {
   position: relative;
@@ -239,14 +249,23 @@ header.masthead {
     height: 170px;
     border-radius: 100%; }
   .team-container .item .line {
-    width: 100px;
+    width: 130px;
     height: 1px;
-    background-color: #212529; }
-  .team-container .item .team-caption .list-team-social li a {
-    font-size: 1.5rem;
-    color: #5c5c5c; }
-    .team-container .item .team-caption .list-team-social li a:hover, .team-container .item .team-caption .list-team-social li a:focus {
-      color: rgba(92, 92, 92, 0.7); }
+    background: #bbb; }
+  .team-container .item .team-caption .list-team-social li .inactive {
+    width: 23px;
+    height: 23px;
+    filter: opacity(20%);
+    margin-right: 5px;
+    margin-left: 5px; }
+  .team-container .item .team-caption .list-team-social li a .active {
+    width: 23px;
+    height: 23px;
+    filter: opacity(70%);
+    margin-right: 5px;
+    margin-left: 5px; }
+  .team-container .item .team-caption .list-team-social li a:hover, .team-container .item .team-caption .list-team-social li a:focus {
+    filter: opacity(40%); }
 
 #talks {
   background-color: #f7f7f7; }
@@ -265,7 +284,13 @@ header.masthead {
     border: 1px solid #5c5c5c;
     border-radius: 20px;
     width: 80px;
+    padding: 5px;
+    font-size: 0.8rem;
     cursor: pointer; }
+    #talks .show-more-btn:hover {
+      transition: all 0.5s;
+      color: rgba(92, 92, 92, 0.7);
+      border: 1px solid rgba(92, 92, 92, 0.7); }
 
 #media {
   background-color: #f7f7f7; }
@@ -273,10 +298,6 @@ header.masthead {
     padding: 15px;
     position: relative;
     max-width: 345px; }
-    #media .media-item i {
-      position: absolute;
-      right: 15px;
-      bottom: 18px; }
   #media .media-item-container {
     max-width: 800px; }
   #media .show-more-btn {
@@ -284,7 +305,13 @@ header.masthead {
     border: 1px solid #5c5c5c;
     border-radius: 20px;
     width: 80px;
+    padding: 5px;
+    font-size: 0.8rem;
     cursor: pointer; }
+    #media .show-more-btn:hover {
+      transition: all 0.5s;
+      color: rgba(92, 92, 92, 0.7);
+      border: 1px solid rgba(92, 92, 92, 0.7); }
 
 #partners .partner-container {
   max-width: 600px; }
