@@ -208,6 +208,9 @@ header.masthead {
       color: rgba(153, 153, 153, 0.5);
       border: 1px solid rgba(153, 153, 153, 0.5); }
 
+#events .hidden-event {
+  display: none; }
+
 #events .event-item-container {
   max-width: 800px; }
 
@@ -269,6 +272,8 @@ header.masthead {
 
 #talks {
   background-color: #f7f7f7; }
+  #talks .hidden-talk {
+    display: none; }
   #talks .talk-item-container {
     max-width: 800px; }
   #talks .talk-item {
@@ -294,6 +299,8 @@ header.masthead {
 
 #media {
   background-color: #f7f7f7; }
+  #media .hidden-media {
+    display: none; }
   #media .media-item {
     border-bottom: 1px solid #bbb; }
     #media .media-item .media-title {

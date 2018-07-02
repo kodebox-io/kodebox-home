@@ -76,4 +76,19 @@ $(document).ready(function() {
     }
   });
 
+  $('#media-more').click(function(e) {
+    $('.hidden-media').removeClass('hidden-media');
+    $(this).hide();
+  });
+
+  $('#talk-more').click(function(e) {
+    $('.hidden-talk').removeClass('hidden-talk');
+    $(this).hide();
+  });
+
+  $('#event-more').click(function(e) {
+    $('.hidden-event').removeClass('hidden-event');
+    $(this).hide();
+  });
+
 })(jQuery); // End of use strict

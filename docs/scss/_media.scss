@@ -1,5 +1,8 @@
 #media {
   background-color: #f7f7f7;
+  .hidden-media {
+    display: none;
+  }
   .media-item {
     border-bottom: 1px solid #bbb;
     .media-title {
