@@ -91,4 +91,24 @@ $(document).ready(function() {
     $(this).hide();
   });
 
+  $(".talks-carousel").owlCarousel({
+    items: 3,
+    navigation: true,
+    pagination: false,
+    navigationText: [
+      "<i class='fa fa-angle-left'></i>",
+      "<i class='fa fa-angle-right'></i>"
+    ],
+  });
+
+  $(".event-carousel").owlCarousel({
+    items: 3,
+    navigation: true,
+    pagination: false,
+    navigationText: [
+      "<i class='fa fa-angle-left'></i>",
+      "<i class='fa fa-angle-right'></i>"
+    ],
+  });
+
 })(jQuery); // End of use strict

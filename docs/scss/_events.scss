@@ -1,35 +1,23 @@
 #events {
-  .hidden-event {
-    display: none;
-  }
-  .event-item-container {
-    max-width: 800px;
+  .event-container {
+    padding-right: 200px;
+    padding-left: 200px;
   }
   .event-item {
+    padding: 40px;
     img {
-      width: 80px;
-      height: 80px;
+      width: 100%;
+      height: auto;
     }
-    .type {
+    .upcoming-type {
+      @include heading-font;
+    }
+    .past-type {
       @include heading-font;
     }
     .title {
       font-weight: 600;
       @include heading-font;
-    }
-  }
-  .show-more-btn {
-    color: $themeDescription;
-    border: 1px solid $themeDescription;
-    border-radius: 20px;
-    width: 80px;
-    padding: 5px;
-    font-size: 0.8rem;
-    cursor: pointer;
-    &:hover {
-      @include transition-all;
-      color: fade-out($themeDescription, 0.3);
-      border: 1px solid fade-out($themeDescription, 0.3);
     }
   }
 }

@@ -3,7 +3,7 @@
   .project-item-container {
     .project-item {
       img {
-        width: auto;
+        width: 300px;
         height: 250px;
       }
       .project-title {
@@ -12,12 +12,12 @@
         font-weight: 600;
       }
       .project-description {
-        max-width: 340px;
+        max-width: 400px;
       }
       .detail-btn {
         font-size: 0.8rem;
         border: 1px solid #999;
-        width: 80px;
+        width: 90px;
         padding: 5px;
         border-radius: 20px;
         cursor: pointer;

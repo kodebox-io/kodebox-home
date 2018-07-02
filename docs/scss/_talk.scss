@@ -1,34 +1,8 @@
 #talks {
   background-color: #f7f7f7;
-  .hidden-talk {
-    display: none;
-  }
-  .talk-item-container {
-    max-width: 800px;
-  }
-  .talk-item {
-    border-bottom: 1px solid #bbb;
-    .talk-title {
-      font-weight: 600;
-      @include heading-font;
-    }
-    img {
-      width: 100px;
-      height: 100px;
-    }
-  }
-  .show-more-btn {
-    color: $themeDescription;
-    border: 1px solid $themeDescription;
-    border-radius: 20px;
-    width: 80px;
-    padding: 5px;
-    font-size: 0.8rem;
-    cursor: pointer;
-    &:hover {
-      @include transition-all;
-      color: fade-out($themeDescription, 0.3);
-      border: 1px solid fade-out($themeDescription, 0.3);
-    }
+  img {
+    padding: 16px;
+    width: 100%;
+    height: auto;
   }
 }

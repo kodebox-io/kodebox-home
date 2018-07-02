@@ -37,6 +37,7 @@ h4,
 h5,
 h6 {
   @include heading-font;
+  letter-spacing: 2px;
   font-weight: 900;
 }
 

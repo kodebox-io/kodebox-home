@@ -71,6 +71,7 @@ h4,
 h5,
 h6 {
   font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: 2px;
   font-weight: 900; }
 
 @media (min-width: 768px) {
@@ -113,7 +114,7 @@ h6 {
       transition: padding-top 0.3s, padding-bottom 0.3s;
       box-shadow: none;
       border-bottom: 1px solid rgba(220, 220, 220, 0.4);
-      background-color: transparent; }
+      background-color: white; }
       #mainNav.navbar-shrink {
         padding: 5px 0;
         background-color: white;
@@ -133,10 +134,9 @@ h6 {
             color: #1d1d1d; } }
 
 header.masthead {
+  height: 700px;
   position: relative;
-  padding-top: 150px;
-  padding-bottom: 150px;
-  background-color: white;
+  color: white;
   background-size: cover;
   background-attachment: scroll; }
   @media (min-width: 1024px) {
@@ -145,61 +145,45 @@ header.masthead {
   @media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
     header.masthead {
       background-attachment: scroll; } }
+  header.masthead .header-container {
+    padding-top: 75px; }
+  header.masthead .overlay {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); }
   header.masthead .masthead-title {
-    font-size: 40px;
+    font-size: 4rem;
     font-weight: 900;
     font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
   header.masthead .masthead-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.5em;
     font-weight: 400;
-    color: #5c5c5c; }
+    line-height: 2rem; }
   header.masthead .asset-image {
     width: 100%;
     height: auto; }
-  header.masthead .scroll-down {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    text-align: center; }
-    header.masthead .scroll-down .btn {
-      font-size: 60px;
-      line-height: 50px;
-      width: 100px;
-      height: 60px;
-      padding: 0;
-      letter-spacing: normal;
-      color: #ccc;
-      transition: all 0.5s; }
-      header.masthead .scroll-down .btn:hover {
-        color: rgba(204, 204, 204, 0.5) !important;
-        outline: none; }
-      header.masthead .scroll-down .btn:active, header.masthead .scroll-down .btn:focus {
-        box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5) !important; }
-  @media (min-width: 992px) {
-    header.masthead {
-      height: 100vh;
-      min-height: 600px; }
-      header.masthead .masthead-title {
-        font-size: 3.5rem;
-        font-weight: 900; }
-      header.masthead .masthead-subtitle {
-        font-size: 1.4rem; } }
 
 #project {
   background-color: #f7f7f7; }
   #project .project-item-container .project-item img {
-    width: auto;
+    width: 300px;
     height: 250px; }
   #project .project-item-container .project-item .project-title {
     text-transform: none !important;
     font-size: 1.5rem;
     font-weight: 600; }
   #project .project-item-container .project-item .project-description {
-    max-width: 340px; }
+    max-width: 400px; }
   #project .project-item-container .project-item .detail-btn {
     font-size: 0.8rem;
     border: 1px solid #999;
-    width: 80px;
+    width: 90px;
     padding: 5px;
     border-radius: 20px;
     cursor: pointer; }
@@ -208,35 +192,22 @@ header.masthead {
       color: rgba(153, 153, 153, 0.5);
       border: 1px solid rgba(153, 153, 153, 0.5); }
 
-#events .hidden-event {
-  display: none; }
+#events .event-container {
+  padding-right: 200px;
+  padding-left: 200px; }
 
-#events .event-item-container {
-  max-width: 800px; }
-
-#events .event-item img {
-  width: 80px;
-  height: 80px; }
-
-#events .event-item .type {
-  font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-
-#events .event-item .title {
-  font-weight: 600;
-  font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-
-#events .show-more-btn {
-  color: #5c5c5c;
-  border: 1px solid #5c5c5c;
-  border-radius: 20px;
-  width: 80px;
-  padding: 5px;
-  font-size: 0.8rem;
-  cursor: pointer; }
-  #events .show-more-btn:hover {
-    transition: all 0.5s;
-    color: rgba(92, 92, 92, 0.7);
-    border: 1px solid rgba(92, 92, 92, 0.7); }
+#events .event-item {
+  padding: 40px; }
+  #events .event-item img {
+    width: 100%;
+    height: auto; }
+  #events .event-item .upcoming-type {
+    font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  #events .event-item .past-type {
+    font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  #events .event-item .title {
+    font-weight: 600;
+    font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 .team-container .item {
   position: relative;
@@ -272,30 +243,10 @@ header.masthead {
 
 #talks {
   background-color: #f7f7f7; }
-  #talks .hidden-talk {
-    display: none; }
-  #talks .talk-item-container {
-    max-width: 800px; }
-  #talks .talk-item {
-    border-bottom: 1px solid #bbb; }
-    #talks .talk-item .talk-title {
-      font-weight: 600;
-      font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-    #talks .talk-item img {
-      width: 100px;
-      height: 100px; }
-  #talks .show-more-btn {
-    color: #5c5c5c;
-    border: 1px solid #5c5c5c;
-    border-radius: 20px;
-    width: 80px;
-    padding: 5px;
-    font-size: 0.8rem;
-    cursor: pointer; }
-    #talks .show-more-btn:hover {
-      transition: all 0.5s;
-      color: rgba(92, 92, 92, 0.7);
-      border: 1px solid rgba(92, 92, 92, 0.7); }
+  #talks img {
+    padding: 16px;
+    width: 100%;
+    height: auto; }
 
 #media {
   background-color: #f7f7f7; }
@@ -330,11 +281,12 @@ header.masthead {
   #partners .partner-container img {
     width: 180px; }
 
-footer.footer img {
-  width: 50px; }
-
-footer.footer .copyright {
-  font-size: 1rem; }
+footer.footer {
+  background-color: black;
+  padding-top: 40px;
+  height: 100px; }
+  footer.footer img {
+    width: 50px; }
 
 .btn {
   font-weight: 900;
