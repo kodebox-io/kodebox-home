@@ -252,9 +252,9 @@ header.masthead {
     height: 170px;
     border-radius: 100%; }
   .team-container .item .line {
-    width: 130px;
+    width: 100px;
     height: 1px;
-    background: #bbb; }
+    background: #ddd; }
   .team-container .item .team-caption .list-team-social li .inactive {
     width: 23px;
     height: 23px;
