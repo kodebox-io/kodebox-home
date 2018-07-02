@@ -222,24 +222,24 @@ header.masthead {
   position: relative;
   margin-bottom: 30px; }
   .team-container .item .name {
-    text-transform: none; }
+    text-transform: none;
+    font-size: 1.2rem;
+    font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
   .team-container .item .rank {
     font-size: 1rem; }
   .team-container .item .team-img {
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 170px;
     border-radius: 100%; }
   .team-container .item .line {
     width: 100px;
     height: 1px;
     background-color: #212529; }
-  .team-container .item .team-caption .list-team-social {
-    margin-top: 5px; }
-    .team-container .item .team-caption .list-team-social li a {
-      font-size: 1.5rem;
-      color: #212529; }
-      .team-container .item .team-caption .list-team-social li a:hover, .team-container .item .team-caption .list-team-social li a:focus {
-        color: rgba(33, 37, 41, 0.7); }
+  .team-container .item .team-caption .list-team-social li a {
+    font-size: 1.5rem;
+    color: #5c5c5c; }
+    .team-container .item .team-caption .list-team-social li a:hover, .team-container .item .team-caption .list-team-social li a:focus {
+      color: rgba(92, 92, 92, 0.7); }
 
 #talks .talk-item {
   max-width: 345px; }

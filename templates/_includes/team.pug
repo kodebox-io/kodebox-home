@@ -3,11 +3,10 @@ mixin team-iteam(imgSrc, name, rank, mediumLink, GithubLink)
     .item
       img.team-img(src=imgSrc, alt='')
       .team-caption
-        p.lead.name.mt-3.mb-0
+        p.name.mt-3.mb-0
           | #{name}
-        p.description.rank
+        p.description.rank.mb-1
           | #{rank}
-        .line.mx-auto.my-3
         ul.list-inline.list-team-social
           li.list-inline-item
             a(href=mediumLink)
@@ -20,25 +19,23 @@ section#team.page-section
     h2.wow.fadeIn TEAM
     .team-container.mt-5
       .row
-        +team-iteam('img/team/team1.png', 'Kwang Yul Seo', 'CEO', '#', '#')
-        +team-iteam('img/team/team1.png', 'Mi Sun Cho', 'Head of Business', '#', '#')
-        +team-iteam('img/team/team1.png', 'Jae Yong Jo', 'COO', '#', '#')
-        +team-iteam('img/team/team1.png', 'Ju Hyeong Park', 'Software Engineer', '#', '#')
-        +team-iteam('img/team/team1.png', 'Jin Gyeong Jung', 'Software Engineer', '#', '#')
-        +team-iteam('img/team/team1.png', 'Seul Gi Kim', 'Software Engineer', '#', '#')
-        +team-iteam('img/team/team1.png', 'Seung Woo Kim', 'Software Engineer', '#', '#')
-        +team-iteam('img/team/team1.png', 'Gil Young Kim', 'Software Engineer', '#', '#')
-        +team-iteam('img/team/team1.png', 'Joon Mo Yang', 'Software Engineer', '#', '#')
-        +team-iteam('img/team/team1.png', 'Kyung Hee Yim', 'Software Engineer', '#', '#')
-        +team-iteam('img/team/team1.png', 'Gi Yoon Kim', 'Business Manager', '#', '#')
+        +team-iteam('img/team/1.png', 'Kwang Yul Seo', 'CEO', '#', '#')
+        +team-iteam('img/team/2.png', 'Mi Sun Cho', 'Head of Business', '#', '#')
+        +team-iteam('img/team/3.png', 'Jae Yong Jo', 'COO', '#', '#')
+        +team-iteam('img/team/4.png', 'Ju Hyeong Park', 'Software Engineer', '#', '#')
+        +team-iteam('img/team/5.png', 'Jin Gyeong Jung', 'Software Engineer', '#', '#')
+        +team-iteam('img/team/6.png', 'Seul Gi Kim', 'Software Engineer', '#', '#')
+        +team-iteam('img/team/7.png', 'Seung Woo Kim', 'Software Engineer', '#', '#')
+        +team-iteam('img/team/8.png', 'Gil Young Kim', 'Software Engineer', '#', '#')
+        +team-iteam('img/team/9.png', 'Joon Mo Yang', 'Software Engineer', '#', '#')
+        +team-iteam('img/team/10.png', 'Kyung Hee Yim', 'Software Engineer', '#', '#')
+        +team-iteam('img/team/11.png', 'Gi Yoon Kim', 'Business Manager', '#', '#')
         // Join Us
         .col-lg-4.col-md-6.wow.fadeIn.mb-3
           .item
-            img.team-img(src='img/team/join-us.svg', alt='')
+            img.team-img(src='img/team/join-us.png', alt='')
             .team-caption
               p.lead.name.mt-3.mb-0
                 | Join Us
               .rank
                 | job@kodebox.io
-              .line.mx-auto.my-3
-              // Logo
