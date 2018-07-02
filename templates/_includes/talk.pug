@@ -1,19 +1,29 @@
-mixin talk-item(icon, title, description)
+mixin talk-item(icon, title, description, link)
   .col-12.wow.fadeIn
-    .talk-item.py-1.d-flex
-      .talk-word.d-inline-block.mr-auto.my-auto
-        p.talk-title.mb-1
-          | #{title}
-        p.description.talk-date
-          | #{description}
-      img.pl-3(src=icon)
+    a(href=link, target='_blank')
+      .talk-item.py-1.d-flex
+        .talk-word.d-inline-block.mr-auto.my-auto.py-3
+          p.talk-title.mb-1
+            | #{title}
+          p.description.talk-date
+            | #{description}
+        img.my-auto.ml-3(src=icon)
 section#talks.page-section
   .container.text-center
     h2.wow.fadeIn TALKS
     .talk-item-container.mx-auto
       .row.mt-5.text-left
-        +talk-item('img/talks/slide_r.svg', 'CodeChain Seminar: Blockchain Storage', '2018-05-24')
-        +talk-item('img/talks/slide_g.svg', 'CodeChain Seminar: Blockchain Storage', '2018-05-24')
-        +talk-item('img/talks/slide_y.svg', 'CodeChain Seminar: Blockchain Storage', '2018-05-24')
+        +talk-item('img/talks/slide_r.svg', 'CodeChain Connect - Introduction to CodeChain', '2018-06-27', 'https://docs.google.com/presentation/d/1XvcKCuIhc8eDWnAx-IneiS0a_e5CgPz31tQ-xUy978c/edit?usp=sharing')
+        +talk-item('img/talks/slide_g.svg', 'CodeChain Connect - Blockchain games and GoCryptobot: lessons learned', '2018-06-27', 'https://docs.google.com/presentation/d/17mHkxlywJu3mmlKi0k_3-HfGSfwwi1qP6qXYoTePPV4/edit?usp=sharing')
+        +talk-item('img/talks/slide_y.svg', 'CodeChain Connect - CodeChain Deep Dive', '2018-06-27', 'https://docs.google.com/presentation/d/1Q7--JyZ8_StcHWIquiIzOarsRh7c81YOI8ppyPC5QJA/edit?usp=sharing')
+        +talk-item('img/talks/slide_r.svg', 'CodeChain Connect - CodeChainOpen Source and Roadmap', '2018-06-27', 'https://docs.google.com/presentation/d/1oVBP9WCR7Oolb37Zk1gdIQ74CKtKdcsbTVzD0iqAbCI/edit?usp=sharing')
+        +talk-item('img/talks/slide_g.svg', 'CodeChain Seminar - Interchain and Sharding', '2018-06-20', 'https://docs.google.com/presentation/d/1woHERW1TS4ZpSWrynKHk-RRiMl3-ZTrjKdVY3QzBY_k/edit?usp=sharing')
+        +talk-item('img/talks/slide_y.svg', 'CodeChain Seminar - Script Language', '2018-06-14', 'https://docs.google.com/presentation/d/1E9efuCuTLT2E7gIbfPVezuAWhJMHakHr9x8zqLpt6Dg/edit?usp=sharing')
+        +talk-item('img/talks/slide_r.svg', 'IEEE Blockchain Summit Korea - Crypto Game Development With CodeChain', '2018-06-08', 'https://docs.google.com/presentation/d/1Ly_w1-N3ju9D1xXgXTvatIIJUCNptgPtJHOotDVZqkg/edit?usp=sharing')
+        +talk-item('img/talks/slide_g.svg', 'IEEE Blockchain Summit Korea - CodeChain Core & Use cases', '2018-06-08', 'https://docs.google.com/presentation/d/1WP6DDBKZ26-kwManYverS69BJQFFUUcKDtNylteZlWY/edit?usp=sharing')
+        +talk-item('img/talks/slide_y.svg', 'IEEE Blockchain Summit Korea - CodeChain Programmable multi-asset blockchain', '2018-06-07', 'https://docs.google.com/presentation/d/1fCa8vR6UHXvn6vQNOlf4zG53KJCmgfghhUOc70Y46WE/edit?usp=sharing')
+        +talk-item('img/talks/slide_r.svg', 'CodeChain Seminar - Blockchain Storage', '2018-06-05', 'https://docs.google.com/presentation/d/1HtXdipYotF9DKmXJhP0c2OEgLCGEj1cxCP0jEuTeS8w/edit?usp=sharing')
+        +talk-item('img/talks/slide_g.svg', 'CodeChain Seminar - P2P Network', '2018-05-30', 'https://docs.google.com/presentation/d/1qYBKe8RONh3JKdRrwvKTuY_2p7FeQEJRR1oqep5lKmo/edit?usp=sharing')
+        +talk-item('img/talks/slide_y.svg', 'CodeChain Seminar - BFT Consensus', '2018-05-24', 'https://docs.google.com/presentation/d/10W7gKEvk_6XRIlSdiKwnwP9gVzo5Re5m_24QzLGaqvk/edit?usp=sharing')
     .show-more-btn.mx-auto.mt-4.wow.fadeIn.mt-5
       | More

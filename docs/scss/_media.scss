@@ -1,11 +1,15 @@
 #media {
   background-color: #f7f7f7;
   .media-item {
-    position: relative;
-    max-width: 345px;
-    .title {
-      @include heading-font;
+    border-bottom: 1px solid #bbb;
+    .media-title {
       font-weight: 600;
+      @include heading-font;
+    }
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
     }
   }
   .media-item-container {

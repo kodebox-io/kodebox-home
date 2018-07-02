@@ -40,7 +40,7 @@ section.page-section {
   font-family: 'Hind', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 body {
-  font-weight: 300;
+  font-weight: normal;
   font-family: 'Hind', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased; }
 
@@ -48,7 +48,7 @@ a {
   color: #5c5c5c;
   transition: all 0.5s; }
   a:hover, a:focus {
-    color: #363636;
+    color: rgba(92, 92, 92, 0.6);
     text-decoration: none; }
 
 p {
@@ -295,11 +295,14 @@ header.masthead {
 #media {
   background-color: #f7f7f7; }
   #media .media-item {
-    position: relative;
-    max-width: 345px; }
-    #media .media-item .title {
-      font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      font-weight: 600; }
+    border-bottom: 1px solid #bbb; }
+    #media .media-item .media-title {
+      font-weight: 600;
+      font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    #media .media-item img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover; }
   #media .media-item-container {
     max-width: 800px; }
   #media .show-more-btn {

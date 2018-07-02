@@ -1,5 +1,5 @@
 body {
-  font-weight: 300;
+  font-weight: normal;
   @include sans-serif-font;
   -webkit-font-smoothing: antialiased;
 }
@@ -9,7 +9,7 @@ a {
   @include transition-all;
   &:hover,
   &:focus {
-    color: darken($themeDescription, 15%);
+    color: fade-out($themeDescription, 0.4);
     text-decoration: none;
   }
 }
