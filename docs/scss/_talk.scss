@@ -1,16 +1,17 @@
 #talks {
+  background-color: #f7f7f7;
+  .talk-item-container {
+    max-width: 800px;
+  }
   .talk-item {
-    border-bottom: 1px solid $themeDescription;
+    border-bottom: 1px solid #bbb;
     .talk-title {
       font-weight: 600;
       @include heading-font;
     }
     img {
-      position: absolute;
-      right: 15px;
-      top: 12px;
       width: 100px;
-      height: auto;
+      height: 100px;
     }
   }
   .show-more-btn {
@@ -18,5 +19,6 @@
     border: 1px solid $themeDescription;
     border-radius: 20px;
     width: 80px;
+    cursor: pointer;
   }
 }

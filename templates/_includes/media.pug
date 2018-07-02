@@ -1,64 +1,24 @@
+mixin media-item(title, media, date)
+  .col-md-6.mt-3.wow.fadeIn
+    .media-item.mx-auto
+      .top-decoration
+      i.fa.fa-file-text-o.fa-2x.d-block
+      p.font-weight-bold.mb-0
+        | CodeChain Seminar - Blockchain Storage
+      p.text-muted.mb-0
+        | BTCMANAGER.COM
+      p.text-muted.mb-0
+        | 2018-05-24
 section#media.page-section
-  .container.text-center.wow.fadeIn
-    h2 MEDIA COVERAGE
-    .row.mt-5.text-left
-      .col-lg-4.col-md-6.mt-4
-        .media-item.mx-auto
-          .top-decoration
-          i.fa.fa-file-text-o.fa-2x.d-block
-          p.font-weight-bold.mb-0
-            | CodeChain Seminar - Blockchain Storage
-          p.text-muted.mb-0
-            | BTCMANAGER.COM
-          p.text-muted.mb-0
-            | 2018-05-24
-      .col-lg-4.col-md-6.mt-3
-        .media-item.mx-auto
-          .top-decoration
-          i.fa.fa-file-text-o.fa-2x.d-block
-          p.font-weight-bold.mb-0
-            | CodeChain Seminar - Blockchain Storage
-          p.text-muted.mb-0
-            | BTCMANAGER.COM
-          p.text-muted.mb-0
-            | 2018-05-24
-      .col-lg-4.col-md-6.mt-3
-        .media-item.mx-auto
-          .top-decoration
-          i.fa.fa-file-text-o.fa-2x.d-block
-          p.font-weight-bold.mb-0
-            | CodeChain Seminar - Blockchain Storage
-          p.text-muted.mb-0
-            | BTCMANAGER.COM
-          p.text-muted.mb-0
-            | 2018-05-24
-      .col-lg-4.col-md-6.mt-3
-        .media-item.mx-auto
-          .top-decoration
-          i.fa.fa-file-text-o.fa-2x.d-block
-          p.font-weight-bold.mb-0
-            | CodeChain Seminar - Blockchain Storage
-          p.text-muted.mb-0
-            | BTCMANAGER.COM
-          p.text-muted.mb-0
-            | 2018-05-24
-      .col-lg-4.col-md-6.mt-3
-        .media-item.mx-auto
-          .top-decoration
-          i.fa.fa-file-text-o.fa-2x.d-block
-          p.font-weight-bold.mb-0
-            | CodeChain Seminar - Blockchain Storage
-          p.text-muted.mb-0
-            | BTCMANAGER.COM
-          p.text-muted.mb-0
-            | 2018-05-24
-      .col-lg-4.col-md-6.mt-3
-        .media-item.mx-auto
-          .top-decoration
-          i.fa.fa-file-text-o.fa-2x.d-block
-          p.font-weight-bold.mb-0
-            | CodeChain Seminar - Blockchain Storage
-          p.text-muted.mb-0
-            | BTCMANAGER.COM
-          p.text-muted.mb-0
-            | 2018-05-24
+  .container.text-center
+    h2.wow.fadeIn MEDIA COVERAGE
+    .media-item-container.mx-auto
+      .row.mt-5.text-left
+        +media-item('CodeChain Seminar - Blockchain Storage', 'BTCMANAGER.COM', '2018-05-24')
+        +media-item('CodeChain Seminar - Blockchain Storage', 'BTCMANAGER.COM', '2018-05-24')
+        +media-item('CodeChain Seminar - Blockchain Storage', 'BTCMANAGER.COM', '2018-05-24')
+        +media-item('CodeChain Seminar - Blockchain Storage', 'BTCMANAGER.COM', '2018-05-24')
+        +media-item('CodeChain Seminar - Blockchain Storage', 'BTCMANAGER.COM', '2018-05-24')
+        +media-item('CodeChain Seminar - Blockchain Storage', 'BTCMANAGER.COM', '2018-05-24')
+    .show-more-btn.mx-auto.mt-4.wow.fadeIn
+      | More

@@ -1,27 +1,24 @@
+mixin talk-item(type, title, description)
+  .col-12.wow.fadeIn
+    .talk-item.py-1.d-flex
+      .talk-word.d-inline-block.mr-auto.my-auto
+        p.talk-title.mb-1
+          | #{title}
+        p.description.talk-date
+          | #{description}
+      if (type == 'slide')
+        img.pl-3(src='img/talks/slide.svg')
+      else if (type == 'text')
+        img.pl-3(src='img/talks/text.svg')
+      else
+        img.pl-3(src='img/talks/youtube.svg')
 section#talks.page-section
-  .container.text-center.wow.fadeIn
-    h2 TALKS
-    .row.mt-5.text-left
-      .col-12
-        .talk-item.py-3
-          p.talk-title.mb-1
-            | CodeChain Seminar: Blockchain Storage
-          p.description.talk-date
-            | 2018-05-24
-          img.float-right(src='img/talks/slide.svg')
-      .col-12
-        .talk-item.py-3
-          p.talk-title.mb-1
-            | CodeChain Seminar: Blockchain Storage
-          p.description.talk-date
-            | 2018-05-24
-          img.float-right(src='img/talks/slide.svg')
-      .col-12
-        .talk-item.py-3
-          p.talk-title.mb-1
-            | CodeChain Seminar: Blockchain Storage
-          p.description.talk-date
-            | 2018-05-24
-          img.float-right(src='img/talks/slide.svg')
-    .show-more-btn.mx-auto.mt-4
+  .container.text-center
+    h2.wow.fadeIn TALKS
+    .talk-item-container.mx-auto
+      .row.mt-5.text-left
+        +talk-item('slide', 'CodeChain Seminar: Blockchain Storage', '2018-05-24')
+        +talk-item('text', 'CodeChain Seminar: Blockchain Storage', '2018-05-24')
+        +talk-item('youtube', 'CodeChain Seminar: Blockchain Storage', '2018-05-24')
+    .show-more-btn.mx-auto.mt-4.wow.fadeIn.mt-5
       | More

@@ -1,3 +1,31 @@
+mixin event-item(type, title, description)
+  .col-md-6.text-left.mt-5.wow.fadeIn
+    .event-item.d-flex
+      if type == 'upcoming'
+        img.my-auto.d-inline-block(src='img/events/upcoming.svg')
+      else
+        img.my-auto.d-inline-block(src='img/events/past.svg')
+      .event-item-word.d-inline-block.my-auto.ml-3
+        if type == 'upcoming'
+          p.mb-1.type
+            | UPCOMING
+        else
+          p.mb-1.type
+            | PAST
+        p.mb-1.title
+          | #{title}
+        p.mb-1.description
+          | #{description}
 section#events.page-section
-  .container.text-center.wow.fadeIn
-    h2 EVENTS
+  .container.text-center
+    h2.wow.fadeIn EVENTS
+    .event-item-container.mx-auto
+      .row.mt-2
+        +event-item('upcoming', 'CodeChain Connect 2018-2', '2018-05-27, Seoul')
+        +event-item('upcoming', 'CodeChain Connect 2018-2', '2018-05-27, Seoul')
+        +event-item('upcoming', 'CodeChain Connect 2018-2', '2018-05-27, Seoul')
+        +event-item('past', 'CodeChain Connect 2018-2', '2018-05-27, Seoul')
+        +event-item('past', 'CodeChain Connect 2018-2', '2018-05-27, Seoul')
+        +event-item('past', 'CodeChain Connect 2018-2', '2018-05-27, Seoul')
+    .show-more-btn.mx-auto.mt-5.wow.fadeIn
+      | More

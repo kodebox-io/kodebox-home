@@ -1,22 +1,25 @@
 #events {
-  .upcoming-event-carousel {
-    .upcoming-item {
-      background-color: antiquewhite;
-      padding: 15px;
-      img {
-        width: 100%;
-        height: auto;
-      }
+  .event-item-container {
+    max-width: 800px;
+  }
+  .event-item {
+    img {
+      width: 80px;
+      height: 80px;
+    }
+    .type {
+      font-weight: 900;
+      @include heading-font;
+    }
+    .title {
+      @include heading-font;
     }
   }
-  .past-event-carousel {
-    .past-item {
-      background-color: antiquewhite;
-      padding: 15px;
-      img {
-        width: 100%;
-        height: auto;
-      }
-    }
+  .show-more-btn {
+    color: $themeDescription;
+    border: 1px solid $themeDescription;
+    border-radius: 20px;
+    width: 80px;
+    cursor: pointer;
   }
 }
