@@ -298,6 +298,9 @@ header.masthead {
     padding: 15px;
     position: relative;
     max-width: 345px; }
+    #media .media-item .title {
+      font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-weight: 600; }
   #media .media-item-container {
     max-width: 800px; }
   #media .show-more-btn {

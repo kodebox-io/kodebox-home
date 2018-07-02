@@ -4,6 +4,10 @@
     padding: 15px;
     position: relative;
     max-width: 345px;
+    .title {
+      @include heading-font;
+      font-weight: 600;
+    }
   }
   .media-item-container {
     max-width: 800px;
