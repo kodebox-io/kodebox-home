@@ -208,7 +208,8 @@ header.masthead {
   padding-left: 300px;
   position: relative; }
   #events .event-container .owl-dots {
-    height: 48px; }
+    height: 48px;
+    padding-top: 20px; }
   #events .event-container .owl-prev {
     border: none;
     font-size: 2rem;
@@ -216,7 +217,7 @@ header.masthead {
     z-index: 2;
     left: 250px;
     top: calc(50% - 48px);
-    background-color: #1B8E7D;
+    background-color: #de4848;
     opacity: 0.8;
     filter: alpha(opacity=80);
     /* For IE8 and earlier */
@@ -231,7 +232,7 @@ header.masthead {
     z-index: 2;
     right: 250px;
     top: calc(50% - 48px);
-    background-color: #1B8E7D;
+    background-color: #de4848;
     opacity: 0.8;
     filter: alpha(opacity=80);
     /* For IE8 and earlier */
@@ -278,6 +279,8 @@ header.masthead {
     padding-right: 16px;
     padding-top: 8px;
     padding-bottom: 4px; }
+  #events .event-item .upcoming-overlay {
+    color: #ffbd16; }
   #events .event-item .type {
     font-size: 1rem; }
   #events .event-item .upcoming-type {
@@ -382,7 +385,7 @@ header.masthead {
     margin-left: 10%;
     margin-top: 1%;
     margin-right: 10%;
-    font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
   @media (max-width: 1500px) and (min-width: 600px) {
     #talks .title {
       font-size: 1.5rem; } }
@@ -402,7 +405,10 @@ header.masthead {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: #E6EAEB; }
+    background-color: #E6EAEB;
+    border: 1px solid #ddd; }
+  #talks .talk-item-green {
+    background-color: rgba(17, 82, 17, 0.1); }
   #talks .decoration-white {
     position: relative;
     height: 10%;

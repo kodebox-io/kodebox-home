@@ -69,7 +69,7 @@
     margin-left: 10%;
     margin-top: 1%;
     margin-right: 10%;
-    @include serif-font;
+    @include title-font;
   }
   @media (max-width: 1500px) and (min-width: 600px) {
     .title {
@@ -96,6 +96,10 @@
     top: 0;
     left: 0;
     background-color: #E6EAEB;
+    border: 1px solid #ddd;
+  }
+  .talk-item-green {
+    background-color: rgba(17, 82, 17, 0.1);
   }
   .decoration-white {
     position: relative;

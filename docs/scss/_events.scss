@@ -5,6 +5,7 @@
     position: relative;
     .owl-dots {
       height: 48px;
+      padding-top: 20px;
     }
     .owl-prev {
       border: none;
@@ -13,7 +14,7 @@
       z-index: 2;
       left: 250px;
       top: calc(50% - 48px);
-      background-color: #1B8E7D;
+      background-color: rgb(222, 72, 72);
       opacity: 0.8;
       filter: alpha(opacity=80);
       /* For IE8 and earlier */
@@ -30,7 +31,7 @@
       z-index: 2;
       right: 250px;
       top: calc(50% - 48px);
-      background-color: #1B8E7D;
+      background-color: rgb(222, 72, 72);
       opacity: 0.8;
       filter: alpha(opacity=80);
       /* For IE8 and earlier */
@@ -86,6 +87,9 @@
       padding-right: 16px;
       padding-top: 8px;
       padding-bottom: 4px;
+    }
+    .upcoming-overlay {
+      color: rgb(255, 189, 22);
     }
     .type {
       font-size: 1rem;
