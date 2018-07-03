@@ -94,6 +94,7 @@ $(document).ready(function() {
   $(".talks-carousel").owlCarousel({
     loop: true,
     margin: 40,
+    autoplay: true,
     responsive: {
       0: {
         items: 1
@@ -104,12 +105,14 @@ $(document).ready(function() {
       1100: {
         items: 3
       }
-    }
+    },
+    navContainer: '#talks-nav'
   });
 
   $(".event-carousel").owlCarousel({
     loop: true,
-    margin: 40,
+    margin: 80,
+    autoplay: true,
     responsive: {
       0: {
         items: 1
@@ -120,7 +123,8 @@ $(document).ready(function() {
       1200: {
         items: 3
       }
-    }
+    },
+    navContainer: '#event-nav'
   });
 
 })(jQuery); // End of use strict

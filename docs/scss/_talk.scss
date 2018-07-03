@@ -8,21 +8,69 @@
   .talk-container {
     padding-right: 100px;
     padding-left: 100px;
+    position: relative;
+    .owl-dots {
+      height: 48px;
+      padding-top: 20px;
+    }
+    .owl-prev {
+      font-size: 2rem;
+      position: absolute;
+      z-index: 2;
+      left: 50px;
+      top: calc(50% - 48px);
+      background-color: #1B8E7D;
+      opacity: 0.8;
+      filter: alpha(opacity=80);
+      /* For IE8 and earlier */
+      color: white;
+      width: 30px;
+      &:focus {
+        outline: 0;
+      }
+    }
+    .owl-next {
+      font-size: 2rem;
+      position: absolute;
+      z-index: 2;
+      right: 50px;
+      top: calc(50% - 48px);
+      background-color: #1B8E7D;
+      opacity: 0.8;
+      filter: alpha(opacity=80);
+      /* For IE8 and earlier */
+      color: white;
+      width: 30px;
+      &:focus {
+        outline: 0;
+      }
+    }
   }
   @media (max-width: 1000px) {
     .talk-container {
-      padding-right: 15px;
-      padding-left: 15px;
+      padding-right: 0;
+      padding-left: 0;
+      .owl-prev {
+        left: 0;
+      }
+      .owl-next {
+        right: 0;
+      }
     }
   }
   .title {
-    font-size: 70%;
+    font-size: 2rem;
     color: #3A3A3A;
     font-weight: 900;
     margin-left: 10%;
     margin-top: 1%;
     margin-right: 10%;
     @include serif-font;
+  }
+  @media (max-width: 1500px) and (min-width: 600px) {
+    .title {
+      font-size: 1.5rem;
+    }
   }
   .bottem {
     position: absolute;
@@ -34,7 +82,7 @@
     margin-bottom: 3%;
   }
   .date {
-    font-size: 10%;
+    font-size: 0.8rem;
     margin-bottom: 1%;
   }
   .talk-item-inside {

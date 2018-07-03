@@ -1,5 +1,73 @@
 #events {
+  .event-container {
+    padding-right: 300px;
+    padding-left: 300px;
+    position: relative;
+    .owl-dots {
+      height: 48px;
+    }
+    .owl-prev {
+      font-size: 2rem;
+      position: absolute;
+      z-index: 2;
+      left: 250px;
+      top: calc(50% - 48px);
+      background-color: #1B8E7D;
+      opacity: 0.8;
+      filter: alpha(opacity=80);
+      /* For IE8 and earlier */
+      color: white;
+      width: 30px;
+      &:focus {
+        outline: 0;
+      }
+    }
+    .owl-next {
+      font-size: 2rem;
+      position: absolute;
+      z-index: 2;
+      right: 250px;
+      top: calc(50% - 48px);
+      background-color: #1B8E7D;
+      opacity: 0.8;
+      filter: alpha(opacity=80);
+      /* For IE8 and earlier */
+      color: white;
+      width: 30px;
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+  @media (max-width: 1600px) {
+    .event-container {
+      padding-right: 100px;
+      padding-left: 100px;
+      .owl-prev {
+        left: 50px;
+      }
+      .owl-next {
+        right: 50px;
+      }
+    }
+  }
+  @media (max-width: 1000px) {
+    .event-container {
+      padding-right: 0;
+      padding-left: 0;
+      .owl-prev {
+        left: 0;
+      }
+      .owl-next {
+        right: 0;
+      }
+    }
+  }
   .event-item {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 1px solid #eee;
     img {
       width: 100%;
       height: auto;
@@ -8,7 +76,7 @@
       position: absolute;
       background-color: rgba(0, 0, 0, 0.5);
       top: 0px;
-      width: 100%;
+      width: calc(100% - 2px);
       color: white;
       padding-left: 16px;
       padding-right: 16px;
@@ -27,6 +95,8 @@
     }
     .title {
       @include heading-font;
+      padding-left: 8px;
+      padding-right: 8px;
     }
   }
 }
