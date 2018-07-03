@@ -68,11 +68,19 @@
       }
     }
   }
+  @media (max-width: 600px) {
+    .event-container {
+      .owl-prev {
+        display: none;
+      }
+      .owl-next {
+        display: none;
+      }
+    }
+  }
   .event-item {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     border: 1px solid #eee;
+    background-color: #f7f7f7;
     img {
       width: 100%;
       height: auto;

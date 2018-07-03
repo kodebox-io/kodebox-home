@@ -261,11 +261,15 @@ header.masthead {
       right: 0;
       width: 20px; } }
 
+@media (max-width: 600px) {
+  #events .event-container .owl-prev {
+    display: none; }
+  #events .event-container .owl-next {
+    display: none; } }
+
 #events .event-item {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  border: 1px solid #eee; }
+  border: 1px solid #eee;
+  background-color: #f7f7f7; }
   #events .event-item img {
     width: 100%;
     height: auto; }
@@ -374,10 +378,15 @@ header.masthead {
       padding-left: 0; }
       #talks .talk-container .owl-prev {
         left: 0;
-        width: 20px; }
+        width: 30px; }
       #talks .talk-container .owl-next {
         right: 0;
-        width: 20px; } }
+        width: 30px; } }
+  @media (max-width: 600px) {
+    #talks .talk-container .owl-prev {
+      display: none; }
+    #talks .talk-container .owl-next {
+      display: none; } }
   #talks .title {
     font-size: 2rem;
     color: #3A3A3A;
@@ -387,6 +396,12 @@ header.masthead {
     margin-right: 10%;
     font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
   @media (max-width: 1500px) and (min-width: 600px) {
+    #talks .title {
+      font-size: 1.5rem; } }
+  @media (max-width: 600px) and (min-width: 450px) {
+    #talks .title {
+      font-size: 2rem; } }
+  @media (max-width: 450px) {
     #talks .title {
       font-size: 1.5rem; } }
   #talks .bottem {

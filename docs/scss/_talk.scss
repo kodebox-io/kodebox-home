@@ -54,11 +54,21 @@
       padding-left: 0;
       .owl-prev {
         left: 0;
-        width: 20px;
+        width: 30px;
       }
       .owl-next {
         right: 0;
-        width: 20px;
+        width: 30px;
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    .talk-container {
+      .owl-prev {
+        display: none;
+      }
+      .owl-next {
+        display: none;
       }
     }
   }
@@ -72,6 +82,16 @@
     @include title-font;
   }
   @media (max-width: 1500px) and (min-width: 600px) {
+    .title {
+      font-size: 1.5rem;
+    }
+  }
+  @media (max-width: 600px) and (min-width: 450px) {
+    .title {
+      font-size: 2rem;
+    }
+  }
+  @media (max-width: 450px) {
     .title {
       font-size: 1.5rem;
     }
