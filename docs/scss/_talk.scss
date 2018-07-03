@@ -4,6 +4,26 @@
     overflow: hidden;
     width: 100%;
     padding-top: 70%;
+    &:hover {
+      .title {
+        font-size: 2.05rem;
+      }
+      @media (max-width: 1500px) and (min-width: 600px) {
+        .title {
+          font-size: 1.55rem;
+        }
+      }
+      @media (max-width: 600px) and (min-width: 450px) {
+        .title {
+          font-size: 2.05rem;
+        }
+      }
+      @media (max-width: 450px) {
+        .title {
+          font-size: 1.55rem;
+        }
+      }
+    }
   }
   .talk-container {
     padding-right: 100px;
@@ -119,7 +139,13 @@
     border: 1px solid #ddd;
   }
   .talk-item-green {
-    background-color: rgba(17, 82, 17, 0.1);
+    background-color: rgba(28, 145, 127, 0.2)
+  }
+  .talk-item-yellow {
+    background-color: rgba(240, 186, 49, 0.2)
+  }
+  .talk-item-red {
+    background-color: rgba(255, 93, 90, 0.2)
   }
   .decoration-white {
     position: relative;

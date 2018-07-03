@@ -1,46 +1,45 @@
-mixin talk-item(icon, title, date, link, isGreen)
+mixin sub-talk-item(title, date)
+  .decoration-white
+  .deco-line
+    .decoration-green
+    .decoration-red
+  p.title
+    | #{title}
+  .bottem.text-center
+    p.date
+      | #{date}
+    img.mx-auto.logo(src='img/logo.png')
+mixin talk-item(icon, title, date, link, type)
   .item
     a(href=link, target='_blank')
       .talk-item
-        if isGreen
+        if (type=='green')
           .talk-item-inside.talk-item-green
-            .decoration-white
-            .deco-line
-              .decoration-green
-              .decoration-red
-            p.title
-              | #{title}
-            .bottem.text-center
-              p.date
-                | #{date}
-              img.mx-auto.logo(src='img/logo.png')
+            +sub-talk-item(title, date)
+        else if (type=='yellow')
+          .talk-item-inside.talk-item-yellow
+            +sub-talk-item(title, date)
+        else if (type=='red')
+          .talk-item-inside.talk-item-red
+            +sub-talk-item(title, date)
         else
           .talk-item-inside
-            .decoration-white
-            .deco-line
-              .decoration-green
-              .decoration-red
-            p.title
-              | #{title}
-            .bottem.text-center
-              p.date
-                | #{date}
-              img.mx-auto.logo(src='img/logo.png')
+            +sub-talk-item(title, date)
 section#talks.page-section
   .container-flude.text-center
     h2.wow.fadeIn TALKS
     .talk-container
       .talks-carousel.owl-carousel.owl-theme.mt-5.wow.fadeIn.text-left
-        +talk-item('img/talks/blockchain-game-and-gocryptobot.png', 'Introduction to CodeChain', 'June 27th, 2018', 'https://docs.google.com/presentation/d/1XvcKCuIhc8eDWnAx-IneiS0a_e5CgPz31tQ-xUy978c/edit?usp=sharing', false)
-        +talk-item('img/talks/introduction-to-codechain.png', 'Blockchain games and GoCryptobot: lessons learned', 'June 27th, 2018', 'https://docs.google.com/presentation/d/17mHkxlywJu3mmlKi0k_3-HfGSfwwi1qP6qXYoTePPV4/edit?usp=sharing', true)
-        +talk-item('img/talks/blockchain-game-and-gocryptobot.png', 'CodeChain Deep Dive', 'June 27th, 2018', 'https://docs.google.com/presentation/d/1Q7--JyZ8_StcHWIquiIzOarsRh7c81YOI8ppyPC5QJA/edit?usp=sharing', false)
-        +talk-item('img/talks/blockchain-game-and-gocryptobot.png', 'CodeChainOpen Source and Roadmap', 'June 27th, 2018', 'https://docs.google.com/presentation/d/1oVBP9WCR7Oolb37Zk1gdIQ74CKtKdcsbTVzD0iqAbCI/edit?usp=sharing', true)
-        +talk-item('img/talks/blockchain-game-and-gocryptobot.png', 'CodeChain Seminar 5/5 - Interchain and Sharding', 'June 20th, 2018', 'https://docs.google.com/presentation/d/1woHERW1TS4ZpSWrynKHk-RRiMl3-ZTrjKdVY3QzBY_k/edit?usp=sharing', false)
-        +talk-item('img/talks/blockchain-game-and-gocryptobot.png', 'CodeChain Seminar 4/5 - Script Language', 'June 14th, 2018', 'https://docs.google.com/presentation/d/1E9efuCuTLT2E7gIbfPVezuAWhJMHakHr9x8zqLpt6Dg/edit?usp=sharing', true)
-        +talk-item('img/talks/blockchain-game-and-gocryptobot.png', 'Crypto Game Development With CodeChain', 'June 8th, 2018', 'https://docs.google.com/presentation/d/1Ly_w1-N3ju9D1xXgXTvatIIJUCNptgPtJHOotDVZqkg/edit?usp=sharing', false)
-        +talk-item('img/talks/blockchain-game-and-gocryptobot.png', 'CodeChain Core & Use cases', 'June 8th, 2018', 'https://docs.google.com/presentation/d/1WP6DDBKZ26-kwManYverS69BJQFFUUcKDtNylteZlWY/edit?usp=sharing', true)
-        +talk-item('img/talks/blockchain-game-and-gocryptobot.png', 'CodeChain Programmable multi-asset blockchain', 'June 7th, 2018', 'https://docs.google.com/presentation/d/1fCa8vR6UHXvn6vQNOlf4zG53KJCmgfghhUOc70Y46WE/edit?usp=sharing', false)
-        +talk-item('img/talks/blockchain-game-and-gocryptobot.png', 'CodeChain Seminar 3/5 - Blockchain Storage', 'June 5th, 2018', 'https://docs.google.com/presentation/d/1HtXdipYotF9DKmXJhP0c2OEgLCGEj1cxCP0jEuTeS8w/edit?usp=sharing', true)
-        +talk-item('img/talks/blockchain-game-and-gocryptobot.png', 'CodeChain Seminar 2/5 - P2P Network', 'May 30th, 2018', 'https://docs.google.com/presentation/d/1qYBKe8RONh3JKdRrwvKTuY_2p7FeQEJRR1oqep5lKmo/edit?usp=sharing', false)
-        +talk-item('img/talks/blockchain-game-and-gocryptobot.png', 'CodeChain Seminar 1/5 - BFT Consensus', 'May 24th, 2018', 'https://docs.google.com/presentation/d/10W7gKEvk_6XRIlSdiKwnwP9gVzo5Re5m_24QzLGaqvk/edit?usp=sharing', true)
+        +talk-item('img/talks/blockchain-game-and-gocryptobot.png', 'Introduction to CodeChain', 'June 27th, 2018', 'https://docs.google.com/presentation/d/1XvcKCuIhc8eDWnAx-IneiS0a_e5CgPz31tQ-xUy978c/edit?usp=sharing', 'common')
+        +talk-item('img/talks/introduction-to-codechain.png', 'Blockchain games and GoCryptobot: lessons learned', 'June 27th, 2018', 'https://docs.google.com/presentation/d/17mHkxlywJu3mmlKi0k_3-HfGSfwwi1qP6qXYoTePPV4/edit?usp=sharing', 'yellow')
+        +talk-item('img/talks/blockchain-game-and-gocryptobot.png', 'CodeChain Deep Dive', 'June 27th, 2018', 'https://docs.google.com/presentation/d/1Q7--JyZ8_StcHWIquiIzOarsRh7c81YOI8ppyPC5QJA/edit?usp=sharing', 'common')
+        +talk-item('img/talks/blockchain-game-and-gocryptobot.png', 'CodeChainOpen Source and Roadmap', 'June 27th, 2018', 'https://docs.google.com/presentation/d/1oVBP9WCR7Oolb37Zk1gdIQ74CKtKdcsbTVzD0iqAbCI/edit?usp=sharing', 'red')
+        +talk-item('img/talks/blockchain-game-and-gocryptobot.png', 'CodeChain Seminar 5/5 - Interchain and Sharding', 'June 20th, 2018', 'https://docs.google.com/presentation/d/1woHERW1TS4ZpSWrynKHk-RRiMl3-ZTrjKdVY3QzBY_k/edit?usp=sharing', 'common')
+        +talk-item('img/talks/blockchain-game-and-gocryptobot.png', 'CodeChain Seminar 4/5 - Script Language', 'June 14th, 2018', 'https://docs.google.com/presentation/d/1E9efuCuTLT2E7gIbfPVezuAWhJMHakHr9x8zqLpt6Dg/edit?usp=sharing', 'green')
+        +talk-item('img/talks/blockchain-game-and-gocryptobot.png', 'Crypto Game Development With CodeChain', 'June 8th, 2018', 'https://docs.google.com/presentation/d/1Ly_w1-N3ju9D1xXgXTvatIIJUCNptgPtJHOotDVZqkg/edit?usp=sharing', 'common')
+        +talk-item('img/talks/blockchain-game-and-gocryptobot.png', 'CodeChain Core & Use cases', 'June 8th, 2018', 'https://docs.google.com/presentation/d/1WP6DDBKZ26-kwManYverS69BJQFFUUcKDtNylteZlWY/edit?usp=sharing', 'yellow')
+        +talk-item('img/talks/blockchain-game-and-gocryptobot.png', 'CodeChain Programmable multi-asset blockchain', 'June 7th, 2018', 'https://docs.google.com/presentation/d/1fCa8vR6UHXvn6vQNOlf4zG53KJCmgfghhUOc70Y46WE/edit?usp=sharing', 'common')
+        +talk-item('img/talks/blockchain-game-and-gocryptobot.png', 'CodeChain Seminar 3/5 - Blockchain Storage', 'June 5th, 2018', 'https://docs.google.com/presentation/d/1HtXdipYotF9DKmXJhP0c2OEgLCGEj1cxCP0jEuTeS8w/edit?usp=sharing', 'red')
+        +talk-item('img/talks/blockchain-game-and-gocryptobot.png', 'CodeChain Seminar 2/5 - P2P Network', 'May 30th, 2018', 'https://docs.google.com/presentation/d/1qYBKe8RONh3JKdRrwvKTuY_2p7FeQEJRR1oqep5lKmo/edit?usp=sharing', 'common')
+        +talk-item('img/talks/blockchain-game-and-gocryptobot.png', 'CodeChain Seminar 1/5 - BFT Consensus', 'May 24th, 2018', 'https://docs.google.com/presentation/d/10W7gKEvk_6XRIlSdiKwnwP9gVzo5Re5m_24QzLGaqvk/edit?usp=sharing', 'green')
       #talks-nav.owl-nav

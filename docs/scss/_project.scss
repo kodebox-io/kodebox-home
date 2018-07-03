@@ -25,7 +25,6 @@
         cursor: pointer;
         &:hover {
           @include transition-all;
-          color: fade-out(#999, 0.5);
           border: 1px solid fade-out(#999, 0.5);
         }
       }

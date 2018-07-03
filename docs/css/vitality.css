@@ -48,7 +48,7 @@ a {
   color: #5c5c5c;
   transition: all 0.5s; }
   a:hover, a:focus {
-    color: rgba(92, 92, 92, 0.6);
+    color: #5c5c5c;
     text-decoration: none; }
 
 p {
@@ -161,10 +161,16 @@ header.masthead {
     font-size: 4rem;
     font-weight: 900;
     font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    @media (max-width: 800px) {
+      header.masthead .masthead-title {
+        font-size: 3rem; } }
   header.masthead .masthead-subtitle {
     font-size: 1.5em;
     font-weight: 400;
     line-height: 2rem; }
+    @media (max-width: 800px) {
+      header.masthead .masthead-subtitle {
+        font-size: 1.3rem; } }
   header.masthead .asset-image {
     width: 100%;
     height: auto; }
@@ -192,7 +198,6 @@ header.masthead {
       cursor: pointer; }
       #project .project-item-container .project-item .detail-btn:hover {
         transition: all 0.5s;
-        color: rgba(153, 153, 153, 0.5);
         border: 1px solid rgba(153, 153, 153, 0.5); }
   @media (max-width: 1200px) {
     #project .project-item-container {
@@ -270,9 +275,23 @@ header.masthead {
 #events .event-item {
   border: 1px solid #eee;
   background-color: #f7f7f7; }
-  #events .event-item img {
+  #events .event-item:hover img {
+    width: 103%;
+    height: 103%;
+    transition: all 0.5s; }
+  #events .event-item .img-container {
     width: 100%;
-    height: auto; }
+    padding-top: 75%;
+    height: 0;
+    position: relative;
+    overflow: hidden; }
+  #events .event-item img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%); }
   #events .event-item .overlay {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
@@ -307,9 +326,24 @@ header.masthead {
   .team-container .item .rank {
     font-size: 1rem; }
   .team-container .item .team-img {
-    width: 170px;
-    height: 170px;
-    border-radius: 100%; }
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .team-container .item .team-join-us-img {
+    width: 300px;
+    height: 300px; }
+  .team-container .item .team-img-container {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 300px; }
+    .team-container .item .team-img-container:hover .team-img {
+      width: 320px;
+      height: 320px;
+      transition: all 0.5s; }
   .team-container .item .line {
     width: 100px;
     height: 1px;
@@ -335,6 +369,17 @@ header.masthead {
     overflow: hidden;
     width: 100%;
     padding-top: 70%; }
+    #talks .talk-item:hover .title {
+      font-size: 2.05rem; }
+    @media (max-width: 1500px) and (min-width: 600px) {
+      #talks .talk-item:hover .title {
+        font-size: 1.55rem; } }
+    @media (max-width: 600px) and (min-width: 450px) {
+      #talks .talk-item:hover .title {
+        font-size: 2.05rem; } }
+    @media (max-width: 450px) {
+      #talks .talk-item:hover .title {
+        font-size: 1.55rem; } }
   #talks .talk-container {
     padding-right: 100px;
     padding-left: 100px;
@@ -423,7 +468,11 @@ header.masthead {
     background-color: #E6EAEB;
     border: 1px solid #ddd; }
   #talks .talk-item-green {
-    background-color: rgba(17, 82, 17, 0.1); }
+    background-color: rgba(28, 145, 127, 0.2); }
+  #talks .talk-item-yellow {
+    background-color: rgba(240, 186, 49, 0.2); }
+  #talks .talk-item-red {
+    background-color: rgba(255, 93, 90, 0.2); }
   #talks .decoration-white {
     position: relative;
     height: 10%;
@@ -453,6 +502,12 @@ header.masthead {
     display: none; }
   #media .media-item {
     border-bottom: 1px solid #bbb; }
+    #media .media-item:hover .media-title {
+      transition: all 0.5s;
+      color: rgba(49, 49, 49, 0.5); }
+    #media .media-item:hover .media-date {
+      transition: all 0.5s;
+      color: rgba(49, 49, 49, 0.5); }
     #media .media-item .media-title {
       font-weight: 600;
       font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif; }

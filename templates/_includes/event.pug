@@ -1,7 +1,8 @@
 mixin event-item(type, title, secondTitle, description, link, imageUrl)
   .event-item
     a(href=link, target='_blank')
-      img(src=imageUrl)
+      .img-container
+        img(src=imageUrl)
       if (type == 'upcoming')
         .overlay.upcoming-overlay.text-left
           if(type == 'upcoming')
@@ -9,7 +10,7 @@ mixin event-item(type, title, secondTitle, description, link, imageUrl)
               | UPCOMING : #{description}
           else
             p.type.past-type.mb-1
-              | PAST : #{description}
+              | Past : #{description}
         p.text-left.title.mt-2.mb-2
           | #{title}#[br]#{secondTitle}
       else
@@ -19,7 +20,7 @@ mixin event-item(type, title, secondTitle, description, link, imageUrl)
               | UPCOMING : #{description}
           else
             p.type.past-type.mb-1
-              | PAST : #{description}
+              | Past : #{description}
         p.text-left.title.mt-2.mb-2
           | #{title}#[br]#{secondTitle}
 section#events.page-section

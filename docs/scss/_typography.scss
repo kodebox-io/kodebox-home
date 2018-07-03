@@ -9,7 +9,7 @@ a {
   @include transition-all;
   &:hover,
   &:focus {
-    color: fade-out($themeDescription, 0.4);
+    color: $themeDescription;
     text-decoration: none;
   }
 }

@@ -5,6 +5,16 @@
   }
   .media-item {
     border-bottom: 1px solid #bbb;
+    &:hover {
+      .media-title {
+        @include transition-all;
+        color: fade-out(#313131, 0.5);
+      }
+      .media-date {
+        @include transition-all;
+        color: fade-out(#313131, 0.5);
+      }
+    }
     .media-title {
       font-weight: 600;
       @include heading-font;
