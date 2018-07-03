@@ -1,4 +1,4 @@
-mixin team-iteam(imgSrc, name, rank, mediumLink, githubLink)
+mixin team-iteam(imgSrc, name, rank, mediumLink, githubLink, twitterLink)
   .col-lg-4.col-md-6.wow.fadeIn.mb-3
     .item
       img.team-img(src=imgSrc, alt='')
@@ -19,6 +19,9 @@ mixin team-iteam(imgSrc, name, rank, mediumLink, githubLink)
             if (githubLink)
               a(href=githubLink, target='_blank')
                 img.active(src='img/team/github.png')
+            else if (twitterLink)
+              a(href=twitterLink, target='_blank')
+                img.active(src='img/team/github.png')
             else
               img.inactive(src='img/team/github.png')
 section#team.page-section
@@ -27,7 +30,7 @@ section#team.page-section
     .team-container.mt-5
       .row
         +team-iteam('img/team/1.png', 'Kwang Yul Seo', 'CEO', 'https://medium.com/@kwangseo', 'https://github.com/kseo')
-        +team-iteam('img/team/2.png', 'Mi Sun Cho', 'Head of Business', 'https://medium.com/@misunsilviacho')
+        +team-iteam('img/team/2.png', 'Mi Sun Cho', 'Head of Business', 'https://medium.com/@misunsilviacho', '', 'https://twitter.com/kodebox_cho')
         +team-iteam('img/team/3.png', 'Jae Yong Jo', 'COO', 'https://medium.com/@jaeyoi', 'https://github.com/jaeyoi')
         +team-iteam('img/team/4.png', 'Ju Hyeong Park', 'Software Engineer', 'https://medium.com/@majecty', 'https://github.com/majecty')
         +team-iteam('img/team/5.png', 'Jin Gyeong Jung', 'Software Engineer', 'https://medium.com/@jjgjoojis', 'https://github.com/joojis')
