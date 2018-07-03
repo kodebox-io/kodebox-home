@@ -171,29 +171,37 @@ header.masthead {
 
 #project {
   background-color: #f7f7f7; }
-  #project .project-item-container .project-item img {
-    width: 80%;
-    height: 300px; }
-  @media (max-width: 767px) {
+  #project .project-item-container {
+    padding-right: 300px;
+    padding-left: 300px; }
     #project .project-item-container .project-item img {
-      height: 200px; } }
-  #project .project-item-container .project-item .project-title {
-    text-transform: none !important;
-    font-size: 1.5rem;
-    font-weight: 600; }
-  #project .project-item-container .project-item .project-description {
-    max-width: 400px; }
-  #project .project-item-container .project-item .detail-btn {
-    font-size: 0.8rem;
-    border: 1px solid #999;
-    width: 90px;
-    padding: 5px;
-    border-radius: 20px;
-    cursor: pointer; }
-    #project .project-item-container .project-item .detail-btn:hover {
-      transition: all 0.5s;
-      color: rgba(153, 153, 153, 0.5);
-      border: 1px solid rgba(153, 153, 153, 0.5); }
+      width: 70%;
+      height: auto; }
+    #project .project-item-container .project-item .project-title {
+      text-transform: none !important;
+      font-size: 1.5rem;
+      font-weight: 600; }
+    #project .project-item-container .project-item .project-description {
+      max-width: 400px; }
+    #project .project-item-container .project-item .detail-btn {
+      font-size: 0.8rem;
+      border: 1px solid #999;
+      width: 90px;
+      padding: 5px;
+      border-radius: 20px;
+      cursor: pointer; }
+      #project .project-item-container .project-item .detail-btn:hover {
+        transition: all 0.5s;
+        color: rgba(153, 153, 153, 0.5);
+        border: 1px solid rgba(153, 153, 153, 0.5); }
+  @media (max-width: 1200px) {
+    #project .project-item-container {
+      padding-right: 100px;
+      padding-left: 100px; } }
+  @media (max-width: 600px) {
+    #project .project-item-container {
+      padding-right: 15px;
+      padding-left: 15px; } }
 
 #events .event-container {
   padding-right: 300px;
@@ -311,7 +319,7 @@ header.masthead {
     filter: opacity(70%);
     margin-right: 5px;
     margin-left: 5px; }
-  .team-container .item .team-caption .list-team-social li a:hover, .team-container .item .team-caption .list-team-social li a:focus {
+  .team-container .item .team-caption .list-team-social li a:hover {
     filter: opacity(40%); }
 
 #talks {
@@ -487,7 +495,29 @@ footer.footer {
     width: 100%;
     color: white; }
   footer.footer .link-container {
-    color: white; }
+    color: white;
+    font-size: 2rem; }
+    footer.footer .link-container .link-text {
+      margin-top: 60px;
+      font-size: 1.5rem; }
+    footer.footer .link-container li {
+      margin-right: 10px;
+      margin-left: 10px;
+      cursor: pointer;
+      transition: all 0.5s; }
+      footer.footer .link-container li a {
+        color: white; }
+        footer.footer .link-container li a:hover {
+          color: rgba(255, 255, 255, 0.5); }
+      footer.footer .link-container li:hover {
+        color: rgba(255, 255, 255, 0.5); }
+    footer.footer .link-container .img-icon {
+      width: 30px;
+      height: 30px;
+      margin-bottom: 5px;
+      transition: all 0.5s; }
+      footer.footer .link-container .img-icon:hover {
+        filter: opacity(50%); }
 
 .btn {
   font-weight: 900;

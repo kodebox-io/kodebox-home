@@ -1,18 +1,29 @@
 footer.footer(style="background-image: url('img/backgrounds/bg-header.jpg');")
   .overlay
-  .container.text-center
-    .link-container
+    .container.text-center.link-container.wow.fadeIn
+      p.link-text
+        | LINKS
       ul.list-inline
         li.list-inline-item
-          i.fa.fa-facebook-official
+          a(href='https://www.facebook.com/codechain/', target='_blank')
+            i.fa.fa-facebook-official
         li.list-inline-item
-          | facebok
+          a(href='https://twitter.com/codechain_io', target='_blank')
+            i.fa.fa-twitter
         li.list-inline-item
-          | twitter
+          a(href='https://medium.com/codechain', target='_blank')
+            img.img-icon(src='img/footer/medium-icon.png')
         li.list-inline-item
-          | github
-  .copyright-container.text-center.py-3
+          a(href='https://github.com/CodeChain-io/codechain', target='_blank')
+            i.fa.fa-github
+        li.list-inline-item
+          a(href='https://gitter.im/CodeChain-io/codechain', target='_blank')
+            i.fa.fa-comments
+        li.list-inline-item
+          a(href='https://codechain.io/', target='_blank')
+            img.img-icon(src='img/footer/codechain-icon.svg')
+  .copyright-container.text-center.py-3.wow.fadeIn
     p
       | support@kodebox.io
-    p
+    p.mb-0
       | ⓒ 2018 Kodebox, Inc.

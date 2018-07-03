@@ -23,5 +23,34 @@ footer.footer {
   }
   .link-container {
     color: white;
+    font-size: 2rem;
+    .link-text {
+      margin-top: 60px;
+      font-size: 1.5rem;
+    }
+    li {
+      a {
+        color: white;
+        &:hover {
+          color: fade-out(white, 0.5);
+        }
+      }
+      margin-right: 10px;
+      margin-left: 10px;
+      cursor: pointer;
+      @include transition-all;
+      &:hover {
+        color: fade-out(white, 0.5);
+      }
+    }
+    .img-icon {
+      width: 30px;
+      height: 30px;
+      margin-bottom: 5px;
+      @include transition-all;
+      &:hover {
+        filter: opacity(50%);
+      }
+    }
   }
 }

@@ -94,7 +94,6 @@ $(document).ready(function() {
   $(".talks-carousel").owlCarousel({
     loop: true,
     margin: 40,
-    autoplay: true,
     responsive: {
       0: {
         items: 1
@@ -112,7 +111,6 @@ $(document).ready(function() {
   $(".event-carousel").owlCarousel({
     loop: true,
     margin: 80,
-    autoplay: true,
     responsive: {
       0: {
         items: 1

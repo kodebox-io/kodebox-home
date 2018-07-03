@@ -1,15 +1,12 @@
 #project {
   background-color: #f7f7f7;
   .project-item-container {
+    padding-right: 300px;
+    padding-left: 300px;
     .project-item {
       img {
-        width: 80%;
-        height: 300px;
-      }
-      @media (max-width: 767px) {
-        img {
-          height: 200px;
-        }
+        width: 70%;
+        height: auto;
       }
       .project-title {
         text-transform: none !important;
@@ -32,6 +29,18 @@
           border: 1px solid fade-out(#999, 0.5);
         }
       }
+    }
+  }
+  @media (max-width: 1200px) {
+    .project-item-container {
+      padding-right: 100px;
+      padding-left: 100px;
+    }
+  }
+  @media (max-width: 600px) {
+    .project-item-container {
+      padding-right: 15px;
+      padding-left: 15px;
     }
   }
 }
