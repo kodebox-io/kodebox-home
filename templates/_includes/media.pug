@@ -10,7 +10,7 @@ mixin media-item(isShown, icon, title, media, description, link, content)
               | [#{description}] #{media}
             p.description.media-content
               | #{content}
-          img.ml-3(src=icon)
+          img.media-img.ml-3(src=icon)
   else
     .col-12.hidden-media
       a(href=link, target='_blank')
@@ -20,7 +20,7 @@ mixin media-item(isShown, icon, title, media, description, link, content)
               | #{title}
             p.description.media-date
               | [#{description}] #{media}
-          img.ml-3(src=icon)
+          img.media-img.ml-3(src=icon)
 section#media.page-section
   .container.text-center
     h2.wow.fadeIn MEDIA COVERAGE

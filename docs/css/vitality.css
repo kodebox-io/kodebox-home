@@ -173,7 +173,10 @@ header.masthead {
   background-color: #f7f7f7; }
   #project .project-item-container .project-item img {
     width: 80%;
-    height: auto; }
+    height: 300px; }
+  @media (max-width: 767px) {
+    #project .project-item-container .project-item img {
+      height: 200px; } }
   #project .project-item-container .project-item .project-title {
     text-transform: none !important;
     font-size: 1.5rem;
@@ -432,6 +435,12 @@ header.masthead {
       width: 170px;
       height: 150px;
       object-fit: cover; }
+    @media (max-width: 767px) {
+      #media .media-item .media-img {
+        width: 100px;
+        height: 80px; }
+      #media .media-item .media-content {
+        display: none; } }
   #media .show-more-btn {
     color: #5c5c5c;
     border: 1px solid #5c5c5c;

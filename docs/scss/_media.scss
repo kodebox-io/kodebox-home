@@ -20,6 +20,15 @@
       height: 150px;
       object-fit: cover;
     }
+    @media (max-width: 767px) {
+      .media-img {
+        width: 100px;
+        height: 80px;
+      }
+      .media-content {
+        display: none;
+      }
+    }
   }
   .show-more-btn {
     color: $themeDescription;

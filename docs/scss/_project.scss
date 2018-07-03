@@ -4,7 +4,12 @@
     .project-item {
       img {
         width: 80%;
-        height: auto;
+        height: 300px;
+      }
+      @media (max-width: 767px) {
+        img {
+          height: 200px;
+        }
       }
       .project-title {
         text-transform: none !important;
