@@ -5,6 +5,16 @@
     width: 100%;
     padding-top: 70%;
   }
+  .talk-container {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+  @media (max-width: 1000px) {
+    .talk-container {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
   .title {
     font-size: 70%;
     color: #3A3A3A;

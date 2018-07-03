@@ -258,6 +258,13 @@ header.masthead {
     overflow: hidden;
     width: 100%;
     padding-top: 70%; }
+  #talks .talk-container {
+    padding-right: 100px;
+    padding-left: 100px; }
+  @media (max-width: 1000px) {
+    #talks .talk-container {
+      padding-right: 15px;
+      padding-left: 15px; } }
   #talks .title {
     font-size: 70%;
     color: #3A3A3A;
