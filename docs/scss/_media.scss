@@ -9,14 +9,17 @@
       font-weight: 600;
       @include heading-font;
     }
+    .media-date {
+      font-size: 1rem;
+    }
+    .media-content {
+      font-size: 1rem;
+    }
     img {
-      width: 100px;
-      height: 100px;
+      width: 170px;
+      height: 150px;
       object-fit: cover;
     }
-  }
-  .media-item-container {
-    max-width: 800px;
   }
   .show-more-btn {
     color: $themeDescription;

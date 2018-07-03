@@ -1,32 +1,34 @@
-mixin media-item(isShown, icon, title, media, description, link)
+mixin media-item(isShown, icon, title, media, description, link, content)
   if (isShown)
     .col-12.wow.fadeIn
       a(href=link, target='_blank')
-        .media-item.py-1.d-flex
-          .media-word.d-inline-block.mr-auto.my-auto.py-3
+        .media-item.py-3.d-flex
+          .media-word.d-inline-block.mr-auto
             p.media-title.mb-1
               | #{title}
             p.description.media-date
               | [#{description}] #{media}
-          img.my-auto.ml-3(src=icon)
+            p.description.media-content
+              | #{content}
+          img.ml-3(src=icon)
   else
     .col-12.hidden-media
       a(href=link, target='_blank')
-        .media-item.py-1.d-flex
-          .media-word.d-inline-block.mr-auto.my-auto.py-3
+        .media-item.py-3.d-flex
+          .media-word.d-inline-block.mr-auto
             p.media-title.mb-1
               | #{title}
             p.description.media-date
               | [#{description}] #{media}
-          img.my-auto.ml-3(src=icon)
+          img.ml-3(src=icon)
 section#media.page-section
   .container.text-center
     h2.wow.fadeIn MEDIA COVERAGE
     .media-item-container.mx-auto
       .row.mt-5.text-left
-        +media-item(true, 'http://www.gametoc.co.kr/news/photo/201805/48048_91527_3644.jpg', '블록체인과 게임의 융합 "성남 커넥트 세미나" 개최', '한경닷컴 게임톡', '2018-05-29', 'http://gametoc.hankyung.com/news/articleView.html?idxno=48048')
-        +media-item(true, 'http://image.zdnet.co.kr/2018/05/27/haeunsion_jwUrKpehNs.jpg', '2018 IEEE 블록체인 서밋 코리아 내달 7~8일 열려', 'ZDNet Korea', '2018-05-27', 'http://www.zdnet.co.kr/news/news_view.asp?artice_id=20180527184505')
-        +media-item(true, 'https://btcmanager.com/wp-content/uploads/bfi_thumb/Blockchain-Apps-Are-Taking-Over-The-South-Korean-Market-nqnc4jpf55wjrg7niv7ya40o97952mghhc286qkox6.jpg', 'Blockchain Apps are Taking Over the South Korean Market, Cryptocurrency Incentive', 'BTCMANAGER.COM', '2018-05-24', 'https://btcmanager.com/blockchain-apps-are-taking-over-the-south-korean-market-cryptocurrency-incentive/')
+        +media-item(true, 'http://www.gametoc.co.kr/news/photo/201805/48048_91527_3644.jpg', '블록체인과 게임의 융합 "성남 커넥트 세미나" 개최', '한경닷컴 게임톡', '2018-05-29', 'http://gametoc.hankyung.com/news/articleView.html?idxno=48048','블록체인 기술을 활용한 게임산업의 새로운 생태계 조성을 위한 융복합 세미나인 ‘성남 커넥트 세미나’가 오는 31일, 성남산업진흥재단 대강당(정자역 킨스타워 7층)에서 개최된다. 성남 커넥트 세미나는 성남시가 주최하고 성남산업진흥재단이 주관하며 한국모바일게임협회가 운영한다. 세미나에서는 ‘블록체인&게임’을 주제로 전문가 강연과...')
+        +media-item(true, 'http://image.zdnet.co.kr/2018/05/27/haeunsion_jwUrKpehNs.jpg', '2018 IEEE 블록체인 서밋 코리아 내달 7~8일 열려', 'ZDNet Korea', '2018-05-27', 'http://www.zdnet.co.kr/news/news_view.asp?artice_id=20180527184505', '국내외 블록체인 및 암호화폐 전문가들이 대거 참여하는 "2018 IEEE 블록체인 서밋 코리아(IEEE Blockchain Summit Korea 2018)"이 내달 7~8일 이틀간 서울 을지로 SKT타워 4층(슈펙스홀)에서 열린다. 이번 행사는 오는 9월 17-19일 미국 워싱턴에서 열리는 "IEEE 글로벌 블록체인 서밋(IEEE Global Blockchain Summit)"에 앞서 열리는 "한국 행사"다....')
+        +media-item(true, 'https://btcmanager.com/wp-content/uploads/bfi_thumb/Blockchain-Apps-Are-Taking-Over-The-South-Korean-Market-nqnc4jpf55wjrg7niv7ya40o97952mghhc286qkox6.jpg', 'Blockchain Apps are Taking Over the South Korean Market, Cryptocurrency Incentive', 'BTCMANAGER.COM', '2018-05-24', 'https://btcmanager.com/blockchain-apps-are-taking-over-the-south-korean-market-cryptocurrency-incentive/','Some of the biggest conglomerates in South Korea such as Kakao and Naver have begun to develop blockchain applications to secure a position at the forefront of blockchain development. LINE is the most widely utilized messaging application in Japan. It owned by  South Korea’s largest search engine Naver, and Kakao, a local internet conglomerate that operates ...')
         +media-item(false, 'img/media/mediacoverage.png', '가능성에서 현실로…블록체인 기반 게임 첫 출시', '머니투데이방송', '2018-05-18', 'http://m.mtn.co.kr/news/news_view.php?mmn_idx=2018051816011145214#_enliple#_enliple')
         +media-item(false, 'http://itimg.chosun.com/sitedata/image/201805/11/2018051185020_0.jpg', '코드박스, 블록체인 기반 모바일 러닝 게임 "고크립토봇" 출시', 'IT 조선', '2018-05-11', 'http://it.chosun.com/site/data/html_dir/2018/05/11/2018051185020.html')
         +media-item(false, 'http://image.zdnet.co.kr/2018/03/26/lyk_vPcTzfyvUMqTSfYl.jpg', '게임이 블록체인 킬러 앱 될 수 있다', 'ZDNet Korea', '2018-03-26', 'http://www.zdnet.co.kr/news/news_view.asp?artice_id=20180326023307')

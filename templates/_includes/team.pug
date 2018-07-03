@@ -21,7 +21,7 @@ mixin team-iteam(imgSrc, name, rank, mediumLink, githubLink, twitterLink)
                 img.active(src='img/team/github.png')
             else if (twitterLink)
               a(href=twitterLink, target='_blank')
-                img.active(src='img/team/github.png')
+                img.active(src='img/team/twitter.png')
             else
               img.inactive(src='img/team/github.png')
 section#team.page-section
@@ -41,8 +41,11 @@ section#team.page-section
         +team-iteam('img/team/10.png', 'Kyung Hee Yim', 'Designer', 'https://medium.com/@KyungheeYim')
         +team-iteam('img/team/11.png', 'Gi Yoon Kim', 'Intern', 'https://medium.com/@kky2455')
         // Join Us
-    .join-us
-      p.lead.name.mt-3.mb-0
-        | Join us!
-      .rank
-        | hi@kodebox.io
+        .col-lg-4.col-md-6.wow.fadeIn.mb-3
+          .item
+            img.team-img(src='img/team/join-us.svg', alt='')
+            .team-caption
+              p.name.mt-3.mb-0
+                | Join us!
+              p.description.rank.mb-1
+                | hi@kodebox.io

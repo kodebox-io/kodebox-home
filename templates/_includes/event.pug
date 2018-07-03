@@ -1,28 +1,26 @@
-mixin event-item(type, title, description, link)
+mixin event-item(type, title, description, link, imageUrl)
   .event-item
     a(href=link, target='_blank')
-      img(src='img/events/codechain-connect.jpeg')
-      .overlay.text-left.mt-3
+      img(src=imageUrl)
+      .overlay.text-left
         if(type == 'upcoming')
-          p.upcoming-type.mb-1
-            | Upcoming : #{description}
+          p.type.upcoming-type.mb-1
+            | UPCOMING : #{description}
         else
-          p.past-type.mb-1
-            | Past : #{description}
-        p.title.mb-1
-          | #{title}
-        p.description
-          | #{description}
+          p.type.past-type.mb-1
+            | PAST : #{description}
+      p.text-left.title.mt-2
+        | #{title}
 section#events.page-section
-  .container-flude.event-container.text-center.mt-5
+  .container.event-container.text-center.mt-5
     h2.wow.fadeIn EVENTS
-    .event-carousel.owl-carousel.owl-theme.mt-5
-      +event-item('upcoming', 'Upcoming Dummy Event', '[2018-07-02]', '#')
-      +event-item('past', 'CodeChain Connect', '[2018-06-27] ', 'https://medium.com/codechain/codechain-connect-2018-6-27-739f52ffd814')
-      +event-item('past', 'CodeChain Seminar - Interchain and Sharding', '[2018-06-20] Seoul', 'https://docs.google.com/presentation/d/1woHERW1TS4ZpSWrynKHk-RRiMl3-ZTrjKdVY3QzBY_k/edit?usp=sharing')
-      +event-item('past', 'CodeChain Seminar - Script Language', '[2018-06-14] Seoul', 'https://docs.google.com/presentation/d/1E9efuCuTLT2E7gIbfPVezuAWhJMHakHr9x8zqLpt6Dg/edit?usp=sharing')
-      +event-item('past', 'IEEE Blockchain Summit Korea 2018', '[2018-06-07~08] Seoul', 'http://sites.ieee.org/bcsummitkorea-2018/')
-      +event-item('past', 'CodeChain Seminar - Blockchain Storage', '[2018-05-27] Seoul', 'https://docs.google.com/presentation/d/1HtXdipYotF9DKmXJhP0c2OEgLCGEj1cxCP0jEuTeS8w/edit?usp=sharing')
-      +event-item('past', 'CodeChain Seminar - P2P Network', '[2018-05-27] Seoul', 'https://docs.google.com/presentation/d/1qYBKe8RONh3JKdRrwvKTuY_2p7FeQEJRR1oqep5lKmo/edit?usp=sharing')
-      +event-item('past', 'CodeChain Seminar - BTF Consensus', '[2018-05-23] Seoul', 'https://docs.google.com/presentation/d/10W7gKEvk_6XRIlSdiKwnwP9gVzo5Re5m_24QzLGaqvk/edit?usp=sharing')
-      +event-item('past', 'Blockchain Connect', '[2018-01-11] Seoul', 'https://onoffmix.com/event/123063')
+    .event-carousel.owl-carousel.owl-theme.mt-5.wow.fadeIn
+      +event-item('upcoming', 'Upcoming Dummy Event', 'July 2nd, 2018', '#', 'img/events/codechain-connect.jpeg')
+      +event-item('past', 'CodeChain Connect', 'June 27th, 2018', 'https://medium.com/codechain/codechain-connect-2018-6-27-739f52ffd814', 'img/events/codechain-connect.jpeg')
+      +event-item('past', 'CodeChain Seminar - Interchain and Sharding', 'June 20th, 2018', 'https://docs.google.com/presentation/d/1woHERW1TS4ZpSWrynKHk-RRiMl3-ZTrjKdVY3QzBY_k/edit?usp=sharing', 'img/events/interchain-and-sharding.jpg')
+      +event-item('past', 'CodeChain Seminar - Script Language', 'June 14th, 2018', 'https://docs.google.com/presentation/d/1E9efuCuTLT2E7gIbfPVezuAWhJMHakHr9x8zqLpt6Dg/edit?usp=sharing', 'img/events/script-language.png')
+      +event-item('past', 'IEEE Blockchain Summit Korea 2018', 'June 7th~9th, 2018', 'http://sites.ieee.org/bcsummitkorea-2018/')
+      +event-item('past', 'CodeChain Seminar - Blockchain Storage', 'June 5th, 2018', 'https://docs.google.com/presentation/d/1HtXdipYotF9DKmXJhP0c2OEgLCGEj1cxCP0jEuTeS8w/edit?usp=sharing', 'img/events/blockchain-storage.png')
+      +event-item('past', 'CodeChain Seminar - P2P Network', 'May 30th, 2018', 'https://docs.google.com/presentation/d/1qYBKe8RONh3JKdRrwvKTuY_2p7FeQEJRR1oqep5lKmo/edit?usp=sharing', 'img/events/p2p-network.JPG')
+      +event-item('past', 'CodeChain Seminar - BFT Consensus', 'May 23rd, 2018', 'https://docs.google.com/presentation/d/10W7gKEvk_6XRIlSdiKwnwP9gVzo5Re5m_24QzLGaqvk/edit?usp=sharing', 'img/events/bft-consensus.JPG')
+      +event-item('past', 'Blockchain Connect', 'Jan 11st, 2018', 'https://onoffmix.com/event/123063')

@@ -92,23 +92,35 @@ $(document).ready(function() {
   });
 
   $(".talks-carousel").owlCarousel({
-    items: 3,
-    navigation: true,
-    pagination: false,
-    navigationText: [
-      "<i class='fa fa-angle-left'></i>",
-      "<i class='fa fa-angle-right'></i>"
-    ],
+    loop: true,
+    margin: 40,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 2
+      },
+      1100: {
+        items: 3
+      }
+    }
   });
 
   $(".event-carousel").owlCarousel({
-    items: 3,
-    navigation: true,
-    pagination: false,
-    navigationText: [
-      "<i class='fa fa-angle-left'></i>",
-      "<i class='fa fa-angle-right'></i>"
-    ],
+    loop: true,
+    margin: 40,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 2
+      },
+      1200: {
+        items: 3
+      }
+    }
   });
 
 })(jQuery); // End of use strict
