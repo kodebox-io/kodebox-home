@@ -172,8 +172,8 @@ header.masthead {
 #project {
   background-color: #f7f7f7; }
   #project .project-item-container .project-item img {
-    width: 300px;
-    height: 250px; }
+    width: 80%;
+    height: auto; }
   #project .project-item-container .project-item .project-title {
     text-transform: none !important;
     font-size: 1.5rem;
@@ -199,6 +199,7 @@ header.masthead {
   #events .event-container .owl-dots {
     height: 48px; }
   #events .event-container .owl-prev {
+    border: none;
     font-size: 2rem;
     position: absolute;
     z-index: 2;
@@ -213,6 +214,7 @@ header.masthead {
     #events .event-container .owl-prev:focus {
       outline: 0; }
   #events .event-container .owl-next {
+    border: none;
     font-size: 2rem;
     position: absolute;
     z-index: 2;
@@ -241,9 +243,11 @@ header.masthead {
     padding-right: 0;
     padding-left: 0; }
     #events .event-container .owl-prev {
-      left: 0; }
+      left: 0;
+      width: 20px; }
     #events .event-container .owl-next {
-      right: 0; } }
+      right: 0;
+      width: 20px; } }
 
 #events .event-item {
   box-sizing: border-box;
@@ -321,6 +325,7 @@ header.masthead {
       height: 48px;
       padding-top: 20px; }
     #talks .talk-container .owl-prev {
+      border: none;
       font-size: 2rem;
       position: absolute;
       z-index: 2;
@@ -335,6 +340,7 @@ header.masthead {
       #talks .talk-container .owl-prev:focus {
         outline: 0; }
     #talks .talk-container .owl-next {
+      border: none;
       font-size: 2rem;
       position: absolute;
       z-index: 2;
@@ -353,9 +359,11 @@ header.masthead {
       padding-right: 0;
       padding-left: 0; }
       #talks .talk-container .owl-prev {
-        left: 0; }
+        left: 0;
+        width: 20px; }
       #talks .talk-container .owl-next {
-        right: 0; } }
+        right: 0;
+        width: 20px; } }
   #talks .title {
     font-size: 2rem;
     color: #3A3A3A;
