@@ -52,5 +52,11 @@ footer.footer {
         filter: opacity(50%);
       }
     }
+    .gitter-icon {
+      filter: brightness(0) invert(1);
+      &:hover {
+        filter: brightness(0) invert(0.5);
+      }
+    }
   }
 }
