@@ -1106,10 +1106,6 @@ lcid@^1.0.0:
   dependencies:
     invert-kv "^1.0.0"
 
-live-server-https@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/live-server-https/-/live-server-https-0.0.2.tgz#98d4361b1af94021fc36423712fa8142e7fe8e6f"
-
 live-server@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/live-server/-/live-server-1.2.0.tgz#4498644bbf81a66f18dd8dffdef61c4c1c374ca3"

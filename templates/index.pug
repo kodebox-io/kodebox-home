@@ -25,17 +25,6 @@ html(lang='en')
     // Custom styles for this theme
     // Uncomment the color scheme you want to use! Red is chosen by default!
     link(href='css/vitality.css', rel='stylesheet', type='text/css')
-    script(type='text/javascript').
-      var protocol = window.location.protocol
-      if (protocol === 'http:') {
-        window.location.replace(window.location.href.replace('http://', 'https://'))
-      }
-    script(async="" src="https://www.googletagmanager.com/gtag/js?id=UA-101144979-1")
-    script.
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag("js", new Date());
-      gtag("config", "UA-101144979-1");
   body#page-top
     // Navigation
     include ./_includes/nav.pug
