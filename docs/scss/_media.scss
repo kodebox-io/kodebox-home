@@ -29,6 +29,10 @@
       width: 170px;
       height: 150px;
       object-fit: cover;
+
+      &.image-left {
+        object-position: left;
+      }
     }
     @media (max-width: 767px) {
       .media-img {

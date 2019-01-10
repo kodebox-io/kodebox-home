@@ -1,4 +1,4 @@
-mixin media-item(isShown, icon, title, media, description, link, content)
+mixin media-item(isShown, icon, title, media, description, link, content, imageLeft)
   if (isShown)
     .col-12.wow.fadeIn
       a(href=link, target='_blank')
@@ -10,7 +10,10 @@ mixin media-item(isShown, icon, title, media, description, link, content)
               | [#{description}] #{media}
             p.description.media-content
               | #{content}
-          img.media-img.ml-2.ml-md-5(src=icon)
+          if (imageLeft)
+            img.media-img.ml-2.ml-md-5.image-left(src=icon)
+          else
+            img.media-img.ml-2.ml-md-5(src=icon)
   else
     .col-12.hidden-media
       a(href=link, target='_blank')
@@ -22,12 +25,16 @@ mixin media-item(isShown, icon, title, media, description, link, content)
               | [#{description}] #{media}
             p.description.media-content
               | #{content}
-          img.media-img.ml-2.ml-md-5(src=icon)
+          if (imageLeft)
+            img.media-img.ml-2.ml-md-5.image-left(src=icon)
+          else
+            img.media-img.ml-2.ml-md-5(src=icon)
 section#media.page-section
   .container.text-center
     h2.wow.fadeIn MEDIA COVERAGE
     .media-item-container.mx-auto
       .row.mt-5.text-left
+        +media-item(true, 'http://image.zdnet.co.kr/2019/01/10/lyk_XemjlvGSlEc2NlHb.jpg', "'미술품·부동산 토큰으로 판다'...코드박스-비시드파트너스 맞손", 'ZDNet Korea','2019-01-10','http://www.zdnet.co.kr/view/?no=20190110093753','자산 토큰화 플랫폼 기업 코드박스(대표 서광열)는 핀테크 전문기업 비시드파트너스(대표 장원태)와 디지털 자산 발행 및 거래 시스템 적용을 위한 업무협약을 체결했다고 10일 밝혔다. 이번 계약을 통해 비시드파트너스는 미술품, 특허, 부동산, 재고 등의 실물 자산을 디지털화해 코드박스의 코드체인 네트워크 상에 발행하고 이에 기반한 다양한 금융 서비스를 제공할 예정이다...', true)
         +media-item(true, 'http://www.businesskorea.co.kr/news/photo/201812/27474_38669_938.png', "Kakao Ventures Releases Infographic to Sum up Investments in 2018", 'BUSINESS KOREA','2018-12-14','http://www.businesskorea.co.kr/news/articleView.html?idxno=27474','Kakao Ventures, a venture capital company specializing in funding in initial rounds, released an infographic that sums up its investment activities in 2018. This year, Kakao Ventures carried out new and follow-up investments worth 33.7 billion won (US$29.8 million) in 43 startups. Investments in seed rounds and series A rounds took up the largest share. The company’s accumulated investments since 2012 amount to 135 billion won (US$119.4 million)...')
         +media-item(true, 'http://www.thebchain.co.kr/news/photo/201812/2673_2802_5654.png', "'될 듯 되지 않는 될 것 같은' STO, 한국서 어떻게 될까?", 'THE BCHAIN', '2018-12-07', 'http://www.thebchain.co.kr/news/articleView.html?idxno=2673', "정부 차원에서 ICO는 증권법을 따라야 한다는 입장을 분명히 하고 나섬에 따라 미국 시장에서 현행법 체제에 맞춰 투자금을 모집하는 증권형토큰공개(STO)에 대한 관심은 점점 달아오르는 모양새다. STO는 이미 2019년 암호화폐 생태계에서 중량급 키워드 자리를 이미 예고해둔 상황이다...")
         +media-item(true, 'http://www.thebchain.co.kr/news/photo/201811/2567_2700_3649.jpg', '"증권형 토큰" 관심 급증...한국서도 발행 가능할까?', 'THE BCHAIN', '2018-11-29', 'http://www.thebchain.co.kr/news/articleView.html?idxno=2567','서광열 코드박스 대표는 "증권형 토큰은 국내 자본시장법 틀 안에서 수용할 수 있는 부분들도 있어 보인다"면서 "ICO로 대규모 자금을 유치하는 것이 예전보다 어려워진 만큼 증권형 토큰을 발행해 자금을 확보하려는 기업들이 늘 것이란 전망이 늘고 있다"고 전했다...')
