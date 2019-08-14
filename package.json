@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "concurrently": "^3.5.1",
-    "live-server": "^1.2.0",
+    "live-server": "^1.2.1",
     "live-server-https": "^0.0.2",
     "node-sass": "^4.9.0"
   }
