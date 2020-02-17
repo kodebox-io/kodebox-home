@@ -1,0 +1,41 @@
+#announcement {
+  margin-top: 90px;
+
+  .title {
+    margin-top: 20px;
+  }
+
+  .table {
+    tbody {
+      tr {
+        cursor: pointer;
+
+        &:hover {
+          background: lightgray;
+        }
+      }
+    }
+  }
+
+  .placeholder {
+    height: 600px;
+  }
+
+  .announcement1 {
+    margin: 100px 0;
+
+    .content {
+      border: 1px solid black;
+      padding: 96px 64px 24px 64px;
+      margin-bottom: 12px;
+
+      li {
+        margin-bottom: 8px;
+      }
+
+      .indent-100 {
+        margin-left: 100px;
+      }
+    }
+  }
+}
