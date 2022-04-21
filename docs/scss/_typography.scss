@@ -22,7 +22,7 @@ p {
 p.description {
   font-size: 18px;
   line-height: 1.5;
-  color: $themeDescription
+  color: $themeDescription;
 }
 
 p.lead {
@@ -37,7 +37,6 @@ h4,
 h5,
 h6 {
   @include heading-font;
-  letter-spacing: 2px;
   font-weight: 600;
 }
 

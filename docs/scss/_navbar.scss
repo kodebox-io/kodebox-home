@@ -2,7 +2,7 @@
   background-color: white;
   @include heading-font;
   letter-spacing: 2px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   font-weight: 400;
   font-size: 0.8rem;
   .navbar-toggler {
@@ -18,17 +18,14 @@
     font-size: 24px;
     line-height: 44px;
     @include heading-font;
-    img {
-      height: 35px;
-    }
   }
   .navbar-collapse {
     .navbar-nav {
-      >.nav-item {
-        >.nav-link {
+      > .nav-item {
+        > .nav-link {
           padding-top: 15px;
           padding-bottom: 15px;
-          color: #999;
+          color: #535353;
           &:focus,
           &:hover {
             color: fade-out($themeDark, 0.7);
@@ -42,33 +39,43 @@
       }
     }
   }
+  @media (max-width: 991px) {
+    .navbar-brand {
+      font-size: 26px;
+      line-height: 50px;
+      img {
+        height: 20px;
+      }
+    }
+  }
+
   @media (min-width: 992px) {
     height: auto;
     padding: 15px 0;
     @include transition-padding;
     box-shadow: none;
-    border-bottom: 1px solid rgba(220, 220, 220, .4);
+    border-bottom: 1px solid rgba(220, 220, 220, 0.4);
     background-color: white;
     &.navbar-shrink {
       padding: 5px 0;
       background-color: white;
-      box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     }
     .navbar-brand {
       font-size: 26px;
       line-height: 50px;
       img {
-        height: 41px;
+        height: 24px;
       }
     }
     .navbar-collapse {
       .navbar-nav {
-        >.nav-item {
+        > .nav-item {
           margin-right: 5px;
           &:last-child {
             margin-right: 0;
           }
-          >.nav-link {
+          > .nav-link {
             padding: 15px;
             &.active,
             &.active:focus,
