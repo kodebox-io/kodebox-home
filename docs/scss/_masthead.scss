@@ -2,8 +2,6 @@ header.masthead {
   height: 70%;
   position: relative;
   color: white;
-  @include background-cover;
-  @include background-fixed;
   .header-container {
     padding-top: 75px;
   }
