@@ -20,12 +20,6 @@ rm -rf .git/worktrees/docs/ # 변경된 부분
 echo "Checking out gh-pages branch into docs" # 변경된 부분
 git worktree add -B gh-pages docs origin/gh-pages # 변경된 부분
 
-echo "Removing existing files"
-rm -rf docs/* # 변경된 부분
-
-echo "Generating site"
-yarn run build
-
 echo "kodebox.io" >> docs/CNAME # 변경된 부분
 
 echo "Updating gh-pages branch"
