@@ -5,7 +5,7 @@ DIR=$(dirname "$0")
 cd $DIR/..
 
 echo "Deleting old publication"
-rm -rf public
+rm -rf docs # 변경된 부분
 
 if [[ $(git status -s) ]]
 then
@@ -13,21 +13,21 @@ then
     exit 1;
 fi
 
-mkdir public
+mkdir docs # 변경된 부분
 git worktree prune
-rm -rf .git/worktrees/public/
+rm -rf .git/worktrees/docs/ # 변경된 부분
 
-echo "Checking out gh-pages branch into public"
-git worktree add -B gh-pages public origin/gh-pages
+echo "Checking out gh-pages branch into docs" # 변경된 부분
+git worktree add -B gh-pages docs origin/gh-pages # 변경된 부분
 
 echo "Removing existing files"
-rm -rf public/*
+rm -rf docs/* # 변경된 부분
 
 echo "Generating site"
 yarn run build
 
-echo "kodebox.io" >> public/CNAME
+echo "kodebox.io" >> docs/CNAME # 변경된 부분
 
 echo "Updating gh-pages branch"
-cd public && git add --all && git commit -m "Publishing to gh-pages (publish.sh)"
+cd docs && git add --all && git commit -m "Publishing to gh-pages (publish.sh)" # 변경된 부분
 git push origin
